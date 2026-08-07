@@ -10,7 +10,7 @@ Featured Sellers spotlights a set of sellers on the storefront — an **Our Feat
 
 ## Enabling and tuning
 
-In the admin panel, go to **Configure → Featured Sellers**.
+In the admin panel, go to **Configure → Marketplace → Featured Sellers**.
 
 <ImagePopup src="/images/featured-sellers/featured-sellers-config.png" alt="Featured Sellers configuration" />
 
@@ -24,6 +24,10 @@ In the admin panel, go to **Configure → Featured Sellers**.
   - **Maximum Sale** — the sellers with the highest sales value.
 
 Save the configuration, and the storefront shows the featured sellers accordingly.
+
+::: warning Requires "Show Publicly"
+The showcase only appears when **both** this **Status** toggle **and** the sellers' **Show Publicly** setting (**Configure → Marketplace → Sellers → Registration & Visibility**) are enabled. With Show Publicly off, the storefront hides the showcase even if Featured Sellers is on.
+:::
 
 ## How the selection works
 

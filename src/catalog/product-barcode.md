@@ -14,8 +14,8 @@ Open a product from **Catalog → Products** and go to the **Barcode** tab on th
 
 <ImagePopup src="/images/product-barcode/barcode-tab.png" alt="Barcode tab on the product edit form" />
 
-- **Barcode Value** — the value encoded in the barcode. Set it to whatever the barcode should represent (a product code, GTIN, and so on). If you leave it empty, the product's **SKU** is used.
-- **Barcode** — the generated image. It is **read-only and created automatically every time you save the product**, and refreshes whenever the value (or SKU) changes. Once generated, a **Download Barcode** link gives you a single-product PDF.
+- **Barcode Value** — the value encoded in the barcode. Set it to whatever the barcode should represent (a product code, GTIN, and so on). If you leave it empty, **no barcode is generated when you save** — but the bulk **Generate Barcode** action can still produce one, deriving the value from the product's ID.
+- **Barcode** — the generated image. It is **read-only and created automatically every time you save the product**, and refreshes whenever the value changes. Once generated, a **Download Barcode** link gives you a single-product PDF.
 
 Save the product and the barcode image is generated from the value.
 
@@ -35,5 +35,5 @@ Select one or more products with the checkboxes and use the bulk actions:
 - **Print Barcodes** — download a single PDF of the selected products' barcodes — a table of **ID**, **Name**, and the **barcode image + value** — ready to print onto labels.
 
 ::: tip
-Leave **Barcode Value** empty to fall back to the SKU — that keeps the barcode aligned with the code you already use to identify the product.
+Set **Barcode Value** to the GTIN or product code you already use in your inventory system, so the printed barcode scans to the same identifier everywhere.
 :::

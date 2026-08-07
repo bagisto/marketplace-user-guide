@@ -21,7 +21,7 @@ export default defineConfig({
   ],
 
   themeConfig: {
-    siteTitle: "Marketplace Guide",
+    siteTitle: false,
 
     logo: {
       light: "/logo.png",

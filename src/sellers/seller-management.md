@@ -48,7 +48,7 @@ The right side shows read-only **Total Sales**, **Commission**, and **Seller Ear
 
 ## Approving, impersonating, and removing
 
-- **Approve / Disapprove** — from the row/bulk **Update Status** action; the seller is emailed when their status changes. A disapproved seller can't sell.
+- **Approve / Disapprove** — via the bulk **Update Status** action (select one or more sellers); the seller is emailed when their status changes. A disapproved seller can't sell.
 - **Login as Seller** — open the Seller Panel as that seller to see exactly what they see (great for support).
 - **Delete** — remove a seller. This is **blocked** if the seller still has **pending or processing orders**, so no in-flight order is orphaned.
 - **Flags** — review the flags customers have raised against a seller. See [Seller & Product Flagging](/moderation/seller-product-flagging).

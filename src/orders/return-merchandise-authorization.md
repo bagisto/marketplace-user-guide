@@ -20,12 +20,14 @@ Open **Sales → RMA** in the Seller Panel. Each request shows its **RMA ID**, t
 
 ## Working a return
 
-Open a request with its **View** action. The page gathers everything about the return: a **General** panel (date, package condition, notes, images), an **Items** panel (each returned item with its price, RMA quantity, resolution type, and reason), a **Conversation** thread, and **Order / Customer** details.
+Open a request with its **View** action. The page gathers everything about the return: a **General** panel (date, package condition, notes, images), an **Items** panel (each returned item with its price, RMA quantity, resolution type, and reason), a **Conversation** thread, and **Order / Customer** details. The **Status** panel shows the current **RMA Status** and **Order Status**, and an **Update Status** control moves the request forward.
+
+<ImagePopup src="/images/return-merchandise-authorization/rma-status.png" alt="Seller RMA request detail — status panel, update-status control, items, and conversation" />
 
 - **Message the customer** — the conversation thread lets the seller and customer exchange details (reasons, photos, resolution) with file attachments, right on the request.
-- **Update the status** — move the request through its lifecycle. RMA statuses are **Pending → Accept → Awaiting → Dispatched Package → Received Package → Solved**, with **Declined**, **Item Canceled**, and **Canceled** as end states. A brand-new request starts at **Pending**, from which you either **Accept** it or **Decline** it; which statuses you can move to next depends on whether the resolution is a **return** or a **cancellation**.
-- **Refund on receipt** — moving a return to **Received Package** processes the **refund** for the returned items (you can also refund the shipping). A refund needs the item to have been invoiced first.
-- **Reopen** — if you declined a request and the admin allows it, a customer can have it **reopened**, which puts it back to Pending.
+- **Update the status** — move the request through its lifecycle. RMA statuses are **Pending Review → Approved → Awaiting Return → Return In Transit → Refunded → Solved**, with **Request Declined**, **Item Canceled**, and **Request Canceled** as end states. A brand-new request starts at **Pending Review**, from which you either **Approve** it or decline it (**Request Declined**); which statuses you can move to next depends on whether the resolution is a **return** or a **cancellation**.
+- **Refund on receipt** — moving a return to **Refunded** processes the **refund** for the returned items (you can also refund the shipping). A refund needs the item to have been invoiced first.
+- **Reopen** — if a request was declined and the admin allows it, the **seller** can **reopen** it, which returns it to **Pending Review**.
 
 ::: info Admin oversight
 Admins see every seller's RMAs across the marketplace under **Marketplace → Sales → RMA**, and RMA availability and policy are governed by the admin. Each status change notifies the customer.
