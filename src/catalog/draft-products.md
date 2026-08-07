@@ -14,7 +14,7 @@ Every product you create from scratch starts life as a **draft**, so you can bui
 
 <ImagePopup src="/images/draft-products/edit-draft-buttons.png" alt="Save as Draft and Submit on the product form" />
 
-- **Save as Draft** — stores everything entered so far and keeps the product a draft. It skips validation, so you can save an incomplete listing and come back to it.
+- **Save as Draft** — stores what you've entered and keeps the product a draft so you can come back to it. It relaxes the checks a submission enforces: when you're listing a product with *Sell as Yours*, details like condition and description can be left blank. A few core essentials (such as SKU and URL key) are still required to save.
 - **Submit** — validates the listing and sends it into the approval flow.
 
 ## Finding your drafts

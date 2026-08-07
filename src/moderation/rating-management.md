@@ -24,7 +24,7 @@ A review can only be left by a customer who has actually **bought** the product 
 
 Reviews carry a **status** — **Pending**, **Approved**, or **Disapproved** — and the admin decides which go live:
 
-- **Seller reviews** — under **Marketplace → Sellers → Seller Reviews**, the admin can **approve**, **disapprove**, or **delete** a review, individually or in bulk.
+- **Seller reviews** — under **Marketplace → Sellers → Seller Reviews**, the admin **approves** or **disapproves** reviews with the **Update Status** bulk action (select one or more rows), and can **delete** a review directly from its row.
 
 <ImagePopup src="/images/rating-management/admin-seller-reviews.png" alt="Admin seller review moderation" />
 

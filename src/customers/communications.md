@@ -18,7 +18,9 @@ The admin has the matching view on their side, so replies appear in the same con
 
 ## Messaging customers
 
-Where enabled, sellers can also message the **customers** who've bought from them, and customers can message sellers back from their own account. These conversations send **email notifications** to the other party (each side can turn their own emails off), and either party can be blocked.
+Where enabled, sellers can also message the **customers** who've bought from them, and customers can message sellers back from their own account. Open **Communication → Customers**, pick a customer from the list, and exchange messages in the thread — with the same attachment support. These conversations send **email notifications** to the other party (each side can turn their own emails off), and either party can be blocked.
+
+<ImagePopup src="/images/communications/customer-communication.png" alt="Seller–customer communication thread under Communication → Customers" />
 
 ::: tip
 Use Communication with the admin for anything that needs their attention — onboarding questions, policy clarifications, payout queries. For a conversation about a specific return, use the message thread on the [RMA request](/orders/return-merchandise-authorization) instead, so it stays tied to that return.

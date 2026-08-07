@@ -36,12 +36,41 @@ color-scheme:initial!important;
 }
 
 .logo {
-    width: 100px !important;
-    height: auto !important;
+    height: 30px !important;
+    width: auto !important;
 }
 
 .VPHero .VPImage {
   filter: drop-shadow(-2px 4px 6px rgba(0, 0, 0, 0.2));
   padding: 18px;
   scale: 1.2;
+}
+
+/* Sidebar (left nav) scroller — smooth and theme-aware.
+   Colors come from VitePress theme variables so light/dark match automatically. */
+.VPSidebar {
+  scroll-behavior: smooth;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: var(--vp-c-divider) transparent;
+}
+
+.VPSidebar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.VPSidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.VPSidebar::-webkit-scrollbar-thumb {
+  background-color: var(--vp-c-divider);
+  border-radius: 8px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+  transition: background-color 0.25s ease;
+}
+
+.VPSidebar::-webkit-scrollbar-thumb:hover {
+  background-color: var(--vp-c-text-3);
 }

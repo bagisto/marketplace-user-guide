@@ -24,7 +24,7 @@ Each metric is graded **good / warning / critical** against its thresholds, and 
 
 - **0–33 Unhealthy**, **34–66 At Risk**, **67–100 Healthy**.
 
-The overall verdict follows the worst-performing metric that has data, so one bad area is surfaced rather than averaged away. Cancellation always counts; feedback counts once there are reviews; flags count while flagging is enabled. The **cancellation-rate thresholds** (warning and critical percentages) are set by the admin under **Configure → Marketplace → Account Health**.
+The overall verdict follows the worst-performing metric that has data, so one bad area is surfaced rather than averaged away. Cancellation always counts; feedback counts once there are reviews; flags count while flagging is enabled. The **cancellation-rate thresholds** (warning and critical percentages) are set by the admin under **Configure → Marketplace → Moderation & Health → Account Health**.
 
 ## Refreshing
 

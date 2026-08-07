@@ -24,7 +24,7 @@ The admin panel gains a **Marketplace** section that governs the whole platform:
 
 ## For sellers
 
-Each seller signs in to their **Seller Panel** — a dedicated dashboard with a grouped sidebar (Catalog, Inventories, Pricing, Marketing, Sales, Performance, Reporting, Communication, Customers, Settings) and full dark-mode support:
+Each seller signs in to their **Seller Panel** — a dedicated dashboard with a grouped sidebar (Catalog, Inventories, Pricing, Marketing, Sales, Performance, Reporting, Communication, Customers, Plans, Settings) and full dark-mode support:
 
 - **Catalog** — **[Product Management](/catalog/product-management)**, **[Selling Existing Products](/catalog/selling-existing-products)**, **[Product Barcode](/catalog/product-barcode)** and **[Bulk Upload](/catalog/bulk-upload)**. Sellers can save **[draft products](/catalog/draft-products)**, and use **[Magic AI](/catalog/magic-ai)** to generate product content within admin-set limits.
 - **Inventories & Pricing** — dedicated **Manage Inventory** and **Manage Pricing** screens, plus **[Inventory Sources](/inventory/inventory-source-management)** for multiple stock locations.
