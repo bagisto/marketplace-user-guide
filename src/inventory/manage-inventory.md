@@ -1,30 +1,31 @@
 # Manage Inventory
 
-**Manage Inventory** gives a seller one screen to see and update stock across their whole catalog, without opening each product. It's the fastest way to keep quantities accurate as orders come in.
+Manage Inventory is the seller's stock control room — one screen to see and edit quantities for every product across every inventory source, with bulk tools for updating many products at once.
 
 ::: info What you'll learn
-- Where to find Manage Inventory in the Seller Panel
-- What each column tells you at a glance
-- How to update stock per inventory source
+- What the manage-inventory screen shows
+- How to edit stock per source
+- How to bulk-adjust stock and listing status
 :::
 
-## Opening Manage Inventory
+## The inventory screen
 
-In the **Seller Panel**, go to **Inventories → Manage Inventory**.
+Open **Inventories → Manage Inventory**. Each row is a stock-carrying product (simple and virtual products; configurable variants appear as their own rows), showing its image, name, SKU, type, **listing status**, **sales** (sold / undelivered / cancelled), and total **stock**.
 
-<ImagePopup src="/images/manage-inventory/manage-inventory.png" alt="Manage Inventory screen" />
+<ImagePopup src="/images/manage-inventory/manage.png" alt="Manage Inventory screen" />
 
-Each row is one product, showing:
+You can **search**, **filter** (by listing status, category, type, approval), and jump straight to a product's pricing with the **Edit price** link on each row.
 
-- **Product** — name, SKU, type, and price, with a quick **Edit price** link.
-- **Listing Status** — whether the listing is **Active**, and when it was last updated.
-- **Sales** — **Sold**, **Undelivered**, and **Canceled** counts, so you can spot fast-moving items.
-- **Inventories** — the current **Stock** total for the product.
+## Editing stock
 
-## Updating stock
+- **Per source** — expand a product row to reveal a quantity input for each of your [inventory sources](/inventory/inventory-source-management); type the new quantities. A product with **stock not managed** is always available and shows no quantity.
+- **Bulk stock tool** — select several products, then choose a **source** (all sources or a specific one), an **action** (**set**, **add**, or **remove**), and a **value**, and **Apply** it across the selection.
+- **Save** — a bar at the bottom tracks unsaved changes; **Save Inventories** writes them all at once (or **Discard** to revert).
 
-Expand a row to see its stock **per inventory source** (a seller with more than one warehouse or store manages each separately — see [Inventory Sources](/inventory/inventory-source-management)). Enter the new quantity and save.
+## Bulk listing status
+
+Select products and use the **Update Status** action to switch their listing status to **Active** or **Inactive** in one move — handy for taking a range of products on or off the storefront quickly.
 
 ::: tip
-Select several rows to update their status in bulk. Keeping stock accurate directly protects your [account health](/sellers/seller-account-health) — overselling and cancellations pull the score down.
+Use the bulk stock tool with **set** after a stock-take, and **add** / **remove** when receiving or shipping batches — it's far faster than editing rows one by one.
 :::

@@ -1,36 +1,56 @@
 # Order Management
 
-When a customer buys a seller's product, the order appears in the seller's **Sales → Orders**. From there the seller works their part of the order — invoicing, shipping, and requesting payment — while the admin keeps oversight of the whole marketplace order.
+When a customer buys a seller's product, the order appears in the seller's **Sales → Orders**. From there the seller works their part of the order end to end — invoicing, shipping, and requesting payment — while the admin keeps oversight of the whole marketplace order.
 
 ::: info What you'll learn
-- What the seller's orders list tracks
-- How a seller processes an order (invoice, ship, cancel)
-- How a seller's earning and payment status are shown
+- What the orders list tracks
+- How to process an order: invoice, ship, cancel
+- How a seller's earning and payment status flow
 :::
 
 ## The orders list
 
-Open **Sales → Orders** in the Seller Panel. Each row is an order containing this seller's items, grouped into columns for the order **ID / date / status / customer**, its **items / payment / shipment**, the **gross amount / discount / commission**, and the **seller earning / seller payment status**.
+Open **Sales → Orders**. Each row is an order containing this seller's items, with columns for the order **ID / date / status / customer**, **items / payment / shipment**, **gross amount / discount / commission**, and **seller earning / seller payment status**.
 
 <ImagePopup src="/images/order-management/orders-list.png" alt="Seller orders list" />
 
-The commission and seller-earning columns make it clear, per order, how much the marketplace keeps and how much the seller is owed. See [Commission Management](/payments/commission-management) for how commission is calculated.
+The commission and seller-earning columns make it clear, per order, how much the marketplace keeps and how much you're owed (see [Commission Management](/payments/commission-management)). Row actions surface exactly what an order needs next — **Schedule Pickup**, **Print Label**, **Request Payment**, **Transaction**, or **View Order** — each appearing only when it applies.
 
-## Processing an order
-
-Open an order with **View** to see its items, addresses, and totals, then act on the seller's portion:
-
-- **Create Invoice** — invoice the seller's items. Invoices can be printed.
-- **Create Shipment** — ship the items through one of the configured [Fulfilment Carriers](/orders/fulfilment-carriers), including buying a label or scheduling a pickup where the carrier supports it.
-- **Cancel** — cancel the order (or the seller's items in it) when it can't be fulfilled.
-
-::: info Sellers only see their own items
-In a multi-seller order, each seller sees and processes only the items they sold. The admin sees the complete order across all sellers.
+::: info Sellers see only their own items
+In a multi-seller order, each seller sees and processes only the items they sold, with money columns drawn from their own slice of the order. The admin sees the complete order across all sellers.
 :::
+
+## The order detail page
+
+Open an order with **View Order** to see everything about it — the items with their ordered / invoiced / shipped / refunded quantities, the totals (with the seller's earning and commission broken out), and the customer's addresses and chosen shipping and payment methods.
+
+<ImagePopup src="/images/order-management/order-view.png" alt="Seller order detail" />
+
+The header carries the fulfilment actions, each shown only when it's available and permitted:
+
+- **Invoice** — raise an invoice for your items (you can invoice partial quantities).
+- **Schedule Pickup / Shipment** — ship the items through a [fulfilment carrier](/orders/fulfilment-carriers).
+- **Cancel** — cancel the order (or your items in it) when it can't be fulfilled.
+
+As you invoice and ship, the **Invoices**, **Shipments**, and **Refunds** tabs fill in.
+
+## Shipping an order
+
+Selecting **Schedule Pickup** opens the shipment form. You enter the **quantity to ship** per inventory source, pick a **Carrier**, and choose the **Product Ordered Source**.
+
+<ImagePopup src="/images/order-management/shipment-create.png" alt="Create shipment form" />
+
+What you see next depends on the carrier:
+
+- **Manual (Own Arrangement)** — you arrange your own courier and simply type the **Carrier Title** and **Tracking ID**.
+- **Label-capable carriers** — a **Parcel** section (weight and dimensions) appears; a shipping **label** is bought on submit, tracking is filled in automatically, and the shipment card shows a **Download** label button and the label cost.
+- **Pickup-capable carriers** — a **Collection** section appears to book a courier pickup (either from published time slots or a ready/close window) with a pickup date and instructions.
+
+If a carrier can't be booked, the shipment is still saved and marked **Not Booked** so you can retry — nothing is lost. See [Fulfilment Carriers](/orders/fulfilment-carriers) for how carriers are set up.
 
 ## Getting paid
 
-Once a seller has fulfilled an order, the **seller payment status** tracks whether they've been paid for it. Sellers request their earnings from the admin — see [Payment Management](/payments/payment-management) — and the admin can also settle balances in bulk through [Mass Payout Management](/payments/mass-payout-management).
+Once you've fulfilled and invoiced an order, its **seller payment status** tracks whether you've been paid. Use **Request Payment** on a completed order to ask the admin for your earnings — see [Payment Management](/payments/payment-management). Settled payouts show a **Transaction** link.
 
 ::: tip
 Invoice and ship promptly — a healthy fulfilment record feeds into [Seller Account Health](/sellers/seller-account-health), which the admin uses to keep the marketplace reliable.

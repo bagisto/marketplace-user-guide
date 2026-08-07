@@ -1,49 +1,44 @@
 # Selling Existing Products
 
-A seller doesn't have to build every product from scratch. If a product already exists in the store catalog, the seller can list it as their own — set their **condition** and **price**, add a description, and start selling. This is the marketplace's *Sell as Yours* flow, and when several sellers list the same product, customers see them all as **offers** and can pick who to buy from.
+Not every product has to be built from scratch. If an item already exists in the marketplace catalog, a seller can list **their own offer** on it — their price, stock, condition, and description — without recreating the product. This is the "Sell as Yours" flow.
 
 ::: info What you'll learn
-- How a seller lists an existing catalog product with *Sell as Yours*
-- The fields on the **Assign Product** form, and how a listing is reviewed
-- How the admin approves seller listings and can assign products to sellers
-- How the same product appears as offers from multiple sellers on the storefront
+- How to find an existing product to sell
+- Every field on the "Sell as Yours" form
+- How offers differ by product type, and how they get approved
 :::
 
-## Why sell an existing product
+## Finding a product to sell
 
-- **Faster listing** — reuse an existing product instead of re-entering all its details.
-- **Consistent catalog** — every seller's copy shares the same base product information.
-- **Product offers** — customers can compare the sellers carrying a product and choose the best one.
+From the **List Your Product** launcher, choose **Search Products** (or open **Catalog → Products** and start the create flow). Search the marketplace catalog by name — results appear after a few characters, each showing the product's image, name, and price.
 
-## Listing an existing product (seller)
+<ImagePopup src="/images/selling-existing-products/search.png" alt="Search existing catalog products" />
 
-In the **Seller Panel**, open **Catalog → Products** and choose **Add Product**, then pick the option to sell an existing product rather than create one from scratch. Search the store catalog and select the item you want to sell — this opens the **Assign Product** form.
+On the product you want, select **Sell as Yours** to open the offer form.
 
-<ImagePopup src="/images/selling-existing-products/seller-assign-form.png" alt="The Assign Product (Sell as Yours) form" />
-
-The chosen product is shown in the **Product Details** panel on the right. Fill in your own selling details on the left:
-
-- **Condition** — *New* or *Old*.
-- **Price** — the price you'll sell this product for.
-- **Description** — your own description of the listing.
-- **Inventory** — the stock quantity you hold, per inventory source.
-
-Select **Submit** to send the listing for review, or **Save as Draft** to finish it later. A new listing starts as **Disapproved** and only goes live once the admin approves it.
-
-## Approving seller listings (admin)
-
-The admin reviews every seller product under **Marketplace → Catalog → Products**. The grid shows each product with its **Seller Name**, whether that seller **is the owner** of the base product, and the approval **Status**.
-
-<ImagePopup src="/images/selling-existing-products/admin-seller-products.png" alt="Seller products in the admin panel" />
-
-Approve or reject a listing from the row actions, or select several rows and use the bulk **Update Status** action. Only **Approved** listings appear on the storefront.
-
-::: tip Assigning a product to a seller
-The admin can also push a product to a seller directly — from the same **Products** grid, assign an admin-owned product to a chosen seller, who can then set their price and stock.
+::: info When you can't sell one
+You'll be stopped if the admin has disabled assigning products, if the product's type isn't one you're allowed to sell, or if you're **already selling** that product.
 :::
 
-## How customers see it — product offers
+## The "Sell as Yours" form
 
-When more than one seller lists the same product, its storefront page links to the other offers — shown as *"… more seller selling same product"* — so a customer can compare the sellers carrying that product before buying. Each seller's listing keeps its own price, condition, and stock.
+You're not editing the product itself — only your **offer** on it. The **General** panel holds the core fields, with the catalog product shown on the right for reference:
 
-To manage the sellers behind these listings, see [Seller Management](/sellers/seller-management); to create brand-new products instead, see [Product Management](/catalog/product-management).
+- **Condition** — **New** or **Old**.
+- **Price** — your selling price (for simple, virtual, and downloadable products).
+- **Description** — a short description of your offer, up to **300 characters** (a live counter shows how many you've used).
+
+An **Inventories** panel lets you set stock **per inventory source** (for simple and virtual products). The product's images and other catalog details are shared from the existing product, so you don't re-upload them for a simple offer.
+
+### By product type
+
+- **Configurable** — pick which variants you'll sell; for each, set its **price**, **quantities** per source, **description**, and **images**.
+- **Downloadable** — add your own **downloadable links** (title, price, downloads limit, file or URL) and **samples**.
+
+## Saving and approval
+
+Save the offer as a **draft** to finish later, or **Submit** it for approval. Like any listing, an assigned product enters the [approval flow](/catalog/product-management#drafts-submission-and-approval) — the admin reviews it, and once approved it appears on the storefront under your store at your price. You can revisit the offer any time to adjust price, stock, or condition.
+
+::: tip
+Reselling is the fastest way to grow a catalog around popular products. To assign **many** products at once, use **Sell Catalog Products** in [Bulk Upload](/catalog/bulk-upload).
+:::

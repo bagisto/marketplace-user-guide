@@ -1,12 +1,16 @@
 # Return Merchandise Authorization (RMA)
 
-RMA is the marketplace's returns workflow. When a customer wants to return or exchange an item they bought from a seller, they raise an RMA request, and the seller handles it from **Sales → RMA** — reviewing it, messaging the customer, and moving it through its statuses.
+RMA is the marketplace's returns workflow. When a customer wants to return or exchange an item they bought from a seller, they raise an RMA request from their storefront order, and the seller handles it from **Sales → RMA** — reviewing it, messaging the customer, moving it through its statuses, and refunding when the goods come back.
 
 ::: info What you'll learn
 - How returns reach the seller
-- What the RMA requests list shows
-- How a seller works a return to resolution
+- The RMA statuses and how a request moves through them
+- How a seller messages, refunds, and reopens a return
 :::
+
+## How returns reach the seller
+
+Returns start on the **customer's** side: from their order, a customer raises an RMA against specific items. The marketplace routes each request to the seller who sold those items, so it lands in that seller's RMA list. Whether a product can be returned at all — and under which rule — is set by the seller on the product's **RMA** tab (see [Product Management](/catalog/product-management#the-product-form)).
 
 ## The RMA requests list
 
@@ -16,14 +20,15 @@ Open **Sales → RMA** in the Seller Panel. Each request shows its **RMA ID**, t
 
 ## Working a return
 
-Open a request with its **View** action to handle it:
+Open a request with its **View** action. The page gathers everything about the return: a **General** panel (date, package condition, notes, images), an **Items** panel (each returned item with its price, RMA quantity, resolution type, and reason), a **Conversation** thread, and **Order / Customer** details.
 
-- **Message the customer** — RMA carries a message thread, so the seller and customer can exchange details (reason, photos, resolution) directly on the request.
-- **Update the status** — move the request through its lifecycle as you agree a resolution and process the return.
-- **Reopen** — a closed request can be reopened if the matter isn't settled.
+- **Message the customer** — the conversation thread lets the seller and customer exchange details (reasons, photos, resolution) with file attachments, right on the request.
+- **Update the status** — move the request through its lifecycle. RMA statuses are **Pending → Accept → Awaiting → Dispatched Package → Received Package → Solved**, with **Declined**, **Item Canceled**, and **Canceled** as end states. A brand-new request starts at **Pending**, from which you either **Accept** it or **Decline** it; which statuses you can move to next depends on whether the resolution is a **return** or a **cancellation**.
+- **Refund on receipt** — moving a return to **Received Package** processes the **refund** for the returned items (you can also refund the shipping). A refund needs the item to have been invoiced first.
+- **Reopen** — if you declined a request and the admin allows it, a customer can have it **reopened**, which puts it back to Pending.
 
 ::: info Admin oversight
-RMA availability and policy are governed by the admin, and returns are also visible on the admin side. A product's own return terms are set on its **RMA** tab — see [Product Management](/catalog/product-management#the-product-form).
+Admins see every seller's RMAs across the marketplace under **Marketplace → Sales → RMA**, and RMA availability and policy are governed by the admin. Each status change notifies the customer.
 :::
 
 ::: tip
