@@ -37,7 +37,7 @@ export default defineConfig({
 
     editLink: {
       pattern:
-        "https://github.com/bagisto/marketplace-user-guide/edit/master/src/:path",
+        "https://github.com/bagisto/marketplace-user-guide/edit/main/src/:path",
       text: "Help us improve this page on GitHub.",
     },
 

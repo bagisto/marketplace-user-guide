@@ -14,7 +14,7 @@ Like reviews, a flag can only be raised by a customer who has **ordered** the pr
 
 ## Flag reasons (admin)
 
-The admin controls the list of reasons a customer may pick when flagging. Go to **Marketplace → Configure → Flag Reasons**.
+The admin controls the list of reasons a customer may pick when flagging. In the admin panel, go to **Marketplace → Configure → Flag Reasons**.
 
 <ImagePopup src="/images/seller-product-flagging/flag-reasons.png" alt="Flag reasons list" />
 
@@ -34,7 +34,16 @@ When customers flag products or sellers, the admin reviews them:
 - **Product flags** — from **Marketplace → Catalog → Products**, a product's flags list shows who raised each flag, their email, the reason, and the date.
 - **Seller flags** — from **Marketplace → Sellers**, a seller's flags list shows the same.
 
-Under **Configure → Marketplace → Moderation**, the admin can enable flagging, and set a **Red Flag Limit** — once a seller collects more flags than the limit, a red flag is shown on their profile, and flags feed into the seller's [account health](/sellers/seller-account-health).
+## Flag settings (admin)
+
+Whether flagging is available at all, and how it's scored, is controlled in the system configuration under **Configure → Marketplace → Moderation** — a separate place from the reason list above. It has two sub-sections:
+
+- **Product Flags** — an **Enable Flag** toggle that turns product flagging on or off.
+- **Seller Flags** — an **Enable Flag** toggle, plus **Show Red Flag** and a **Red Flag Limit**. Once a seller collects more flags than the limit, a red flag is shown on their profile, and flags feed into the seller's [account health](/sellers/seller-account-health).
+
+::: info Two different places
+The *list of reasons* customers pick from lives under **Marketplace → Configure → Flag Reasons** (a management page inside the Marketplace section). The *flag settings* — turning flagging on and setting the red-flag limit — live under the system **Configure → Marketplace → Moderation**.
+:::
 
 ::: tip
 Keep your reasons specific and few — a short, clear list gets more useful reports than a long, overlapping one.

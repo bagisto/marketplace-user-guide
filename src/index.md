@@ -17,37 +17,48 @@ hero:
       link: /sellers/seller-management
 
 features:
-  - title: Sellers
+  - icon: 🧑‍💼
+    title: Sellers
     details: Seller management, featured sellers, account health, users & roles, and seller attributes.
     link: /sellers/seller-management
-  - title: Catalog
+  - icon: 📦
+    title: Catalog
     details: Product creation, selling existing products, drafts, barcodes, bulk upload, and Magic AI.
     link: /catalog/product-management
-  - title: Inventory
+  - icon: 🗃️
+    title: Inventory
     details: Inventory sources and per-seller stock management across the marketplace.
     link: /inventory/inventory-source-management
-  - title: Pricing
+  - icon: 💲
+    title: Pricing
     details: Per-seller pricing, sale prices, and customer-group tiers.
     link: /pricing/manage-pricing
-  - title: Marketing
+  - icon: 📣
+    title: Marketing
     details: Product discounts (catalog rules) and checkout deals with coupons.
     link: /marketing/product-discounts
-  - title: Orders & Fulfilment
+  - icon: 🚚
+    title: Orders & Fulfilment
     details: Order and booking management, fulfilment carriers, and returns (RMA).
     link: /orders/order-management
-  - title: Payments & Commission
+  - icon: 💰
+    title: Payments & Commission
     details: Payment requests, commission rules, and mass payouts.
     link: /payments/payment-management
-  - title: Subscriptions
+  - icon: 🔁
+    title: Subscriptions
     details: Seller subscription plans, limits, and billing.
     link: /subscriptions/seller-subscription-management
-  - title: Customers & Communication
+  - icon: 💬
+    title: Customers & Communication
     details: Seller customer lists and seller–admin / seller–customer messaging.
     link: /customers/customer-management
-  - title: Reviews & Moderation
+  - icon: ⭐
+    title: Reviews & Moderation
     details: Rating management plus seller and product flagging.
     link: /moderation/rating-management
-  - title: Reporting
+  - icon: 📈
+    title: Reporting
     details: Seller sales, product, and customer reports with exports.
     link: /reporting/seller-reporting
 ---

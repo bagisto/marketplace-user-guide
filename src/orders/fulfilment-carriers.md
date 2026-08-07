@@ -43,5 +43,5 @@ When a seller ships an order (from **Sales → Orders → the order → Schedule
 If a booking fails, the shipment is still saved and marked **Not Booked** so the seller can retry — no shipment is lost.
 
 ::: info For developers
-A courier integration is a standalone package built on the marketplace's carrier interfaces — see the developer guide for [Fulfilment Carrier Development](https://devdocs.bagisto.com/). No marketplace code changes are needed to add a carrier.
+A courier integration is a standalone package built on the marketplace's carrier interfaces — see the [Bagisto developer documentation](https://devdocs.bagisto.com/) to build one. No marketplace code changes are needed to add a carrier.
 :::

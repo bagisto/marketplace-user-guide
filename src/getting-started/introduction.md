@@ -13,12 +13,12 @@ This section walks through every part of the marketplace, grouped by who uses it
 The admin panel gains a **Marketplace** section that governs the whole platform:
 
 - **[Seller Management](/sellers/seller-management)** — review, approve, edit, suspend and log in as sellers, and watch each seller's **account health** and flags.
-- **Product approval & assignment** — an approval queue for seller products, and **[Selling Existing Products](/catalog/selling-existing-products)** so sellers can list existing catalog items as their own (and the admin can assign products to sellers).
+- **Product approval & assignment** — an **[approval queue](/catalog/product-management#drafts-submission-and-approval)** for seller products, and **[Selling Existing Products](/catalog/selling-existing-products)** so sellers can list existing catalog items as their own (and the admin can assign products to sellers).
 - **[Commissions](/payments/commission-management)** and **[Mass Payout](/payments/mass-payout-management)** — set commission rates and settle many sellers at once, alongside per-seller **[Payments](/payments/payment-management)**.
 - **[Subscription Plans](/subscriptions/seller-subscription-management)** — paid plans that cap product counts, staff counts, allowed product types and permissions.
 - **Moderation** — **[Seller & Product Flagging](/moderation/seller-product-flagging)** with configurable flag reasons, plus account-health scoring that surfaces problem sellers automatically.
-- **Marketing** — publish **Product Discounts** for sellers to join, and run marketplace-wide **Checkout Deals**.
-- **Fulfilment Carriers** — connect one courier account for the whole marketplace so sellers can buy shipping labels, schedule pickups and track shipments without seeing the credentials.
+- **Marketing** — publish **[Product Discounts](/marketing/product-discounts)** for sellers to join, and run marketplace-wide **[Checkout Deals](/marketing/checkout-deals)**.
+- **[Fulfilment Carriers](/orders/fulfilment-carriers)** — connect one courier account for the whole marketplace so sellers can buy shipping labels, schedule pickups and track shipments without seeing the credentials.
 - **[Featured Sellers](/sellers/featured-sellers)** — highlight top sellers on the storefront, ranked by orders, products or ratings.
 - **[Seller Attributes](/sellers/seller-attributes)** and the **seller product form** — define custom registration/profile fields and choose which fields appear on the seller product form.
 
@@ -29,7 +29,7 @@ Each seller signs in to their **Seller Panel** — a dedicated dashboard with a 
 - **Catalog** — **[Product Management](/catalog/product-management)**, **[Selling Existing Products](/catalog/selling-existing-products)**, **[Product Barcode](/catalog/product-barcode)** and **[Bulk Upload](/catalog/bulk-upload)**. Sellers can save **[draft products](/catalog/draft-products)**, and use **[Magic AI](/catalog/magic-ai)** to generate product content within admin-set limits.
 - **Inventories & Pricing** — dedicated **Manage Inventory** and **Manage Pricing** screens, plus **[Inventory Sources](/inventory/inventory-source-management)** for multiple stock locations.
 - **Sales** — **[Orders](/orders/order-management)**, **[Bookings](/orders/booking-management)** and **[Returns (RMA)](/orders/return-merchandise-authorization)**.
-- **Marketing** — sellers create their own **Product Discounts** and **Checkout Deals**, and can join the admin's product discounts.
+- **Marketing** — sellers create their own **[Product Discounts](/marketing/product-discounts)** and **[Checkout Deals](/marketing/checkout-deals)**, and can join the admin's product discounts.
 - **Performance & Reporting** — an **account-health** score on the Performance menu, and **[sales, product and customer reports](/reporting/seller-reporting)**.
 - **Team, customers & messaging** — **[Users & Roles](/sellers/seller-user-role-management)**, **[Customer insights](/customers/customer-management)**, and **[Communication](/customers/communications)** with the admin and buyers.
 
