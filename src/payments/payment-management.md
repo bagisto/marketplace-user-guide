@@ -31,7 +31,7 @@ Every settlement is logged under **Marketplace → Sales → Transactions**, giv
 
 <ImagePopup src="/images/payment-management/transactions.png" alt="Marketplace transactions" />
 
-A seller sees their own side under **Sales → Transactions**, and can print a transaction as a PDF.
+A seller sees their own side under **Sales → Transaction**, and can print a transaction as a PDF.
 
 ::: info Payout statuses
 An order's payout moves through **pending → requested → paid**; a refunded order shows **refunded**.

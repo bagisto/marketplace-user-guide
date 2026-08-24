@@ -10,11 +10,13 @@ Communications is the seller's built-in messaging — a direct thread with the m
 
 ## Messaging the admin
 
-Open **Communication** in the Seller Panel. It's a chat thread with the admin — type a message, attach a file (image, PDF, or document) if needed, and send. Past messages stay in the thread, unread messages are marked, and you can search back through the history over a date range.
+Open **Communication → Admin** in the Seller Panel. It's a chat thread with the admin — type a message, attach a file (image, PDF, or document) if needed, and send. Past messages stay in the thread, unread messages are marked, and you can search back through the history over a date range.
 
 <ImagePopup src="/images/communications/communication.png" alt="Seller–admin communication thread" />
 
-The admin has the matching view on their side, so replies appear in the same conversation. The admin can also **clear** a chat or **block** a seller who's misusing it — a blocked seller can't send new messages.
+The admin has the matching view under **Marketplace → Communications**, so replies appear in the same conversation. It lists every seller down one side and the selected thread beside it, with a **Search Message** box and a date filter (**All Messages**, **Previous 7 Days**, **Previous 15 Days**, **Previous 30 Days**, **Previous 6 Months**).
+
+From there the admin can **Clear Chat History** for a seller, or **Block Seller** — a blocked seller is told they can't send messages until they're unblocked with **Unblock Seller**.
 
 ## Messaging customers
 

@@ -52,6 +52,8 @@ Select **Save Checkout Deal**.
 
 When a deal uses a **Specific Coupon** with auto-generation, you can bulk-generate codes from the deal's **Coupons** screen. The **Generate Coupons** dialog lets you set the **quantity**, **code length**, **format** (alphanumeric / alphabetical / numeric), and an optional **prefix** and **suffix**. Each generated code is listed with how many **times** it's been **used** and its dates, and codes can be deleted individually.
 
+Seller coupons get their own box at checkout, separate from the store-wide coupon field — see [Seller Storefront](/storefront/seller-storefront#one-cart-several-sellers) for what a shopper sees.
+
 ## Copying a deal
 
 To build a similar promotion quickly, use **Copy** on an existing deal. It duplicates the deal's settings into a new, **inactive** copy (named "Copy of …") and opens it for editing — faster than rebuilding a recurring campaign from scratch.

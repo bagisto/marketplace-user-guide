@@ -35,6 +35,12 @@ Only **user-defined** attributes can be deleted; the system attributes the marke
 
 The **Mapping** screen arranges attributes into the two-column seller form: which **groups** (General, Description, Policies, Meta Description, Address, Social Links, Settings, …) sit in which **column**, and the **order** of attributes within each group. This is exactly the layout that appears on the [seller edit form](/sellers/seller-management#editing-a-seller) and sign-up.
 
+You can also change the groups themselves:
+
+- **Add Group** — create a new group with a **name** and a **code**, and choose the **column** it sits in.
+- **Rename a group** — double-click its heading to edit it.
+- **Delete Group** — remove a group you no longer need.
+
 ## Attributes that ship by default
 
 The marketplace comes with a full set of seller attributes, including:

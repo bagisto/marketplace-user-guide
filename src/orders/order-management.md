@@ -17,7 +17,7 @@ Open **Sales → Orders**. Each row is an order containing this seller's items, 
 The commission and seller-earning columns make it clear, per order, how much the marketplace keeps and how much you're owed (see [Commission Management](/payments/commission-management)). Row actions surface exactly what an order needs next — **Schedule Pickup**, **Print Label**, **Request Payment**, **Transaction**, or **View Order** — each appearing only when it applies.
 
 ::: info Sellers see only their own items
-In a multi-seller order, each seller sees and processes only the items they sold, with money columns drawn from their own slice of the order. The admin sees the complete order across all sellers.
+In a multi-seller order, each seller sees and processes only the items they sold, with money columns drawn from their own slice of the order. The admin sees the complete order across all sellers under **Marketplace → Sales → Orders**, where each row also names the **seller** and **shop** the items belong to, alongside the order's **commission** and the seller's **earn**.
 :::
 
 ## The order detail page

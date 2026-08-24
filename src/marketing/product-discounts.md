@@ -63,8 +63,30 @@ The admin can publish product discounts for sellers to opt into. From **Marketin
 Once enrolled and approved, the admin's discount reprices your listings for as long as you stay joined.
 
 ::: info Admin controls this
-Joining admin discounts is governed by an admin capability. If the admin turns off catalog-rule joining, joined discounts stop repricing your products.
+Joining is switched on under **Configure → Marketplace → Marketing → Join**. **Enable Product Discount Join** turns the whole feature on or off — with it off, joined discounts stop repricing sellers' products — and **Auto-Approve Join Requests** decides whether an enrollment goes live immediately or waits for the admin.
 :::
+
+## Approving who joins (admin)
+
+<ImagePopup src="/images/product-discounts/marketing-join-config.png" alt="Marketing Join settings — Enable Product Discount Join and Auto-Approve Join Requests" />
+
+The admin decides, per promotion and per seller, who takes part.
+
+### On the discount itself
+
+An admin product discount carries a **Participating Sellers** panel:
+
+- **Allow Sellers to Join** — when off, sellers can no longer join this promotion, and it stops applying to sellers who had already joined.
+- **Sellers** — search for and add sellers directly. A seller added here participates immediately as **approved**; removing one withdraws them from the promotion.
+
+### The join queue
+
+Every enrollment across the marketplace is reviewed under **Marketplace → Marketing → Joined Product Discounts**. Each row shows the discount's **Name**, the **Seller**, the **Join Status** (**Approved** / **Pending** / **Disapproved**), and the discount's own **Status**, **Priority**, **Starts From** and **Ends Till**.
+
+- **Approve** or **Disapprove** a request from its row.
+- **Update Status** applies the same decision to a whole selection at once.
+
+With **Auto-Approve Join Requests** on, requests arrive already approved and this screen becomes a record of who is taking part; with it off, every request lands here as **Pending** until the admin acts.
 
 ::: tip
 Product Discounts change a product's **shown price**. To reward the **whole cart** — or to gate an offer behind a coupon code — use [Checkout Deals](/marketing/checkout-deals). For a quick scheduled price cut on individual products, the [Manage Pricing](/pricing/manage-pricing) special price is often simpler.

@@ -16,7 +16,7 @@ Subscriptions are disabled until the admin switches them on. Go to **Configure �
 
 ## Plans
 
-Once enabled, the admin manages plans under **Marketplace → Plans**, where each plan can be created, edited, enabled, or reordered. A plan defines:
+Once enabled, the admin manages plans under **Marketplace → Subscription Plans → Plans**, where each plan can be created, edited, enabled, or reordered. A plan defines:
 
 - **Name**, **code**, and **description**, and whether it's the **default** (free) plan.
 - **Price** and **billing cycle** (**monthly** or **yearly**), with an optional custom **duration** in days.
@@ -33,7 +33,7 @@ With subscriptions on, a seller browses the **available plans** in their panel �
 
 - A new subscription starts **pending**, becomes **active** on successful payment (or immediately for a free plan), and later moves to **expired** or **cancelled**. Statuses are **pending / active / expired / cancelled**.
 - When a subscription activates, the seller's **commission**, **allowed product types**, **product limit**, and **staff limit** follow the plan. If a plan's product limit is exceeded, the newest products beyond the limit are disabled until the seller is within limits again.
-- The admin reviews who's subscribed under **Marketplace → Plans → Subscriptions**, and can **approve** or **cancel** subscriptions. Sellers are reminded before a subscription expires, and expired subscriptions are closed automatically.
+- The admin reviews who's subscribed under **Marketplace → Subscription Plans → Subscription**, and can **approve** or **cancel** subscriptions. Sellers are reminded before a subscription expires, and expired subscriptions are closed automatically.
 
 ::: info Commission-only marketplaces
 If you'd rather not charge a recurring fee, simply leave subscriptions off — sellers then sell without a subscription and you earn purely through [commission](/payments/commission-management).

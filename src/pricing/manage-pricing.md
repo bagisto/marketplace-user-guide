@@ -10,7 +10,7 @@ Manage Pricing is where a seller controls prices across their whole catalog from
 
 ## The pricing screen
 
-Open **Pricing** in the Seller Panel. Each row is a product (simple and virtual) with inline fields for its **price**, **sale price**, and the sale's **valid-from / valid-to** dates. You can **search**, **filter** by category or type, and edit directly in the row.
+Open **Pricing → Manage Pricing** in the Seller Panel. Each row is a product (simple and virtual) with inline fields for its **price**, **sale price**, and the sale's **valid-from / valid-to** dates. You can **search**, **filter** by category or type, and edit directly in the row.
 
 <ImagePopup src="/images/manage-pricing/pricing.png" alt="Manage Pricing screen" />
 

@@ -36,13 +36,13 @@ When customers flag products or sellers, the admin reviews them:
 
 ## Flag settings (admin)
 
-Whether flagging is available at all, and how it's scored, is controlled in the system configuration under **Configure → Marketplace → Moderation** — a separate place from the reason list above. It has two sub-sections:
+Whether flagging is available at all, and how it's scored, is controlled in the system configuration under **Configure → Marketplace → Moderation & Health** — a separate place from the reason list above. It has two sub-sections:
 
 - **Product Flags** — an **Enable Flag** toggle that turns product flagging on or off.
 - **Seller Flags** — an **Enable Flag** toggle, plus **Show Red Flag** and a **Red Flag Limit**. Once a seller collects more flags than the limit, a red flag is shown on their profile, and flags feed into the seller's [account health](/sellers/seller-account-health).
 
 ::: info Two different places
-The *list of reasons* customers pick from lives under **Marketplace → Configure → Flag Reasons** (a management page inside the Marketplace section). The *flag settings* — turning flagging on and setting the red-flag limit — live under the system **Configure → Marketplace → Moderation**.
+The *list of reasons* customers pick from lives under **Marketplace → Configure → Flag Reasons** (a management page inside the Marketplace section). The *flag settings* — turning flagging on and setting the red-flag limit — live under the system **Configure → Marketplace → Moderation & Health**.
 :::
 
 ::: tip

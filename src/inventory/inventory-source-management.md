@@ -35,6 +35,14 @@ A source can't be deleted if it's the seller's **only active** source — you al
 
 Stock is held per source: a product's quantity is set against a source, and its total availability is the sum across sources. Manage those quantities from [Manage Inventory](/inventory/manage-inventory), or on a product's **Inventories** tab in [Product Management](/catalog/product-management#the-product-form).
 
+## What the admin sees
+
+The admin can review every seller's sources across the marketplace under **Marketplace → Configure → Inventory Sources**. The list shows each source's **Id**, **Code**, **Name**, the **Seller Name** and **Business Name** it belongs to, and its **Status**, and each row opens a read-only view with the source's **General Information**, **Source Address**, **Contact Information**, and **Seller Information**.
+
+<ImagePopup src="/images/inventory-source-management/admin-inventory-sources.png" alt="Admin inventory sources list showing each source against its seller and business name" />
+
+This view is for oversight only — sources are created, edited, and deleted by the seller who owns them.
+
 ::: tip
 Order your sources by **priority** the way you actually want them fulfilled — the marketplace draws stock from higher-priority sources first.
 :::

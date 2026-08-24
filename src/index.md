@@ -57,6 +57,10 @@ features:
     title: Reviews & Moderation
     details: Rating management plus seller and product flagging.
     link: /moderation/rating-management
+  - icon: 🏬
+    title: Storefront
+    details: The marketplace landing page that recruits sellers, and the store page shoppers buy from.
+    link: /storefront/marketplace-landing-page
   - icon: 📈
     title: Reporting
     details: Seller sales, product, and customer reports with exports.

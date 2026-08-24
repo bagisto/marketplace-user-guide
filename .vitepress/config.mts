@@ -66,7 +66,10 @@ export default defineConfig({
         text: "Sellers",
         collapsed: false,
         items: [
+          { text: "Seller Dashboard", link: "/sellers/seller-dashboard" },
+          { text: "Registration & Sign-in", link: "/sellers/seller-registration" },
           { text: "Seller Management", link: "/sellers/seller-management" },
+          { text: "Manage Profile", link: "/sellers/seller-profile" },
           { text: "Featured Sellers", link: "/sellers/featured-sellers" },
           { text: "Seller Account Health", link: "/sellers/seller-account-health" },
           { text: "Seller Users & Roles", link: "/sellers/seller-user-role-management" },
@@ -81,6 +84,7 @@ export default defineConfig({
           { text: "Selling Existing Products", link: "/catalog/selling-existing-products" },
           { text: "Draft Products", link: "/catalog/draft-products" },
           { text: "Product Barcode", link: "/catalog/product-barcode" },
+          { text: "Product Form Layout", link: "/catalog/product-form-layout" },
           { text: "Bulk Upload", link: "/catalog/bulk-upload" },
           { text: "Magic AI", link: "/catalog/magic-ai" },
         ],
@@ -155,6 +159,14 @@ export default defineConfig({
         text: "Reporting",
         collapsed: false,
         items: [{ text: "Seller Reporting", link: "/reporting/seller-reporting" }],
+      },
+      {
+        text: "Storefront",
+        collapsed: false,
+        items: [
+          { text: "Marketplace Landing Page", link: "/storefront/marketplace-landing-page" },
+          { text: "Seller Storefront", link: "/storefront/seller-storefront" },
+        ],
       },
     ],
   },

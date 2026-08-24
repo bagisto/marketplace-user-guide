@@ -24,7 +24,7 @@ Deleting a product you **created** removes it from the catalog. Deleting one you
 
 ## Adding a product
 
-Product creation starts from the **List Your Product** launcher (the sidebar's create entry). It offers three ways to add products:
+Product creation starts from **Catalog → List Your Product**. The launcher offers three ways to add products:
 
 <ImagePopup src="/images/product-management/create-launcher.png" alt="List Your Product launcher" />
 
@@ -57,7 +57,14 @@ Select **Continue** and the product opens on the edit form, created as a **draft
 
 ## The product form
 
-The edit form is where the listing takes shape. A **Listing Completeness** bar at the top shows how much is filled in — a more complete listing gets more visibility and is easier to approve. The form is organised into two phases (**Product Basics → Complete Listing**) with tabbed sections.
+The edit form is where the listing takes shape. A **Listing Completeness** bar at the top shows how much is filled in — a more complete listing gets more visibility and is easier to approve.
+
+The form comes in two shapes, and which one a seller gets is the admin's choice:
+
+- **Stepped** — the listing is split into two phases, **Product Basics → Complete Listing**, with tabbed sections inside each. A progress bar tracks how far through the seller is.
+- **Two Column** — the classic single-page form with every section laid out in two columns.
+
+The admin sets the default under **Configure → Marketplace → Products → Product Form** and can override it for individual attribute families — see [Product Form Layout](/catalog/product-form-layout). The sections below are the same either way; only their arrangement changes.
 
 <ImagePopup src="/images/product-management/edit-general.png" alt="Product edit form — General" />
 
@@ -91,6 +98,16 @@ Keep the **Listing Completeness** bar as close to 100% as you can before submitt
 
 ## Drafts, submission, and approval
 
+Three admin settings under **Configure → Marketplace → Products → Approval & Creation** govern this whole flow:
+
+- **Approval Required** — whether a submitted product waits for the admin before going live. With it off, submitted products publish straight away.
+- **Seller Can Create Product** — whether sellers may build brand-new listings at all.
+- **Seller Can Assign Product** — whether sellers may list existing catalog products as their own. See [Selling Existing Products](/catalog/selling-existing-products).
+
+<ImagePopup src="/images/product-management/products-config.png" alt="Marketplace product configuration — Approval &amp; Creation, Product Form and Inventory settings" />
+
+With those in place:
+
 - **Save as Draft** keeps a work-in-progress private — it isn't sent for approval and never shows on the storefront. See [Draft Products](/catalog/draft-products).
 - **Submit** sends the product into the **approval** flow. Until the admin approves it, the products list shows it as **Waiting For Approval**.
-- The admin reviews products under **Marketplace → Products** in the admin panel. Once approved, the product goes live; if **rejected**, the admin attaches a reason and the listing shows as **Rejected** so you know what to fix before resubmitting.
+- The admin reviews products under **Marketplace → Catalog → Products** in the admin panel. Once approved, the product goes live; if **rejected**, the admin attaches a reason and the listing shows as **Rejected** so you know what to fix before resubmitting.
