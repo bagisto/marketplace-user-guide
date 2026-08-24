@@ -37,9 +37,18 @@ color-scheme:initial!important;
   }
 }
 
+/* The wordmark is the only branding in the nav bar (siteTitle is off), so it
+   has to carry the site's identity on its own. At 100px it read as a favicon
+   with text attached. Give it room, and let the nav bar grow to hold it. */
 .logo {
-    width: 100px !important;
+    width: 170px !important;
     height: auto !important;
+}
+
+@media (max-width: 767px) {
+  .logo {
+    width: 140px !important;
+  }
 }
 
 .VPHero .VPImage {
@@ -281,24 +290,54 @@ html::-webkit-scrollbar-corner,
   }
 
   .Layout .VPHero .image-container {
-    width: 420px;
-    height: 420px;
+    width: 560px;
+    height: 560px;
     transform: none;
   }
 
   .Layout .VPHero .image-bg {
-    width: 360px;
-    height: 360px;
+    width: 480px;
+    height: 480px;
   }
 
   /* The site's own scale()/padding on the logo composes with the theme's
      translate(-50%), knocking it 40px off the edge it should sit on. Size it
-     outright here instead. */
+     outright here instead. The logo is wider than it is tall, so width is what
+     actually binds — cap height well above it or the logo never reaches the
+     width it is given. */
   .Layout .VPHero .image-src {
     padding: 0;
     scale: none;
-    max-width: 420px;
-    max-height: 420px;
+    width: 100%;
+    max-width: 560px;
+    max-height: 560px;
+  }
+}
+
+/* Below the 960px band the theme's default hero image is small enough that the
+   logo reads as an afterthought next to the heading. Give it real presence at
+   every width, not just the widest one. */
+@media (min-width: 640px) and (max-width: 959px) {
+  .Layout .VPHero .image-container {
+    width: 400px;
+    height: 400px;
+  }
+
+  .Layout .VPHero .image-bg {
+    width: 340px;
+    height: 340px;
+  }
+
+  .Layout .VPHero .image-src {
+    max-width: 400px;
+    max-height: 400px;
+  }
+}
+
+@media (max-width: 639px) {
+  .Layout .VPHero .image-src {
+    max-width: 300px;
+    max-height: 300px;
   }
 }
 

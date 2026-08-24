@@ -12,9 +12,11 @@ Before a seller can do anything else they have to join the marketplace and get i
 
 A visitor starts from the **Become Seller** form. The quickest route is the button on the [marketplace landing page](/storefront/marketplace-landing-page), whose caption the admin sets.
 
-The form asks for a **Password** and **Confirm Password**, and above them an **Additional Information** section built from the [seller attributes](/sellers/seller-attributes) the admin marked as visible on sign up. That's how you decide what a new seller must tell you — add an attribute and mark it visible on sign up, and it appears here for everyone who registers next.
+The **Become Seller** form opens with the account basics — **Name**, **Email**, **Slug**, **Password** and **Confirm Password** — where the slug becomes the address of the seller's public store page.
 
-<ImagePopup src="/images/seller-registration/become-seller.png" alt="Become Seller registration form with the Additional Information fields and password fields" />
+Below them sits an **Additional Information** section built from the [seller attributes](/sellers/seller-attributes) the admin marked as visible on sign up, starting with **Business Name**. That section is how you decide what a new seller must tell you: mark an attribute visible on sign up and it appears here for everyone who registers next.
+
+<ImagePopup src="/images/seller-registration/become-seller.png" alt="Become Seller form showing the name, email, slug and password fields above the Additional Information section" />
 
 Select **Register**. The account is created, and the seller is returned to the sign-in screen.
 

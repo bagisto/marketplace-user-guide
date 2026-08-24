@@ -13,17 +13,21 @@ hero:
       text: Get Started
       link: /getting-started/introduction
     - theme: alt
-      text: Seller Management
-      link: /sellers/seller-management
+      text: Seller Dashboard
+      link: /sellers/seller-dashboard
 
 features:
   - icon: 🧑‍💼
     title: Sellers
-    details: Seller management, featured sellers, account health, users & roles, and seller attributes.
-    link: /sellers/seller-management
+    details: The seller dashboard and profile, registration and sign-in, seller management, featured sellers, account health, users & roles, and seller attributes.
+    link: /sellers/seller-registration
+  - icon: 🏬
+    title: Storefront
+    details: The marketplace landing page that recruits new sellers, and the seller store page shoppers browse, review and buy from.
+    link: /storefront/marketplace-landing-page
   - icon: 📦
     title: Catalog
-    details: Product creation, selling existing products, drafts, barcodes, bulk upload, and Magic AI.
+    details: Product creation, selling existing products, drafts, barcodes, the product form layout, bulk upload, and Magic AI.
     link: /catalog/product-management
   - icon: 🗃️
     title: Inventory
@@ -57,10 +61,6 @@ features:
     title: Reviews & Moderation
     details: Rating management plus seller and product flagging.
     link: /moderation/rating-management
-  - icon: 🏬
-    title: Storefront
-    details: The marketplace landing page that recruits sellers, and the store page shoppers buy from.
-    link: /storefront/marketplace-landing-page
   - icon: 📈
     title: Reporting
     details: Seller sales, product, and customer reports with exports.

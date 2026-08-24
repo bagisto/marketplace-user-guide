@@ -14,7 +14,9 @@ Seller store pages only appear when **Show Publicly** is enabled under **Configu
 
 ## The seller's store page
 
-A store page carries the seller's banner and logo from [Manage Profile](/sellers/seller-profile), with **Products** and **Reviews** counts and a **Share** control offering the usual networks.
+A store page carries the seller's banner and logo from [Manage Profile](/sellers/seller-profile), their business name, address and star rating.
+
+Three tabs run across it — **Products**, **Reviews** and **About**, the first two showing their counts — and a row of actions sits alongside: **Share**, **Contact**, and **Report Issue**.
 
 <ImagePopup src="/images/seller-storefront/seller-store.png" alt="A seller's public store page with banner, product and review counts, and their catalog" />
 
@@ -28,14 +30,6 @@ The seller's catalog, with **Search for Products** across it and the browsing co
 
 A seller with nothing approved yet shows **No products available here**.
 
-### About
-
-The seller's own words, taken straight from their profile: **About Us**, **Return Policy**, **Shipping Policy**, and **Privacy Policy**, with a **Download** option where the seller has attached a document.
-
-### Contact
-
-A short form — **Name**, **Email**, **Subject**, **Query** — that sends the shopper's message to the seller. On success the shopper is told their query has been submitted. The form is rate-limited, so a shopper can't use it to flood a seller.
-
 ### Reviews
 
 Shoppers rate the seller with a **Rating**, a **Title** and a **Comment** from **Write a Review**, and read existing feedback under **Customer Reviews** with **View All Reviews**.
@@ -48,9 +42,17 @@ Three rules apply, and each is explained on the spot when it stops someone:
 
 Reviews stay hidden until the admin approves them — see [Rating Management](/moderation/rating-management).
 
-### Report Issue
+### About
 
-A shopper who has a problem with the seller picks a **Reason** from the list the admin maintains, or chooses **Other Reason** and describes it. The same three rules apply — signed in, has ordered, once only. See [Seller & Product Flagging](/moderation/seller-product-flagging).
+The seller's own words, taken straight from their profile: **About Us**, **Return Policy**, **Shipping Policy**, and **Privacy Policy**, with a **Download** option where the seller has attached a document.
+
+## Contacting and reporting a seller
+
+**Share**, **Contact** and **Report Issue** sit together beside the tabs.
+
+- **Share** — a **Share On** panel with the usual networks.
+- **Contact** — a short form (**Name**, **Email**, **Subject**, **Query**) that sends the shopper's message to the seller, confirming when the query has been submitted. It's rate-limited, so it can't be used to flood a seller.
+- **Report Issue** — the shopper picks a **Reason** from the list the admin maintains, or chooses **Other Reason** and describes it. The same three rules as reviews apply: signed in, has ordered, once only. See [Seller & Product Flagging](/moderation/seller-product-flagging).
 
 ## On a product page
 
@@ -62,7 +64,7 @@ Where more than one seller carries the same product, the page says so — *:coun
 
 ## Comparing offers
 
-The offers view lists every seller carrying a product, each with their own price, condition and description, and its own **Add to Cart**. More offers load as the shopper scrolls.
+The offers view lists every seller carrying a product, each with their own price, condition and description, and its own **Add to Cart**; a downloadable product also shows that seller's **links** and **samples**. Where there are more sellers than fit, a **Load More** control fetches the next batch.
 
 This is the customer-facing side of [Selling Existing Products](/catalog/selling-existing-products): each row is one seller's offer on the same catalog product.
 

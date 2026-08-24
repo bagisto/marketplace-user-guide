@@ -66,8 +66,8 @@ export default defineConfig({
         text: "Sellers",
         collapsed: false,
         items: [
-          { text: "Seller Dashboard", link: "/sellers/seller-dashboard" },
           { text: "Registration & Sign-in", link: "/sellers/seller-registration" },
+          { text: "Seller Dashboard", link: "/sellers/seller-dashboard" },
           { text: "Seller Management", link: "/sellers/seller-management" },
           { text: "Manage Profile", link: "/sellers/seller-profile" },
           { text: "Featured Sellers", link: "/sellers/featured-sellers" },
