@@ -1,50 +1,131 @@
 # Bulk Upload
 
-Bulk Upload lets a seller add many products at once from a spreadsheet, instead of creating them one by one. Uploads are validated before anything is created, run in the background, and report exactly what happened — so a large catalog can be listed in a single pass.
+<div class="page-roles"><span class="role role--seller">Seller</span></div>
 
-::: info What you'll learn
-- The two kinds of bulk upload
-- How the upload wizard is structured, step by step
-- How an import is validated, run, and reported
-:::
+Bulk upload adds many products at once from a spreadsheet. You can create your own
+new products, or sell products that are already in the store's catalog. The file is
+checked before anything is imported, and you get a report when it's done.
 
-## The two kinds of upload
+Go to **Catalog >> Bulk Upload**.
 
-From the Seller Panel, open **Catalog → Bulk Upload**. The **Imports** screen offers two ways to add products in bulk:
+<ImagePopup src="/images/bulk-upload/imports.png" alt="The Bulk Upload page with its two options and past uploads" />
 
-<ImagePopup src="/images/bulk-upload/imports.png" alt="Bulk Upload imports screen" />
+## Choose what to upload
 
-- **List Your Own Products** — bulk-create brand-new products in your catalog from a spreadsheet (with images).
-- **Sell Catalog Products** — bulk-list products already in the marketplace catalog as your own, at your own price and stock (the bulk version of [Selling Existing Products](/catalog/selling-existing-products)).
+- **List Your Own Products** — create new products in your catalog.
+- **Sell Catalog Products** — sell products that are already in the store's catalog,
+  at your own price and stock.
 
-Below the cards, **Past Uploads** lists every import with its **type**, **state** (pending / validated / processing / completed), uploaded file, completion time, and a **summary** of created / updated / deleted counts (with an error-file link where relevant).
+You see an option only when the store allows it and your role includes
+**Bulk Upload >> Imports >> Create**. Your profile must be complete.
 
-## Creating an import — the wizard
+**Past Uploads** lists your earlier uploads with their type, state, file, completion
+time and a summary of what was created, updated or deleted. Use the row icons to
+**Process**, **Edit**, **Download Report** (a short summary of the run) or **Delete**
+an upload, and download the **Error File** when some rows failed.
 
-Choosing a kind opens a short wizard.
+## Upload a file
 
-<ImagePopup src="/images/bulk-upload/create-source.png" alt="Bulk upload wizard — Source step" />
+1. Go to **Catalog >> Bulk Upload**.
+2. Click **List Your Own Products** or **Sell Catalog Products**.
+3. In **Source**, under **Download Sample**, download the sample file in CSV, XLS,
+   XLSX or XML.
+4. Fill in your products using the sample's columns, then upload it in **File**.
+5. Click **Next**.
+6. For your own products, choose in **Images** how the images reach the store, then
+   click **Next**.
+7. In **Settings**, check the options below.
+8. Click **Start Import**, then confirm.
 
-1. **Source** — confirm the **Type**, download a **sample file** in your format (**CSV / XLS / XLSX / XML**) so your columns line up, and upload your **file**.
-2. **Images** *(List Your Own Products only)* — supply images either as **URLs in the sheet** (recommended) or by uploading a **ZIP** of image files (a sample ZIP is provided).
-3. **Settings** — choose the **Action** (**Create/Update** or **Delete**), the **Validation Strategy** (**Stop on Errors** or **Skip Errors**), the number of **Allowed Errors**, the **Field Separator** (for CSV), and whether to **Process in Background**.
+<ImagePopup src="/images/bulk-upload/create-source.png" alt="The Source step of the bulk upload wizard" />
 
-Finish with **Start Import**, which validates the file and begins.
+### Images
 
-## Validating and running
+- **Image URLs in the sheet** — add public links to the images, separated by commas,
+  in the `images` column. The store downloads them for you. This is the recommended
+  option.
+- **Upload a ZIP of images** — put the image file names in the `images` column and
+  upload one ZIP file that contains them. The store sets the largest ZIP you can
+  upload, 10 MB unless it has changed it.
 
-Each upload becomes a record you can reopen at any time. A typical import moves through clear phases (shown as a stepper):
+Products you sell from the catalog use the catalog's images, so this step doesn't
+appear for them.
 
-- **Validate** — the file is checked before anything is created. You get a verdict — valid, partially valid (bad rows will be skipped, up to your allowed-errors limit), or invalid — with counts of rows processed, invalid rows, and total errors. When there are errors, **Download Full Report** lists exactly what to fix.
-- **Download Images** *(own products)* — images referenced in the sheet are fetched up front.
-- **Create / Assign / Delete** → **Connect** → **Finalize** — valid rows are imported in the background, related products are linked, and prices and stock are finalized, with live progress.
+### Settings
 
-When it finishes, you get a **"Your import was successful"** summary with **Created / Updated / Deleted** counts, and can download a full processing **report** (records processed, time taken, and so on).
+| Setting | What it does |
+|---|---|
+| **Action** | **Create/Update** adds new products and updates existing ones. **Delete** removes the products in the file. For catalog products, it removes only your offers. |
+| **Validation Strategy** | **Stop on Errors** blocks the import when the file has more errors than **Allowed Errors**. Up to that number, the bad rows are skipped and the rest are imported. **Skip Errors** skips every bad row and imports the rest. |
+| **Allowed Errors** | Used only with **Stop on Errors**: the most errors the file can have and still be imported. Starts at 10. |
+| **Field Separator** | The character between columns in a CSV file, usually a comma. |
+| **Process in Background** | Keeps the import running after you leave the page. It appears when the store can run imports in the background. |
 
-## After the upload
+## Check and run the import
 
-Imported products behave like any other seller product: they appear in **Catalog → Products** and go through the normal [approval flow](/catalog/product-management#drafts-submission-and-approval) before reaching the storefront. Adjust stock and pricing afterwards from [Manage Inventory](/inventory/manage-inventory) and [Manage Pricing](/pricing/manage-pricing).
+The **Import** page opens and checks your file straight away. When the check finishes,
+it shows the **Total Rows Processed**, **Total Invalid Rows** and **Total Errors**.
 
-::: tip Always start from the sample
-Download the sample file for your import type and build your sheet from it — matching the expected columns exactly is the quickest way to pass validation on the first try.
-:::
+- **Every row is valid** — the import starts on its own.
+- **Some rows have errors, and your settings allow them to be skipped** — the page
+  lists the errors and says the remaining rows can still be imported. Click
+  **Start Import** to import them.
+- **The file is invalid** — fix the errors and upload the file again.
+
+Click **Download Full Report** to download every error with its row.
+
+The page shows each stage as it runs, with the progress and the number of batches
+completed. For your own products, the images are downloaded, the products are
+created, related products are linked and prices and stock are finalized. For catalog
+products, the offers are added to your shop.
+
+When it finishes, you'll see **Congratulations! Your import was successful.** with
+how many products were created, updated or deleted. Click **Back** to see them in
+**Catalog >> Products**.
+
+<ImagePopup src="/images/bulk-upload/import-complete.png" alt="A completed import with its summary" />
+
+New imported products follow the store's approval rules like any other product. To
+change a product that is already approved, edit it in the product form rather than
+importing it again. See [Product Approval](product-approval.md).
+
+## What goes in the file
+
+### Your own products
+
+Start from the sample file. It has a column for each product detail, including
+`sku`, `type`, `attribute_family_code`, `categories`, `images`, `name`,
+`description`, `price`, `weight`, `status`, `inventories` and, for products with
+variations, `configurable_variants`.
+
+- A SKU another seller already uses can't be imported.
+- Each product type must be one you are allowed to sell.
+- Downloadable products can't be imported. Create them one at a time in the product
+  form.
+- Each image link can be up to 10 MB.
+
+### Catalog products
+
+The sheet has five columns:
+
+| Column | What to enter |
+|---|---|
+| `sku` | The catalog product's SKU. Required. |
+| `price` | Your price. Leave it empty to use the catalog price. |
+| `qty` | How many you have in stock. It goes into your first active inventory source. |
+| `condition` | `new` or `old`. Leave it empty for `new`. |
+| `description` | A description of your offer. Optional. |
+
+A row fails when no catalog product has the SKU, when you already sell it, when the
+SKU appears twice in the file, when the store doesn't allow sellers to sell catalog
+products, when you aren't allowed to sell that product type, or when `price`, `qty` or
+`condition` has an invalid value.
+
+## Change or rerun an upload
+
+Click the edit icon on an upload in **Past Uploads**, replace the file or change the
+settings, then click **Reimport** and confirm. The file is checked again from the
+start.
+
+If the store uses subscription plans, products over your plan's limit aren't
+imported.

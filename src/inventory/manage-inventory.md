@@ -1,31 +1,85 @@
 # Manage Inventory
 
-Manage Inventory is the seller's stock control room — one screen to see and edit quantities for every product across every inventory source, with bulk tools for updating many products at once.
+<div class="page-roles"><span class="role role--seller">Seller</span></div>
 
-::: info What you'll learn
-- What the manage-inventory screen shows
-- How to edit stock per source
-- How to bulk-adjust stock and listing status
-:::
+Manage Inventory lets you update the stock of all your products on one screen, for
+each of your inventory sources, and save every change at once.
 
-## The inventory screen
+Go to **Inventories >> Manage Inventory**.
 
-Open **Inventories → Manage Inventory**. Each row is a stock-carrying product (simple and virtual products; configurable variants appear as their own rows), showing its image, name, SKU, type, **listing status**, **sales** (sold / undelivered / cancelled), and total **stock**.
+<ImagePopup src="/images/manage-inventory/manage.png" alt="The Manage Inventory screen" />
 
-<ImagePopup src="/images/manage-inventory/manage.png" alt="Manage Inventory screen" />
+## What the screen shows
 
-You can **search**, **filter** (by listing status, category, type, approval), and jump straight to a product's pricing with the **Edit price** link on each row.
+The list includes your simple and virtual products, and each variant of a product
+with variations as its own row. It covers the products you created and the catalog
+products you sell as your own.
 
-## Editing stock
+Each row shows:
 
-- **Per source** — expand a product row to reveal a quantity input for each of your [inventory sources](/inventory/inventory-source-management); type the new quantities. A product with **stock not managed** is always available and shows no quantity.
-- **Bulk stock tool** — select several products, then choose a **source** (all sources or a specific one), an **action** (**set**, **add**, or **remove**), and a **value**, and **Apply** it across the selection.
-- **Save** — a bar at the bottom tracks unsaved changes; **Save Inventories** writes them all at once (or **Discard** to revert).
+- the image, name, SKU, type and ID, and for a variant a **Parent** link to the main
+  product;
+- the category and the price, with an **Edit price** link that opens
+  [Manage Pricing](../pricing/manage-pricing.md) for that product;
+- the **Listing Status**: **Active** when the product is on and approved,
+  **Unapproved** when it is on but not yet approved, and **Inactive** when it is
+  switched off;
+- how many were **Sold**, how many are **Undelivered** and how many were
+  **Canceled**;
+- the total **Stock**, or **Stock Not Managed** when the product doesn't track stock.
 
-## Bulk listing status
+## Update the stock of a product
 
-Select products and use the **Update Status** action to switch their listing status to **Active** or **Inactive** in one move — handy for taking a range of products on or off the storefront quickly.
+1. Go to **Inventories >> Manage Inventory**.
+2. Click the arrow at the start of the product's row.
+3. Under **Inventories**, change the quantity for each source. Type a number or use
+   the **−** and **+** buttons.
+4. Click **Save Inventories** in the bar at the bottom of the page.
 
-::: tip
-Use the bulk stock tool with **set** after a stock-take, and **add** / **remove** when receiving or shipping batches — it's far faster than editing rows one by one.
-:::
+<ImagePopup src="/images/manage-inventory/edit-stock.png" alt="A product row opened to change stock in each inventory source" />
+
+Changed quantities are highlighted, and the bar counts how many products you changed.
+Click **Discard** to undo them all. Your changes stay while you move between pages or
+search, but they are lost if you reload the page before saving.
+
+You'll see **Inventories saved successfully.**
+
+## Update the stock of many products
+
+1. Tick the products.
+2. In **Inventory Source**, choose **All Sources** or one source.
+3. In **Action**, choose **Set to**, **Increase by** or **Decrease by**.
+4. Enter the **Value**.
+5. Click **Apply**.
+6. Click **Save Inventories**.
+
+<ImagePopup src="/images/manage-inventory/bulk-stock.png" alt="Changing the stock of several products at once" />
+
+**Apply** changes only the ticked products on the current page, and stock never goes
+below 0. Nothing is saved until you click **Save Inventories**.
+
+## Switch products on or off
+
+1. Tick the products.
+2. Click **Select Action**, point to **Update Status** and click **Active** or
+   **Inactive**.
+
+You'll see **Product status updated successfully.**
+
+## Find products
+
+Search by product name or SKU, or click **Filter** to narrow the list by
+**Listing Status**, **Product**, **SKU**, **Category**, **Type** or **ID**.
+
+## Low stock
+
+Products at or below the store's low-stock level are listed under
+**Products low on stock** on your [Dashboard](../seller-panel/dashboard.md).
+
+## Good to know
+
+- A product that doesn't manage stock is always available, whatever the quantity.
+- Every inventory source you have appears here, including inactive ones. Stock in an
+  inactive source isn't available to customers.
+- Team members need **Manage Inventory**, with **Save Inventories** to save and
+  **Update Status** to switch products on or off.

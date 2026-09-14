@@ -1,30 +1,48 @@
-# Booking Management
+# Bookings
 
-Sellers can list **bookable** products — items or services a customer reserves for a date or time, such as an appointment, rental, event ticket, or table. When a customer books one, the reservation appears in the seller's **Sales → Bookings**.
+<div class="page-roles"><span class="role role--seller">Seller</span></div>
 
-::: info What you'll learn
-- What a bookable product is
-- Where a seller sees their bookings
-- How bookings relate to orders
-:::
+Sellers can sell bookable products, such as appointments, rentals, event tickets or
+table reservations. Each reservation a customer makes appears under
+**Sales >> Bookings**.
 
-## Bookable products
+To create a bookable product, choose **Bookable** as the kind of product and fill in
+the **Booking Type** step. See [Product Management](../catalog/product-management.md).
 
-A booking product is created like any other listing — choose **Bookable** as the product kind in the [create flow](/catalog/product-management#the-what-kind-of-product-funnel). Bookable products carry availability (dates, time slots, or quantities) that customers pick from when they reserve, and support several booking types (appointment, table, event, rental, and default).
+## The calendar
 
-## The bookings screen
+Go to **Sales >> Bookings**. The page opens on a calendar of the current week. Use the
+arrows to move between weeks.
 
-Open **Sales → Bookings** in the Seller Panel. It offers two views you can switch between:
+<ImagePopup src="/images/booking-management/bookings-calendar.png" alt="The bookings calendar" />
 
-<ImagePopup src="/images/booking-management/bookings-list.png" alt="Seller bookings" />
+Click a booking to see its **Booking Details**:
 
-- **List** — a table of reservations showing the **ID**, **Order ID**, **quantity**, and the reserved **From / To** window; searchable and filterable by date range, and exportable.
-- **Calendar** — the same reservations laid out by date, so you can see how a day or week is filling up, with each entry's details, order, price, and status.
+- the **Booking Date**, which is the day the order was placed, and the booked
+  **Time Slot**;
+- the **Order Id**, and the **Price**, which is the grand total of the customer's whole
+  order, including other sellers' products and shipping;
+- the **Status** of the whole order, such as **Done**, **Pending**, **Canceled** or
+  **Closed**;
+- the customer's name, email, phone number and billing address.
+
+Click **View Details** to open the order.
+
+## The list
+
+Click the list icon at the top right to see bookings as a table with the **ID**,
+**Order ID**, **QTY**, **From** and **To**. Use **Filter** to find bookings by date,
+and **Export** to download the list. Click the arrow icon on a row to open the order.
+
+<ImagePopup src="/images/booking-management/bookings-list.png" alt="The bookings list" />
 
 ## Bookings and orders
 
-A booking is placed through the normal checkout, so each reservation is anchored to a seller order — the **View** action opens the [order](/orders/order-management) it belongs to. You invoice, fulfil, and get paid for a booking the same way as any other order.
+A booking is placed and paid for like any other order, so you handle it from
+[Order Management](order-management.md):
 
-::: tip
-Keep your bookable product's availability accurate so customers can only reserve slots you can actually honour — an over-booked slot means a cancellation, which hurts your [account health](/sellers/seller-account-health).
-:::
+- Bookings have nothing to ship. When all your products in the order are bookings or
+  other products with nothing to ship, the order is **Completed** once you invoice it.
+- Request payment for it in the same way as other orders.
+
+Team members need **Bookings**, and **Orders** with **View** to open the order.

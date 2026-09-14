@@ -1,27 +1,93 @@
 # Communications
 
-Communications is the seller's built-in messaging — a direct thread with the marketplace **admin**, and (where available) with **customers** — so questions, requests, and clarifications happen in one place instead of scattered email.
+<div class="page-roles"><span class="role role--seller">Seller</span><span class="role role--admin">Admin</span><span class="role role--customer">Customer</span></div>
 
-::: info What you'll learn
-- Who a seller can message
-- How the conversation works
-- How email notifications and blocking behave
-:::
+Communications keeps conversations inside the marketplace. Sellers talk to the store
+admin, and customers talk to sellers. Each conversation is a thread of messages, with
+file attachments.
 
-## Messaging the admin
+## Seller and admin
 
-Open **Communication** in the Seller Panel. It's a chat thread with the admin — type a message, attach a file (image, PDF, or document) if needed, and send. Past messages stay in the thread, unread messages are marked, and you can search back through the history over a date range.
+### Message the admin
 
-<ImagePopup src="/images/communications/communication.png" alt="Seller–admin communication thread" />
+1. In the Seller Panel, go to **Communication >> Admin**.
+2. Type your message.
+3. To add a file, click the attachment icon and choose a JPEG, PNG, PDF, DOC or DOCX
+   file. The largest file you can send depends on your server's upload limit. You can
+   send a file without a message.
+4. Click the send icon.
 
-The admin has the matching view on their side, so replies appear in the same conversation. The admin can also **clear** a chat or **block** a seller who's misusing it — a blocked seller can't send new messages.
+<ImagePopup src="/images/communications/communication.png" alt="A seller's conversation with the admin" />
 
-## Messaging customers
+- Use **Search Message** to find a message, or the history icon to show only the last
+  7, 15 or 30 days, the last 6 months, or **All Messages**.
+- A message can be up to 255 characters.
+- If the admin blocks you, the page shows **You are blocked by admin** and you can't
+  send messages.
 
-Where enabled, sellers can also message the **customers** who've bought from them, and customers can message sellers back from their own account. Open **Communication → Customers**, pick a customer from the list, and exchange messages in the thread — with the same attachment support. These conversations send **email notifications** to the other party (each side can turn their own emails off), and either party can be blocked.
+No emails are sent for messages between sellers and the admin, so check this page for
+replies.
 
-<ImagePopup src="/images/communications/customer-communication.png" alt="Seller–customer communication thread under Communication → Customers" />
+### Message sellers
 
-::: tip
-Use Communication with the admin for anything that needs their attention — onboarding questions, policy clarifications, payout queries. For a conversation about a specific return, use the message thread on the [RMA request](/orders/return-merchandise-authorization) instead, so it stays tied to that return.
-:::
+1. In the admin panel, go to **Marketplace >> Communications**.
+2. Click a seller in **Sellers**, or search for one. You can start a conversation with
+   any seller.
+3. Type your message, add a file if needed, and click the send icon.
+
+<ImagePopup src="/images/communications/admin-communications.png" alt="The admin's Communications page with the sellers list" />
+
+Sellers with unread messages show a count. The menu at the top of a conversation has:
+
+- **Block Seller** or **Unblock Seller**, once the conversation has a message. While a
+  seller is blocked, neither of you can send messages;
+- **Clear Chat History** — deletes every message in the conversation;
+- **Exit** — closes the conversation.
+
+## Customers and sellers
+
+### Message a seller
+
+1. Sign in to your customer account and go to **Communications**.
+2. In **Search**, type the seller's business name and click the seller.
+3. Type your message, add a file if needed, and click the send icon.
+
+<ImagePopup src="/images/communications/customer-communications.png" alt="A customer's conversation with a seller" />
+
+The seller receives a **New message from …** email and replies in the same
+conversation. If a seller blocks you, you'll see **You have been blocked by this seller.**
+
+To stop emails when a seller replies, click the menu next to **Sellers**, open
+**Communication Settings**, switch **Receive email for seller messages** off and click
+**Save**.
+
+### Reply to customers
+
+1. In the Seller Panel, go to **Communication >> Customers**.
+2. Click a customer in the list.
+3. Type your reply and click the send icon.
+
+<ImagePopup src="/images/communications/customer-communication.png" alt="A seller's conversation with a customer" />
+
+- The list shows customers who have written to you. You can't start a conversation with
+  a customer.
+- The customer receives a **New message from …** email, unless they have turned emails
+  off.
+- To stop a customer from messaging you, open the menu at the top of the conversation
+  and click **Block Customer**. Neither of you can send messages until you click
+  **Unblock Customer**.
+- To stop emails about customer messages, go to **Settings >> General**. See
+  [Account Settings](../seller-panel/account-settings.md).
+
+Unread messages from customers and the admin are counted under **Buyer Messages** on
+your [Dashboard](../seller-panel/dashboard.md).
+
+## Subscription plans
+
+When the store uses subscription plans, customers can only message sellers whose plan
+includes **Communication >> Customers**.
+
+## Permissions
+
+- Team members need **Communication**, with **Admin** and **Customers** as needed.
+- Admins need **Marketplace >> Communications**.

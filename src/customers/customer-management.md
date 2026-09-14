@@ -1,26 +1,40 @@
-# Customer Management
+# Seller Customers
 
-A seller can see the customers who have bought from them under **Customers** in the Seller Panel — a focused view of their own buyers, with spend and order metrics, without exposing the marketplace's full customer base.
+<div class="page-roles"><span class="role role--seller">Seller</span></div>
 
-::: info What you'll learn
-- Which customers a seller can see
-- What the customers view tracks
-:::
+The **Customers** page lists the registered customers who have bought from you, with
+how much they have spent and how many orders they have placed.
 
-## Your customers
+Go to **Customers** in the Seller Panel.
 
-Open **Customers** in the Seller Panel. The list shows the customers who have placed orders for this seller's products, with columns for the **customer**, **email**, **gender**, **revenue**, **order count**, **status**, and **customer group**.
+<ImagePopup src="/images/customer-management/customers.png" alt="The seller's Customers page" />
 
-<ImagePopup src="/images/customer-management/customers.png" alt="Seller customers view" />
+Each row shows:
 
-- **Revenue** is what that customer has spent with this seller — the invoiced total of their orders, excluding cancelled and closed ones.
-- **Order Count** is how many orders they've placed with the seller.
-- The list is searchable and filterable by group and status.
+- **Customer / Email / Gender** — the customer's name, email and gender;
+- **Revenue / Order Count** — what the customer has spent with you and how many orders
+  they have placed;
+- **Status / Group** — whether their account is **Active** or **Inactive**, and their
+  customer group.
 
-::: info Sellers see only their own buyers
-A seller only sees customers who have bought from *them* — not every customer on the marketplace, and not guest buyers who never created an account. Whether a seller can see customer email addresses is itself governed by an admin permission; when it's off, emails are masked. Full customer management across the platform stays with the admin.
-:::
+**Revenue** is the invoiced total of your orders from that customer, not counting
+cancelled or closed orders. **Order Count** includes every order, even cancelled and
+closed ones.
 
-::: tip
-Use this view to recognise repeat buyers and understand your audience. For sales and buyer **trends over time**, see [Seller Reporting](/reporting/seller-reporting).
-:::
+## Find a customer
+
+Search by name, or click **Filter** to narrow the list by **Customer**, **Email**,
+**Status** or **Group**. Click a column heading to sort by it; **Revenue** and **Group**
+can't be sorted. When email addresses are masked, you can't search, filter or sort by
+email.
+
+## Good to know
+
+- Customers who checked out as guests aren't listed.
+- When the store doesn't let sellers see customer details, email addresses are replaced
+  with asterisks. See **Can View Customers** in
+  [Sellers settings](../configuration/sellers.md).
+- To message a customer who has written to you, see
+  [Communications](communications.md). For trends over time, see
+  [Seller Reports](../reporting/seller-reporting.md).
+- Team members need the **Customers** permission.

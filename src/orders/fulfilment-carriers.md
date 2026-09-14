@@ -1,47 +1,74 @@
-# Fulfilment Carriers
+# Shipments & Carriers
 
-Fulfilment Carriers let the marketplace run shipping **after** an order is placed — sellers buy shipping labels, schedule courier pickups, and report tracking, all through couriers the **admin** connects once for the whole marketplace. Sellers never see the courier credentials.
+<div class="page-roles"><span class="role role--seller">Seller</span><span class="role role--admin">Admin</span></div>
 
-::: info What you'll learn
-- How fulfilment carriers differ from checkout shipping methods
-- How the admin sets up carriers, and the built-in Self Ship option
-- What a seller sees at shipment time, by carrier type
-:::
+Sellers ship their products by scheduling a pickup for the order. The carrier decides
+how the parcel travels. **Self Ship** is always available: the seller arranges their
+own courier and enters the tracking number. A courier integration can also buy labels
+and book collections for the seller.
 
-::: tip Not a checkout shipping method
-A **checkout shipping method** quotes a delivery rate to the customer *before* they pay. A **fulfilment carrier** is used *after* the order, by the seller, to actually ship it. Connecting a carrier never adds an option to customer checkout.
-:::
+Carriers are only used after an order is placed. Customers still choose from the
+store's shipping methods at checkout.
 
-## Setting up carriers (admin)
+## Schedule a pickup
 
-Go to **Configure → Marketplace → Fulfilment Carriers**.
+1. Go to **Sales >> Orders**.
+2. Click **Schedule Pickup** on the order's row, or open the order and click
+   **Schedule Pickup**.
+3. Choose the **Product Ordered Source** your products ship from.
+4. Under **Items To Ship**, enter how many of each product you are shipping from that
+   source. **Avail.** shows the stock in the source.
+5. Choose the **Carrier**. For Self Ship, this is **Manual (Own Arrangement)**, unless
+   the store has renamed it.
+6. For Self Ship, you can enter the **Carrier Title**, such as the courier's name, and
+   the **Tracking ID**.
+7. Click **Schedule Pickup**.
 
-<ImagePopup src="/images/fulfilment-carriers/admin-config.png" alt="Fulfilment Carriers configuration" />
+<ImagePopup src="/images/order-management/shipment-create.png" alt="The Schedule Pickup page with Self Ship" />
 
-Out of the box, one carrier is always present:
+You'll see **Shipment created successfully**. The order's **Shipments** tab shows the
+carrier, the tracking number and the inventory source.
 
-- **Self Ship (Manual)** — the built-in fallback: the seller arranges their own courier and types the carrier name and tracking number by hand. It's always available and cannot be switched off. You can set the **Title Shown To Sellers** that overrides its name in the seller's shipment form.
+| Message | What it means |
+|---|---|
+| **This order has nothing left to ship** | Everything in your part of the order has shipped, or what's left is cancelled, refunded or has nothing to ship, such as a booking. |
+| **Requested quantity is not available** | You entered more than is left to ship or than the source has in stock, or every quantity is 0. |
+| **Shipment blocked for RMA quantity: …** | Shown beside a product when that much of its quantity is in a return request, whatever the request's status. That quantity can't be shipped. |
 
-Real couriers (Shiprocket, Delhivery, UPS, FedEx, and so on) arrive as **separate integration packages**. Installing one adds its own section here, where the admin enters that courier's account credentials once — sellers then ship through it without ever seeing those details. A carrier is only offered to sellers once it's installed, switched on, and fully configured.
+## With a courier integration
 
-## What a carrier can do
+When the store has installed and set up a courier integration, choosing it adds more
+to the page:
 
-Carriers declare which capabilities they support, and the seller's shipment form adapts to match:
+- **Parcel** — the **Weight**, in the store's weight unit, and the **Length**,
+  **Width** and **Height** in centimetres. Each must be more than 0. A shipping label is
+  bought when you schedule the pickup, and the tracking number is added for you.
+- **Collection** — the **Pickup Date**, which can't be in the past, and either a
+  **Collection Round** or the **Ready At** and **Doors Close At** times, with any
+  **Pickup Instructions** for the driver, up to 500 characters.
 
-- **Labels** — generate and buy a shipping label; tracking is filled in automatically and the label is downloadable.
-- **Pickups** — book a courier collection, either from published **time slots** or within a **ready/close window**.
-- **Tracking** — status flows back from the carrier automatically.
+After scheduling:
 
-## What the seller sees at shipment time
+- download the label with **Download** on the shipment, or **Print Label** on the
+  order's row;
+- the shipment shows the pickup's confirmation and time window, and the **Label Cost**;
+- shipments from the same source for the same collection time share one pickup.
 
-When a seller ships an order (from **Sales → Orders → the order → Schedule Pickup**), they pick one of the configured carriers:
+The label cost is shown for your information and isn't taken from your payout.
 
-- **Self Ship (Manual)** — the seller enters the courier name and tracking number themselves; nothing is booked.
-- **Label-capable carrier** — a **Parcel** section (weight and dimensions) appears; the label is bought on submit and its cost and a **Download** button show on the shipment.
-- **Pickup-capable carrier** — a **Collection** section appears to schedule the courier visit (slot or window) with a pickup date and instructions.
+If the courier rejects the collection window, nothing is saved; choose another time and
+try again. If the courier can't be booked for another reason, the shipment is still
+saved and marked **Not Booked**.
 
-If a booking fails, the shipment is still saved and marked **Not Booked** so the seller can retry — no shipment is lost.
+## For the admin
 
-::: info For developers
-A courier integration is a standalone package built on the marketplace's carrier interfaces — see the [Bagisto developer documentation](https://devdocs.bagisto.com/) to build one. No marketplace code changes are needed to add a carrier.
-:::
+- Set up the carriers sellers can use in
+  [Fulfilment Carriers settings](../configuration/fulfilment-carriers.md).
+- When you ship a seller's products from **Sales >> Orders**, the store's own shipment
+  form is used, and only the seller's inventory sources are offered.
+
+## Settings and permissions
+
+- Sellers see **Schedule Pickup** when **Can Create Shipment** is on in
+  [Sellers settings](../configuration/sellers.md).
+- Team members need **Orders** with **Shipment**.

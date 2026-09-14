@@ -1,71 +1,101 @@
 # Product Discounts
 
-Product Discounts are automatic price reductions a seller applies to their **own catalog**. Once a discount is active, every matching product shows its reduced price on the storefront — no coupon needed. Sellers can also opt into discounts the admin publishes for everyone.
+<div class="page-roles"><span class="role role--seller">Seller</span><span class="role role--admin">Admin</span></div>
 
-::: info What you'll learn
-- How to create a product discount, tab by tab
-- How the conditions builder targets the right products
-- How to manage discounts and join admin-published ones
-:::
+A product discount lowers the price of your products automatically, with no coupon.
+Customers see the reduced price on the storefront while the discount runs.
 
-## Creating a product discount
+A product discount only lowers the price of products you created. Catalog products you
+sell as your own aren't included. Discounts don't need the admin's approval.
 
-From the Seller Panel, open **Marketing → Product Discounts** and select **Create Product Discount**. The form has three tabs — **Discount**, **Details**, and **Advanced** — and the tab strip flags any tab that still has errors.
+To take part in the store's own discounts, see
+[Joining Admin Discounts](join-product-discounts.md).
+
+## Create a product discount
+
+1. Go to **Marketing >> Product Discounts**.
+2. Click **Create Product Discount**.
+3. Fill in the **Discount**, **Details** and **Advanced** tabs, described below.
+4. Click **Save Product Discount**.
+
+A tab with a mistake shows a red count, and the form opens that tab when you save.
+
+You'll see **Product discount created successfully.**
 
 ### Discount
 
-Choose **how** the reduction is applied and by how much:
+<ImagePopup src="/images/product-discounts/discount.png" alt="The Discount tab of a product discount" />
 
-<ImagePopup src="/images/product-discounts/discount.png" alt="Product discount — Discount tab" />
-
-- **Percentage off the price** — take a percentage off every matching product (for example, 15%).
-- **Fixed amount off the price** — take a set amount off each matching product (for example, $5).
-- **Discount Amount** — the percentage (max 100) or fixed value to apply.
+1. Under **How would you like to discount these products?**, choose
+   **Percentage off the price** or **Fixed amount off the price**.
+2. Enter the **Discount Amount**. A percentage can't be more than 100, and a fixed
+   amount can't take a price below zero.
 
 ### Details
 
-Give the discount its identity and schedule:
+<ImagePopup src="/images/product-discounts/details.png" alt="The Details tab of a product discount" />
 
-<ImagePopup src="/images/product-discounts/details.png" alt="Product discount — Details tab" />
-
-- **Name** and an optional **Description**.
-- **Marketing Time** — a **Starts From** and **Ends Till** date window (leave empty to run indefinitely).
+1. Under **What should this discount be called?**, enter a **Name** and, if you like,
+   a **Description**.
+2. Under **When should it run?**, choose the **Starts From** and **Ends Till** dates.
 
 ### Advanced
 
-Decide **which products** the discount applies to and how it behaves:
+<ImagePopup src="/images/product-discounts/advanced.png" alt="The Advanced tab with conditions and settings" />
 
-<ImagePopup src="/images/product-discounts/advanced.png" alt="Product discount — Advanced tab with conditions" />
+Under **Which products should it match?**, choose the products the discount covers:
 
-- **Conditions** — a rule builder. Add one or more conditions, each an **Attribute → Operator → Value** row (for example, *Category → Contains → Summer*, or *Price → greater than → 50*). Attributes cover the product's category, attribute family, and every product attribute; operators adapt to the attribute type (equals, contains, greater/less than, and so on).
-- **All conditions true / Any conditions true** — whether a product must match every condition or just one.
-- **Priority** — which discount wins when several could apply to the same product.
-- **End Other Rules** — set to **Yes** to stop lower-priority discounts once this one matches.
-- **Channels** and **Customer Groups** — where and for whom the discount applies (defaults to all of yours).
-- **Status** — turn the discount on or off.
+1. In **Condition Type**, choose **All Conditions Are True** or
+   **Any Condition Is True**.
+2. Click **Add Condition**.
+3. Choose what to check, such as **Categories**, **Attribute Family**, **Price** or
+   **Color**.
+4. Choose how to compare it, and the value.
 
-Select **Save Product Discount**, and the reduction applies automatically to your matching products on the storefront.
+With no conditions, the discount covers all your products.
 
-## Managing discounts
+| For | You can compare with |
+|---|---|
+| Numbers, prices and dates | **Is equal to**, **Is not equal to**, **Equals or greater than**, **Equals or less than**, **Greater than**, **Less than** |
+| Text | **Is equal to**, **Is not equal to**, **Contains**, **Does not contain** |
+| Yes/No and single choices | **Is equal to**, **Is not equal to** |
+| Multiple choices and categories | **Contains**, **Does not contain** |
 
-The **Product Discounts** list shows every discount you've created with its **priority**, dates, and status. From there you can **Edit** a discount or **Delete** it — deleting or disabling one immediately restores the affected products to their normal price.
+In **Settings**:
 
-## Joining an admin product discount
+| Setting | What it does |
+|---|---|
+| **Channels** | The channels the discount runs on. All your channels are selected at first. If none is selected, it runs on all of them. |
+| **Customer Groups** | The customer groups who get the discount. All groups are selected at first. If none is selected, every group gets it. |
+| **Priority** | The order discounts are applied in, starting from the lowest number. This covers your own discounts and the store discounts you've joined. |
+| **Stop Further Rules** | Choose **Yes** so that, once this discount applies, no discount with a higher priority number applies, including store discounts you've joined. |
+| **Status** | Switches the discount on or off. |
 
-The admin can publish product discounts for sellers to opt into. From **Marketing → Product Discounts**, select **Join Product Discounts** to see what's available.
+When several discounts match a product, each one comes off the price left by the one
+before, until a discount with **Stop Further Rules** set to **Yes**.
 
-<ImagePopup src="/images/product-discounts/join.png" alt="Join admin product discounts" />
+## Manage your discounts
 
-- **View** a discount to see its full terms (conditions, actions, schedule) read-only.
-- **Enroll** your products individually or with the **bulk enroll** action; **Withdraw** the same way to leave.
-- Each enrollment shows a status — **Approved**, **Pending**, or **Disapproved**. Depending on the admin's setting, joining is either auto-approved or waits for the admin to approve it.
+The **Product Discounts** list shows each discount's name, whether it is active, its
+priority and its dates. Click the edit icon to change a discount, or the delete icon
+to remove it. Removing or switching off a discount returns your products to their
+normal price.
 
-Once enrolled and approved, the admin's discount reprices your listings for as long as you stay joined.
+## For the admin
 
-::: info Admin controls this
-Joining admin discounts is governed by an admin capability. If the admin turns off catalog-rule joining, joined discounts stop repricing your products.
-:::
+Go to **Marketplace >> Marketing >> Product Discounts** to see the discounts sellers
+have created, with the **Seller**, status, priority and dates. You can filter the list
+by status. To delete a seller's discount, click its delete icon, or tick several and use
+**Select Action >> Delete**. Seller discounts aren't listed under
+**Marketing >> Promotions >> Catalog Rules**. To create a discount sellers can join, see
+[Joining Admin Discounts](join-product-discounts.md).
 
-::: tip
-Product Discounts change a product's **shown price**. To reward the **whole cart** — or to gate an offer behind a coupon code — use [Checkout Deals](/marketing/checkout-deals). For a quick scheduled price cut on individual products, the [Manage Pricing](/pricing/manage-pricing) special price is often simpler.
-:::
+<ImagePopup src="/images/product-discounts/admin-product-discounts.png" alt="Seller product discounts in the admin panel" />
+
+## Permissions
+
+- Team members need **Product Discounts**, with **Create**, **Edit** and **Delete** as
+  needed. **Join**, with **View**, **Enroll** and **Withdraw**, covers taking part in
+  the store's discounts.
+- Admins need **Marketplace >> Marketing >> Product Discounts** with **Delete** to
+  delete sellers' discounts.

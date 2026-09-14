@@ -1,39 +1,61 @@
 # Product Barcode
 
-Every seller product can carry a scannable **barcode**. The barcode image is generated automatically from a value you set — you never upload it — and can be generated and printed in bulk for stock, picking, and fulfilment.
+<div class="page-roles"><span class="role role--seller">Seller</span></div>
 
-::: info What you'll learn
-- How a product's barcode is set and generated
-- Which barcode symbologies are supported
-- How to generate, print, and download barcodes
-:::
+Every product can have a barcode for scanning when you pick, pack or count stock. You
+set the value, and the barcode image is created for you. You can also create and print
+barcodes for many products at once.
 
-## Setting a barcode on a product
+## Add a barcode to a product
 
-Open a product from **Catalog → Products** and go to the **Barcode** tab on the edit form.
+1. Go to **Catalog >> Products**.
+2. Click the edit arrow on the product.
+3. Open the **Barcode** step.
+4. Enter the **Barcode Value**, such as the product code or GTIN you already use.
+5. Click **Save Product**, or **Submit** for a draft.
 
-<ImagePopup src="/images/product-barcode/barcode-tab.png" alt="Barcode tab on the product edit form" />
+<ImagePopup src="/images/product-barcode/barcode-tab.png" alt="The Barcode step with a generated barcode" />
 
-- **Barcode Value** — the value encoded in the barcode. Set it to whatever the barcode should represent (a product code, GTIN, and so on). If you leave it empty, **no barcode is generated when you save** — but the bulk **Generate Barcode** action can still produce one, deriving the value from the product's ID.
-- **Barcode** — the generated image. It is **read-only and created automatically every time you save the product**, and refreshes whenever the value changes. Once generated, a **Download Barcode** link gives you a single-product PDF.
+The **Barcode** image is created when you save and updated whenever the value changes.
+Click **Download Barcode** for a PDF of it. No two products can have the same barcode
+value.
 
-Save the product and the barcode image is generated from the value.
+The barcode uses **Code 128** unless you create it with another format from the
+products list.
 
-::: info Supported symbologies
-Barcodes are generated as **Code 128**, **EAN-13**, or **UPC-A**. A default symbology applies automatically; EAN-13 / UPC-A values are adjusted to a valid GTIN where needed. QR codes are not used here.
-:::
+## Create barcodes for many products
 
-## Barcodes on the products list
+1. Go to **Catalog >> Products**.
+2. Tick the products.
+3. Click **Select Action**, point to **Generate Barcode** and choose **Code 128**,
+   **EAN-13** or **UPC-A**.
 
-The products list shows a **Barcode** column with each product's state (for example, blank until a barcode has been generated), and a **Barcode Value** column you can search and filter.
+The message tells you how many barcodes were created and how many were skipped.
 
-<ImagePopup src="/images/product-barcode/products-list.png" alt="Barcode column on the seller products list" />
+- A product without a barcode value gets a 12-digit value made from its catalog
+  product ID, which isn't always the ID shown in the products list.
+- For **EAN-13** and **UPC-A**, a value that isn't a valid code of that kind is
+  adjusted to one and saved.
 
-Select one or more products with the checkboxes and use the bulk actions:
+## Print barcodes
 
-- **Generate Barcode** — generate barcodes for the selected products; you choose the symbology (**Code 128 / EAN-13 / UPC-A**). Products without a value get one derived automatically. The result reports how many were generated and how many were skipped.
-- **Print Barcodes** — download a single PDF of the selected products' barcodes — a table of **ID**, **Name**, and the **barcode image + value** — ready to print onto labels.
+1. Go to **Catalog >> Products**.
+2. Tick the products.
+3. Click **Select Action >> Print Barcodes**.
 
-::: tip
-Set **Barcode Value** to the GTIN or product code you already use in your inventory system, so the printed barcode scans to the same identifier everywhere.
-:::
+<ImagePopup src="/images/product-barcode/products-list.png" alt="Generated barcodes in the products list with the Select Action menu" />
+
+You get one PDF listing each product's **ID**, **Name** and **Barcode**, ready to print
+on labels. Products without a barcode value are left out.
+
+## Barcodes in the products list
+
+The **Barcode** column shows each product's barcode and its value, or
+**Not Generated**. Use **Filter** to find a product by **Barcode Value**.
+
+## Good to know
+
+- A barcode on a catalog product you sell as your own is saved on the catalog product
+  itself, so other sellers of that product see it too.
+- Team members need **Product Barcode** in their role, with **Generate** to create
+  barcodes, and **Print** to print them or use **Download Barcode**.

@@ -1,36 +1,95 @@
-# Seller Account Health
+# Account Health
 
-Account Health is a single, honest read on how a seller is doing — built from **cancellations**, **customer feedback**, and **flags**. Sellers see it in their panel; the admin sees it per seller and marketplace-wide, and uses it to keep the marketplace reliable.
+<div class="page-roles"><span class="role role--seller">Seller</span><span class="role role--admin">Admin</span></div>
 
-::: info What you'll learn
-- The three metrics behind the score
-- How the score and its bands are calculated
-- How and when it refreshes
-:::
+Account health shows how well a seller is serving customers, based on cancelled
+orders, customer ratings and reports. Sellers use it to spot problems early, and
+the admin uses it to find sellers who need attention.
 
-## The seller's view
+## Check your account health
 
-A seller opens **Performance → Account Health**. It shows an **Overall Health** verdict, a **Health Score** out of 100 on an Unhealthy → At Risk → Healthy gauge, and three metric cards.
+Sellers go to **Performance >> Account Health** in the Seller Panel.
 
-<ImagePopup src="/images/seller-account-health/account-health.png" alt="Seller account health page" />
+<ImagePopup src="/images/seller-account-health/account-health.png" alt="The Account Health page in the Seller Panel" />
 
-- **Order Cancellation Rate** — cancelled units over the **last 30 days**, with a target (for example, below 2.5%). Lower is better.
-- **Customer Feedback** — the seller's average rating across **approved** reviews (last 90 days), target 4.0 and above. Shows "No Data" until there are reviews.
-- **Flags** — flags customers raised against the store in the **last 90 days**, measured against the marketplace's red-flag limit.
+The page shows:
+
+- **Overall Health** — **Healthy**, **At Risk** or **Unhealthy**. It follows the
+  worst of the metrics below.
+- **Health Score** — a score out of 100.
+- **Order Cancellation Rate** — the share of your ordered items that were cancelled
+  in the last 30 days, whether you, the customer or the admin cancelled them.
+- **Customer Feedback** — your average rating from approved reviews of your shop in
+  the last 90 days.
+- **Flags** — reports raised against your shop by customers in the last 90 days. It
+  appears when seller reporting is switched on.
+
+Each metric is marked **Good**, **Needs Attention** or **Critical**, or
+**No Data** when there is nothing to measure yet.
+
+### Refresh the figures
+
+Click **Refresh now** to recalculate. You can refresh again after 60 minutes. Team
+members need the **Refresh Account Health** permission.
+
+### See how the score is worked out
+
+Click **How is this calculated?**. The guide explains each metric and has a live
+calculator where you can try different values. Nothing you enter is saved.
+
+<ImagePopup src="/images/seller-account-health/health-guide.png" alt="The How the Health Score Is Calculated guide" />
+
+## What each metric needs
+
+| Metric | Good | Needs Attention | Critical |
+|---|---|---|---|
+| **Order Cancellation Rate** | Below the warning rate | At or above the warning rate | Above the critical rate |
+| **Customer Feedback** | 4.0 or higher | 3.0 to 3.9 | Below 3.0 |
+| **Flags** | Well under the red flag limit | Approaching the limit | Close to or over the limit |
+
+The warning and critical cancellation rates and the red flag limit are set by the
+admin in [Moderation & Health](../configuration/moderation-and-health.md).
 
 ## How the score works
 
-Each metric is graded **good / warning / critical** against its thresholds, and the three combine into a **0–100** score split into bands:
+- The 100 points are shared equally between the metrics that count: cancellations
+  always, feedback once the seller has reviews, and flags when reporting is on.
+- A perfect metric earns its full share. A poor one takes points away.
+- A score of 67 to 100 is **Healthy**, 34 to 66 is **At Risk**, and 0 to 33 is
+  **Unhealthy**.
 
-- **0–33 Unhealthy**, **34–66 At Risk**, **67–100 Healthy**.
+Because **Overall Health** follows the worst metric, a seller can have a high score
+and still be marked **Unhealthy** when one metric is critical.
 
-The overall verdict follows the worst-performing metric that has data, so one bad area is surfaced rather than averaged away. Cancellation always counts; feedback counts once there are reviews; flags count while flagging is enabled. The **cancellation-rate thresholds** (warning and critical percentages) are set by the admin under **Configure → Marketplace → Moderation & Health → Account Health**.
+## When the figures change
 
-## Refreshing
+Account health is stored when it is refreshed:
 
-- **Seller** — the page shows when it was last updated and a **Refresh now** button, with a short cooldown between manual refreshes (and a countdown to the next allowed refresh). A **How is this calculated?** guide explains the maths interactively.
-- **Admin** — can refresh a seller's health any time (no cooldown) from the sellers list, individually or in bulk, and a scheduled job keeps every seller's health current.
+- the seller clicks **Refresh now**;
+- the admin clicks **Refresh Account Health** on the seller's row, or uses it as a
+  bulk action.
 
-::: tip
-The fastest wins are usually **fewer cancellations** (keep stock accurate so you don't cancel orders) and **more approved reviews**. Both feed directly into the score — and into [Featured Sellers](/sellers/featured-sellers).
-:::
+When subscription plans are on, every seller is also refreshed once a day by the
+store's scheduler. Until a seller is refreshed for the first time, the admin's list
+shows **Not calculated**.
+
+## For the admin
+
+Go to **Marketplace >> Sellers**. The **Account Health** column shows each seller's
+score and band, their cancellation rate, rating and flags.
+
+- To find sellers who need attention, click **Filter** and choose **Unhealthy** or
+  **At Risk** under **Account Health**.
+- To recalculate, click the **Refresh Account Health** icon on a row, or tick
+  several sellers and use **Select Action >> Refresh Account Health**.
+
+The list shows the band of the score, so it can say **Healthy** while one of the
+seller's metrics is critical. Open the seller's Account Health page with
+**Login as Seller** to see each metric.
+
+## Keep your account healthy
+
+- Keep stock accurate so you don't have to cancel orders.
+- Describe products honestly so customers get what they expect.
+- Answer customer messages quickly and resolve returns fairly.
+- Read reviews and flags to see what customers are unhappy about.

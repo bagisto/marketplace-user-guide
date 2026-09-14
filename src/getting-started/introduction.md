@@ -1,50 +1,72 @@
-# Multi-Vendor Marketplace
+# Bagisto Multi-Vendor Marketplace
 
-The [Multi-Vendor Marketplace](https://bagisto.com/en/laravel-multi-vendor-marketplace/) turns a standard Bagisto store into a full marketplace. The admin keeps control of the platform — sellers, commissions, product approvals, moderation and payouts — while each seller gets a dedicated **Seller Panel** to run their own store, and customers shop across many sellers from a single cart.
+<div class="page-roles"><span class="role role--admin">Admin</span><span class="role role--seller">Seller</span><span class="role role--customer">Customer</span></div>
 
-::: info What's in this section
-This section walks through every part of the marketplace, grouped by who uses it: the **marketplace admin**, the **sellers**, and the **customers**. Each capability below links to its own page.
-:::
+The [Multi-Vendor Marketplace](https://store.webkul.com/laravel-multi-vendor-marketplace.html)
+turns a Bagisto store into a marketplace where many sellers sell under one roof.
+You run the platform, sellers run their own shops, and customers buy from any of
+them in a single checkout.
 
-<ImagePopup src="/images/introduction/admin-marketplace.png" alt="Marketplace section in the admin panel" />
+## What the marketplace adds
 
-## For the marketplace admin
+The marketplace adds three places to your store, one for each kind of user.
 
-The admin panel gains a **Marketplace** section that governs the whole platform:
+### The Marketplace menu in the admin panel
 
-- **[Seller Management](/sellers/seller-management)** — review, approve, edit, suspend and log in as sellers, and watch each seller's **account health** and flags.
-- **Product approval & assignment** — an **[approval queue](/catalog/product-management#drafts-submission-and-approval)** for seller products, and **[Selling Existing Products](/catalog/selling-existing-products)** so sellers can list existing catalog items as their own (and the admin can assign products to sellers).
-- **[Commissions](/payments/commission-management)** and **[Mass Payout](/payments/mass-payout-management)** — set commission rates and settle many sellers at once, alongside per-seller **[Payments](/payments/payment-management)**.
-- **[Subscription Plans](/subscriptions/seller-subscription-management)** — paid plans that cap product counts, staff counts, allowed product types and permissions.
-- **Moderation** — **[Seller & Product Flagging](/moderation/seller-product-flagging)** with configurable flag reasons, plus account-health scoring that surfaces problem sellers automatically.
-- **Marketing** — publish **[Product Discounts](/marketing/product-discounts)** for sellers to join, and run marketplace-wide **[Checkout Deals](/marketing/checkout-deals)**.
-- **[Fulfilment Carriers](/orders/fulfilment-carriers)** — connect one courier account for the whole marketplace so sellers can buy shipping labels, schedule pickups and track shipments without seeing the credentials.
-- **[Featured Sellers](/sellers/featured-sellers)** — highlight top sellers on the storefront, ranked by orders, products or ratings.
-- **[Seller Attributes](/sellers/seller-attributes)** and the **seller product form** — define custom registration/profile fields and choose which fields appear on the seller product form.
+As the store owner, you get a **Marketplace** menu in the admin panel. From there
+you approve sellers and their products, keep an eye on seller orders, pay sellers,
+run subscription plans, answer seller messages and moderate reviews and reports.
+The settings sit under **Configure >> Marketplace**.
 
-## For sellers
+<ImagePopup src="/images/introduction/admin-marketplace-menu.png" alt="The Marketplace menu in the admin panel" />
 
-Each seller signs in to their **Seller Panel** — a dedicated dashboard with a grouped sidebar (Catalog, Inventories, Pricing, Marketing, Sales, Performance, Reporting, Communication, Customers, Plans, Settings) and full dark-mode support:
+### The Seller Panel
 
-- **Catalog** — **[Product Management](/catalog/product-management)**, **[Selling Existing Products](/catalog/selling-existing-products)**, **[Product Barcode](/catalog/product-barcode)** and **[Bulk Upload](/catalog/bulk-upload)**. Sellers can save **[draft products](/catalog/draft-products)**, and use **[Magic AI](/catalog/magic-ai)** to generate product content within admin-set limits.
-- **Inventories & Pricing** — dedicated **Manage Inventory** and **Manage Pricing** screens, plus **[Inventory Sources](/inventory/inventory-source-management)** for multiple stock locations.
-- **Sales** — **[Orders](/orders/order-management)**, **[Bookings](/orders/booking-management)** and **[Returns (RMA)](/orders/return-merchandise-authorization)**.
-- **Marketing** — sellers create their own **[Product Discounts](/marketing/product-discounts)** and **[Checkout Deals](/marketing/checkout-deals)**, and can join the admin's product discounts.
-- **Performance & Reporting** — an **account-health** score on the Performance menu, and **[sales, product and customer reports](/reporting/seller-reporting)**.
-- **Team, customers & messaging** — **[Users & Roles](/sellers/seller-user-role-management)**, **[Customer insights](/customers/customer-management)**, and **[Communication](/customers/communications)** with the admin and buyers.
+Each seller signs in to their own **Seller Panel**. It has everything they need to
+run a shop: products, stock and prices, discounts, orders and returns, earnings,
+reviews, reports, messages and their team.
 
-## For customers
+<ImagePopup src="/images/introduction/seller-panel.png" alt="The Seller Panel dashboard" />
 
-- A public store page per seller, with the seller's products, banner, ratings and contact.
+### Marketplace pages on the storefront
 
-<ImagePopup src="/images/introduction/seller-storefront.png" alt="A seller's storefront" />
+Customers get a public shop page for every seller, a **Sold By** line on seller
+products, a page to compare sellers who sell the same product, and one cart for
+products from any seller. Visitors who want to sell find a landing page that
+invites them to open a shop.
 
-- **Product offers** — compare the different sellers carrying the same product before buying.
-- **[Ratings & reviews](/moderation/rating-management)** for both products and sellers.
-- **[Flagging](/moderation/seller-product-flagging)** to report an inappropriate seller or product.
-- Direct **[messaging](/customers/communications)** with sellers from the account area.
-- **One cart** spanning products from several sellers and the admin.
+<ImagePopup src="/images/introduction/seller-shop-page.png" alt="A seller's shop page on the storefront" />
 
-::: tip New here?
-Start with **[Seller Management](/sellers/seller-management)** to see how a seller joins and how the admin manages them end to end.
-:::
+## How a sale works
+
+1. A seller signs up, and you approve them.
+2. The seller lists products, either their own or products already in your
+   catalog, and you approve them.
+3. A customer buys from one or more sellers in a single checkout, and pays your
+   store.
+4. The order is split so each seller sees only their own items.
+5. Each seller invoices and ships their part of the order.
+6. Your commission is taken from each sale, and the seller requests the rest.
+7. You pay the seller and record the payment.
+
+## Who does what
+
+| | What they do | Start here |
+|---|---|---|
+| **Admin** | Sets up the marketplace, approves sellers and products, pays sellers, runs plans and moderation | [Admin Quick Start](admin-quick-start.md) |
+| **Seller** | Runs a shop: products, stock, prices, discounts, orders, returns and payouts | [Seller Quick Start](seller-quick-start.md) |
+| **Customer** | Browses seller shops, compares offers, buys, reviews, messages and reports sellers | [Shopping Across Sellers](../storefront/shopping-across-sellers.md) |
+
+## Generative AI for sellers
+
+Sellers can have Generative AI (Magic AI) write their product listings from a short
+description and a photo. You choose the AI provider and how much each seller can
+use it, and the seller reviews every suggestion before saving. See
+[Generative AI](../generative-ai/introduction.md).
+
+## Badges on each page
+
+Each page starts with badges that show whose panel the steps happen in:
+<span class="role role--admin">Admin</span> for the admin panel,
+<span class="role role--seller">Seller</span> for the Seller Panel, and
+<span class="role role--customer">Customer</span> for the storefront.

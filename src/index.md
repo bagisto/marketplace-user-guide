@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "Bagisto Marketplace"
   text: "Multi-Vendor Marketplace Guide"
-  tagline: Turn a Bagisto store into a full marketplace — onboard sellers, approve products, manage commissions and payouts, and moderate the platform.
+  tagline: Run a marketplace where many sellers sell under one roof — with seller shops, approvals, commissions and payouts, and Generative AI that writes seller listings.
   image:
     src: /logo-large.png
     alt: Bagisto
@@ -13,52 +13,56 @@ hero:
       text: Get Started
       link: /getting-started/introduction
     - theme: alt
-      text: Seller Management
-      link: /sellers/seller-management
+      text: Explore Generative AI
+      link: /generative-ai/introduction
 
 features:
+  - icon: ✨
+    title: Generative AI
+    details: Sellers turn a short description and a photo into a complete product listing, within limits you set.
+    link: /generative-ai/introduction
   - icon: 🧑‍💼
     title: Sellers
-    details: Seller management, featured sellers, account health, users & roles, and seller attributes.
+    details: Seller sign-up and approval, seller details, and account health.
     link: /sellers/seller-management
+  - icon: 🧭
+    title: Seller Panel
+    details: The seller's dashboard, profile, account settings, team users and roles.
+    link: /seller-panel/overview
   - icon: 📦
     title: Catalog
-    details: Product creation, selling existing products, drafts, barcodes, bulk upload, and Magic AI.
+    details: Creating products, selling catalog products, approval, bulk upload, barcodes and the product form.
     link: /catalog/product-management
   - icon: 🗃️
-    title: Inventory
-    details: Inventory sources and per-seller stock management across the marketplace.
-    link: /inventory/inventory-source-management
-  - icon: 💲
-    title: Pricing
-    details: Per-seller pricing, sale prices, and customer-group tiers.
-    link: /pricing/manage-pricing
+    title: Inventory & Pricing
+    details: Stock for every inventory source, prices, sale prices and customer group prices.
+    link: /inventory/manage-inventory
   - icon: 📣
     title: Marketing
-    details: Product discounts (catalog rules) and checkout deals with coupons.
+    details: Seller product discounts, checkout deals and coupons, and joining the store's discounts.
     link: /marketing/product-discounts
   - icon: 🚚
     title: Orders & Fulfilment
-    details: Order and booking management, fulfilment carriers, and returns (RMA).
+    details: Seller orders, invoices, pickups and carriers, bookings and returns.
     link: /orders/order-management
   - icon: 💰
     title: Payments & Commission
-    details: Payment requests, commission rules, and mass payouts.
+    details: Commission rates, payment requests, payouts and transactions.
     link: /payments/payment-management
   - icon: 🔁
-    title: Subscriptions
-    details: Seller subscription plans, limits, and billing.
+    title: Subscription Plans
+    details: Plans that charge sellers and set their limits, commission and permissions.
     link: /subscriptions/seller-subscription-management
-  - icon: 💬
-    title: Customers & Communication
-    details: Seller customer lists and seller–admin / seller–customer messaging.
-    link: /customers/customer-management
+  - icon: 🛍️
+    title: Storefront
+    details: The marketplace landing page, seller shop pages, offers from several sellers and one cart.
+    link: /storefront/shopping-across-sellers
   - icon: ⭐
     title: Reviews & Moderation
-    details: Rating management plus seller and product flagging.
+    details: Seller and product reviews, and customer reports of sellers and products.
     link: /moderation/rating-management
-  - icon: 📈
-    title: Reporting
-    details: Seller sales, product, and customer reports with exports.
-    link: /reporting/seller-reporting
+  - icon: ⚙️
+    title: Configuration
+    details: Every marketplace setting, screen by screen.
+    link: /configuration/overview
 ---

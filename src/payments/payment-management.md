@@ -1,42 +1,97 @@
-# Payment Management
+# Payment Requests & Payouts
 
-Payment Management is how sellers get paid for what they've sold. A seller requests payment for their fulfilled orders, and the admin settles it from a central **Seller Payout Management** view that tracks what's owed, what's been paid, and what's still outstanding.
+<div class="page-roles"><span class="role role--seller">Seller</span><span class="role role--admin">Admin</span></div>
 
-::: info What you'll learn
-- How a seller requests payment for an order
-- How the admin reviews and pays sellers
-- What the payout view and transactions ledger track
-:::
+Customers pay the store, and the store pays each seller what they earned. A seller
+requests payment for each completed order. The admin pays the seller outside the store,
+for example by bank transfer, and records the payment here.
 
-## Requesting payment (seller)
+## What a seller earns
 
-After a seller has **invoiced** and **completed** an order, they can **Request Payment** for it from **Sales → Orders**. The request covers the seller's earning on the order — the invoiced total minus [commission](/payments/commission-management) — and the button only appears when there's actually a remaining amount to pay and the order hasn't already been requested, paid, or refunded. Submitting sets the order's **seller payment status** to *requested* and notifies the admin.
+For each order, a seller earns the invoiced value of their products, minus any discount
+and the store's commission, plus the tax. Shipping isn't included. See
+[Commission](commission-management.md).
 
-## Paying sellers (admin)
+## Request payment
 
-The admin manages every request under **Marketplace → Sales → Payment Requests** — the **Seller Payout Management** screen. Four summary cards give the whole picture at a glance:
+Sellers can request payment for an order once their part of it is **Completed** and
+there is something left to pay.
 
-<ImagePopup src="/images/payment-management/payout-management.png" alt="Admin Seller Payout Management" />
+1. Go to **Sales >> Orders**.
+2. Click **Request Payment** on the order's row.
+3. Confirm.
 
-- **Payable Orders** — how many orders are awaiting payout.
-- **Unpaid Payout Amount** — the total still owed to sellers.
-- **Total Commission Earned** — commission on orders already paid out.
-- **Unpaid Sellers** — how many sellers are still owed, out of the total.
+<ImagePopup src="/images/payment-management/request-payment.png" alt="Request Payment on a completed order" />
 
-The grid lists each payable order with its gross amount, **remaining total**, **seller total invoiced**, the **seller / shop**, and **total paid**. Select **Pay Now** on a row, add a **comment** (for example, a bank-transfer reference), and confirm — the payment is recorded, the remaining balance updates, and the order flips to **paid** once fully settled.
+You'll see **Your payment request is submitted successfully**. The order's
+**Seller Payment Status** changes to **Requested**, and the store admin receives a
+**Seller Payment Request Notification** email.
 
-## Transactions
+If any item in an order is refunded, even partly, the order's **Seller Payment Status**
+becomes **Refunded**. It can't be requested, and it leaves the admin's
+**Payment Requests** list. This also happens if the order was already paid.
 
-Every settlement is logged under **Marketplace → Sales → Transactions**, giving a full payment history — the seller, transaction ID, comment, and amount — with a detailed view per transaction that breaks the payment down by item (total, commission, seller total).
+## Pay a seller
 
-<ImagePopup src="/images/payment-management/transactions.png" alt="Marketplace transactions" />
+1. Go to **Marketplace >> Sales >> Payment Requests**.
+2. Click **Pay Now** on the order.
+3. In **Payment to Seller**, enter a **Comment**, such as your bank transfer reference.
+4. Click **Pay Now**.
 
-A seller sees their own side under **Sales → Transactions**, and can print a transaction as a PDF.
+<ImagePopup src="/images/payment-management/payout-management.png" alt="The Seller Payout Management page" />
 
-::: info Payout statuses
-An order's payout moves through **pending → requested → paid**; a refunded order shows **refunded**.
-:::
+<ImagePopup src="/images/payment-management/pay-seller.png" alt="The Payment to Seller dialog" />
 
-::: tip Settle many at once
-To pay several sellers or orders together, use the bulk action on this screen — see [Mass Payout Management](/payments/mass-payout-management).
-:::
+You'll see **Seller is Paid successfully!**. Each payment covers the whole amount still
+owed for that order. A transaction is recorded, the order's **Seller Payment Status**
+changes to **Paid**, and the seller receives an email. See
+[Transactions](transactions.md).
+
+The page lists only orders sellers have requested payment for. At the top:
+
+| Card | What it shows |
+|---|---|
+| **Payable Orders** | How many requested orders are waiting to be paid |
+| **Unpaid Payout Amount** | How much is owed for those orders |
+| **Total Commission Earned** | The commission on orders that have been paid |
+| **Unpaid Sellers** | How many sellers are waiting to be paid, out of all sellers with requests or payments |
+
+Each order shows its number, date and status, the customer, the amounts, the seller and
+shop, and how much has been paid so far.
+
+### Pay several sellers at once
+
+1. Go to **Marketplace >> Sales >> Payment Requests**.
+2. Tick the orders.
+3. Click **Select Action >> Pay Now**.
+
+<ImagePopup src="/images/payment-management/mass-pay.png" alt="Paying several orders at once" />
+
+Each order is paid in full, with the comment **Paid Out of system**, and each seller
+receives an email for each order.
+
+## Payment statuses
+
+The **Seller Payment Status** column on the seller's orders shows where each order
+stands. Team members see it only with the **Payment Request** permission.
+
+| Status | What it means |
+|---|---|
+| No status, with a **Request Payment** button | The order is completed and payment can be requested. |
+| **Invoice Pending** | Nothing is ready to request yet, for example the order isn't invoiced. |
+| **Processing** | Part of the order is invoiced, but it isn't completed yet. |
+| **Requested** | The seller has requested payment. |
+| **Paid** | The store has paid the seller for the order. |
+| **Refunded** | Something in the order was refunded, so it can't be requested. |
+| **Canceled** | The seller's part of the order was cancelled. |
+
+## Good to know
+
+- The store doesn't send the money. Pay the seller first, then record it here.
+- There is no way to pay part of an order's amount from this page.
+- Sellers follow their payments on [Transactions](transactions.md).
+
+## Permissions
+
+- Team members need **Orders** with **Payment Request** to request payment.
+- Admins need **Marketplace >> Sales >> Payment Request** with **Pay**.

@@ -1,49 +1,108 @@
 # Seller Attributes
 
-Seller Attributes are the building blocks of a seller's profile and configuration. Just as product attributes define a product form, seller attributes define the fields that make up a seller — from business details and social links to commission and Magic AI settings. The admin manages them, and controls how they're laid out on the seller form.
+<div class="page-roles"><span class="role role--admin">Admin</span></div>
 
-::: info What you'll learn
-- What seller attributes are and where they're used
-- How to create an attribute, field by field
-- How to arrange attributes into the seller form
-:::
+Seller attributes are the fields that make up a seller's details: what they fill
+in when they sign up, what they see on their profile, and what customers see on
+their shop page. The marketplace comes with the fields most stores need, and you
+can add your own, such as a tax number.
 
 ## The attributes list
 
-In the admin panel, go to **Marketplace → Sellers → Seller Attributes**. The list shows every attribute with its **code**, **name**, **type**, and whether it's **required**, **unique**, **locale-based**, or **channel-based**.
+Go to **Marketplace >> Sellers >> Seller Attributes**.
 
-<ImagePopup src="/images/seller-attributes/seller-attributes.png" alt="Admin seller attributes list" />
+<ImagePopup src="/images/seller-attributes/seller-attributes.png" alt="The Seller Attributes list" />
 
-The two header buttons are **Create Seller Attribute** and **Mapping**.
+The list shows each attribute's **Code**, **Name** and **Type**, and whether it is
+required, unique, or saved per language or channel. Use the row icons to edit or
+delete an attribute. The built-in attributes can't be deleted.
 
-## Creating an attribute
+## Create an attribute
 
-Select **Create Seller Attribute** and define the field:
+1. Go to **Marketplace >> Sellers >> Seller Attributes**.
+2. Click **Create Seller Attribute**.
+3. In **Label**, enter the **Admin** name, and the name sellers and customers see in
+   each language.
+4. In **General**, enter an **Attribute Code** and choose the **Attribute Type**.
+5. Set the options in **Validations** and **Configuration**.
+6. Click **Save Seller Attribute**.
 
-<ImagePopup src="/images/seller-attributes/attribute-create.png" alt="Create seller attribute form" />
+<ImagePopup src="/images/seller-attributes/attribute-create.png" alt="The Add Seller Attribute form" />
 
-- **Admin name** and per-locale **name** — the internal and displayed labels.
-- **Code** — the unique identifier used in the system.
-- **Type** — the input type: text, textarea, boolean, select, multiselect, date, datetime, image, file, checkbox.
-- **Validation** and **regex**, an optional **default value**, and a rich-text **editor** toggle.
-- Flags: **required**, **unique**, **value per locale**, **value per channel**, and visibility toggles — **on sign up**, **on profile**, and **on public** profile.
-- **Options** — for select / multiselect / checkbox types, the list of choices (each with a label and position).
+A new attribute doesn't appear anywhere until you place it in a group on the
+**Mapping** screen. See [Place attributes on the form](#place-attributes-on-the-form).
 
-Only **user-defined** attributes can be deleted; the system attributes the marketplace ships with are protected.
+### Attribute types
 
-## Mapping attributes to the form
+The **Attribute Type** can be **Text**, **Textarea**, **Price**, **Boolean**,
+**Checkbox**, **Select**, **Multiselect**, **Date**, **Datetime**, **Image** or
+**File**. Some fields depend on the type:
 
-The **Mapping** screen arranges attributes into the two-column seller form: which **groups** (General, Description, Policies, Meta Description, Address, Social Links, Settings, …) sit in which **column**, and the **order** of attributes within each group. This is exactly the layout that appears on the [seller edit form](/sellers/seller-management#editing-a-seller) and sign-up.
+- **Enable Editor** gives a **Textarea** a rich-text editor.
+- **Default Value** sets the starting value of a **Boolean**.
+- **Options** appears for **Select**, **Multiselect** and **Checkbox**. Click
+  **Add Row** to add a choice with its name in each language, and drag rows to
+  change their order. For a **Select**, **Create default empty option** adds a blank
+  first choice.
+- **Input Validation** appears for **Text**: **Numeric**, **Email**, **Decimal**,
+  **URL** or **Regex**. With **Regex**, enter the expression in the **Regex** field.
 
-## Attributes that ship by default
+### Validations and configuration
 
-The marketplace comes with a full set of seller attributes, including:
+| Setting | What it does |
+|---|---|
+| **Is Required** | Sellers must fill in the field. |
+| **Is Unique** | No two sellers can have the same value. |
+| **Value Per Locale** | The seller enters a value for each language. |
+| **Value Per Channel** | The seller enters a value for each channel. |
+| **Visible on Signup Page** | Shows the field on the **Become Seller** form, under **Additional Information**. |
+| **Visible on Profile Page** | Shows the field on the seller's **Manage Profile** page. |
+| **Visible on Public Page** | Shows the value in the **About** tab of the seller's shop page. |
 
-- **Commission** — `commission_enabled` and `commission_percentage` set a seller's [commission](/payments/commission-management).
-- **Magic AI** — `magic_ai_enabled` and `magic_ai_seller_limit` govern a seller's [Magic AI](/catalog/magic-ai) access and quota.
-- **Selling controls** — `allowed_product_types` and `min_order_amount`.
-- **Profile & marketing** — business details, policies, and social links (`facebook`, `instagram`, `youtube`, `google_analytics_id`).
+Once saved, the code, type and **Input Validation** can't change, and **Is Unique**,
+**Value Per Locale** and **Value Per Channel** can't be turned off. For built-in
+attributes, **Visible on Profile Page** can't change, and **Name**, **Email** and
+**Slug** always stay required and on the sign-up form.
 
-::: tip
-Add a seller attribute whenever you need a new piece of information or a new per-seller control — it becomes available on the seller form (and, if you choose, at sign-up) for every seller, without any code changes.
-:::
+## Place attributes on the form
+
+The **Mapping** screen arranges attributes into cards, in two columns. The same
+layout is used on the admin's **Edit Seller** page and on the seller's
+**Manage Profile** page.
+
+1. Go to **Marketplace >> Sellers >> Seller Attributes**.
+2. Click **Mapping**.
+3. Drag an attribute from **Unassigned Attributes** into a group under
+   **Main Column** or **Right Side Column**.
+4. Click **Save Mapping**.
+
+<ImagePopup src="/images/seller-attributes/attribute-mapping.png" alt="The Edit Seller Attribute Mapping screen" />
+
+- To add a card, click **Add Group**, then enter a **Code**, choose the **Column**,
+  and enter the **Admin Name** and the name in each language.
+- To rename a group, double-click its name.
+- To remove a group, select it and click **Delete Group**. A group that holds
+  built-in attributes can't be removed until you move them to another group.
+
+The sign-up form doesn't use groups. It shows **Name**, **Email**, **Slug** and the
+password fields first, then every mapped attribute marked
+**Visible on Signup Page**.
+
+## Built-in attributes
+
+| Card | Attributes | Seen by |
+|---|---|---|
+| General | Name, Email, Phone, Slug, Business Name | Name, Email, Slug and Business Name are on the sign-up form; all are on the profile |
+| Description | Business Description | Profile; the shop page **About** tab |
+| Policies | Return Policy, Shipping Policy, Privacy Policy | Profile; the shop page **About** tab when filled |
+| Meta Description | Meta Title, Meta Keywords, Meta Description | Profile; used for the shop page in search engines |
+| Address | Address, City, Country, State, Postcode | Profile; shown on the shop page |
+| Social Links | Facebook, Instagram, YouTube | Profile; the **Share** menu on the shop page |
+| Settings | Minimum Order Amount, Google Analytics ID | Profile |
+| Settings | Commission Enabled, Commission Percentage, Allowed Product Types, Magic AI Enabled, Magic AI Generation Limit | Admin only, on **Edit Seller** |
+
+## Permissions
+
+To give another admin access, tick **Marketplace >> Sellers >> Seller Attributes**
+in their role, with **Create**, **Edit** (which includes **Mapping**) and **Delete**
+as needed.

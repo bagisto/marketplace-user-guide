@@ -1,35 +1,87 @@
 # Manage Pricing
 
-Manage Pricing is where a seller controls prices across their whole catalog from one screen — base price, scheduled sale prices, and customer-group tiers — with bulk tools to reprice many products at once.
+<div class="page-roles"><span class="role role--seller">Seller</span></div>
 
-::: info What you'll learn
-- What you can edit on the pricing screen
-- How to set a scheduled sale price
-- How to build customer-group price tiers and bulk-reprice
-:::
+Manage Pricing lets you update prices, sale prices and customer group prices for all
+your products on one screen, and save every change at once.
 
-## The pricing screen
+Go to **Pricing >> Manage Pricing**.
 
-Open **Pricing** in the Seller Panel. Each row is a product (simple and virtual) with inline fields for its **price**, **sale price**, and the sale's **valid-from / valid-to** dates. You can **search**, **filter** by category or type, and edit directly in the row.
+<ImagePopup src="/images/manage-pricing/pricing.png" alt="The Pricing screen" />
 
-<ImagePopup src="/images/manage-pricing/pricing.png" alt="Manage Pricing screen" />
+## What you can change
 
-## Sale prices
+The list includes your simple and virtual products, and each variant of a product
+with variations.
 
-Set a **Sale price** and a **Valid from / Valid to** window on a product, and the reduced price shows on the storefront automatically during that period. This is the quickest way to run a simple, scheduled price cut — for rule-based or cart-wide promotions, use [Product Discounts](/marketing/product-discounts) and [Checkout Deals](/marketing/checkout-deals) instead.
+| Field | Products you created | Catalog products you sell |
+|---|---|---|
+| **Price** | Yes | Yes |
+| **Sale Price**, **Valid From**, **Valid To** | Yes | No |
+| **Customer Group Prices** | Yes | No |
 
-## Customer-group price tiers
+For catalog products you sell as your own, the other fields show a dash.
 
-For products you **own**, you can add **advanced pricing tiers** — special prices for specific customer groups and quantities. Each tier sets a **Group** (all groups or a specific one), a **Qty**, a **Type** (**fixed** price or **discount**), and a **Value**. Add as many tiers as you need, or remove them.
+## Change prices
 
-## Bulk repricing
+1. Go to **Pricing >> Manage Pricing**.
+2. Change the **Price**, or enter a **Sale Price** with the **Valid From** and
+   **Valid To** dates it runs between.
+3. Click **Save Prices** in the bar at the bottom of the page.
 
-Select several products and use the **bulk price tool**: choose an **action** (**set**, **increase**, or **decrease**), a **mode** (by **amount** or **percent**), and a value, then **Apply**. A save bar at the bottom tracks changes; **Save** writes them all at once.
+You'll see **Prices saved successfully.** A sale price must be lower than the price,
+and **Valid To** must be on or after **Valid From**.
 
-::: info Reselling vs owning
-For products you **resell** (assigned), you set only the flat **price** — sale prices and customer-group tiers apply to products you own.
-:::
+Your changes stay while you move between pages or search, but they are lost if you
+reload the page before saving. Click **Discard** to undo them.
 
-::: tip
-Combine a bulk **decrease** by percent with a sale-price window to run a catalog-wide sale, then bulk **increase** back afterwards — all from this one screen.
-:::
+## Add customer group prices
+
+For products you created, you can offer a different price to a customer group, or for
+larger quantities.
+
+1. Click the arrow at the start of the product's row.
+2. Under **Customer Group Prices**, click **Add tier**.
+3. Choose the **Customer Group**, or **All Groups**.
+4. Enter the **Min. Qty**.
+5. Choose the **Type**: **Fixed** for a set price, or **Discount** for a percentage
+   off.
+6. Enter the **Value**.
+7. Click **Save Prices**.
+
+<ImagePopup src="/images/manage-pricing/tier-prices.png" alt="Customer group prices for a product" />
+
+To remove a tier, click **Remove tier** on its row and save. A discount can't be more
+than 100%.
+
+## Change many prices at once
+
+1. Tick the products.
+2. In **Action**, choose **Set to**, **Increase by** or **Decrease by**.
+3. For an increase or decrease, choose the **Mode**: **Amount** or **Percent (%)**.
+4. Enter the **Value**.
+5. Click **Apply**.
+6. Click **Save Prices**.
+
+<ImagePopup src="/images/manage-pricing/bulk-price.png" alt="Changing the price of several products at once" />
+
+**Apply** changes only the **Price** of the ticked products on the current page. It
+doesn't change sale prices or customer group prices.
+
+Percentage changes don't cancel each other out. Lowering a price by 20% and then
+raising it by 20% leaves it at 96% of where it started. For a sale, use a sale price
+with dates instead.
+
+## Find products
+
+Search by product name or SKU, or click **Filter** to narrow the list by **Product**,
+**SKU**, **Type**, **Category** or **ID**.
+
+## Other ways to lower prices
+
+- For a discount on a group of products that matches a rule, use
+  [Product Discounts](../marketing/product-discounts.md).
+- For a discount on the cart, or one that needs a coupon, use
+  [Checkout Deals](../marketing/checkout-deals.md).
+
+Team members need **Manage Pricing** with **Save Prices** to save changes.
