@@ -1,0 +1,110 @@
+# Bagisto Marketplace Guide
+
+> The user guide for the Bagisto Multi-Vendor Marketplace
+
+A reference for store admins who run a marketplace, sellers who run a shop on it, and the customers who buy from them
+
+## Table of Contents
+
+### Getting Started
+
+- [Introduction](/getting-started/introduction)
+- [Admin Quick Start](/getting-started/admin-quick-start)
+- [Seller Quick Start](/getting-started/seller-quick-start)
+
+### Generative AI
+
+- [Overview](/generative-ai/introduction)
+- [Generate Product Content](/generative-ai/generate-product-content)
+- [Usage Limits](/generative-ai/usage-limits)
+
+### Sellers
+
+- [Becoming a Seller](/sellers/becoming-a-seller)
+- [Seller Management](/sellers/seller-management)
+- [Seller Attributes](/sellers/seller-attributes)
+- [Account Health](/sellers/seller-account-health)
+
+### Seller Panel
+
+- [Seller Panel Overview](/seller-panel/overview)
+- [Dashboard](/seller-panel/dashboard)
+- [Manage Profile](/seller-panel/manage-profile)
+- [Account Settings](/seller-panel/account-settings)
+- [Users & Roles](/seller-panel/users-and-roles)
+
+### Catalog
+
+- [Product Management](/catalog/product-management)
+- [Selling Existing Products](/catalog/selling-existing-products)
+- [Product Approval](/catalog/product-approval)
+- [Bulk Upload](/catalog/bulk-upload)
+- [Product Barcode](/catalog/product-barcode)
+- [Product Form Layout](/catalog/product-form-layout)
+
+### Inventory
+
+- [Manage Inventory](/inventory/manage-inventory)
+- [Inventory Sources](/inventory/inventory-source-management)
+
+### Pricing
+
+- [Manage Pricing](/pricing/manage-pricing)
+
+### Marketing
+
+- [Product Discounts](/marketing/product-discounts)
+- [Joining Admin Discounts](/marketing/join-product-discounts)
+- [Checkout Deals](/marketing/checkout-deals)
+
+### Orders & Fulfilment
+
+- [Order Management](/orders/order-management)
+- [Shipments & Carriers](/orders/fulfilment-carriers)
+- [Bookings](/orders/booking-management)
+- [Returns (RMA)](/orders/return-merchandise-authorization)
+
+### Payments & Commission
+
+- [Commission](/payments/commission-management)
+- [Payment Requests & Payouts](/payments/payment-management)
+- [Transactions](/payments/transactions)
+
+### Subscription Plans
+
+- [Plans & Subscriptions](/subscriptions/seller-subscription-management)
+- [Choosing a Plan](/subscriptions/choosing-a-plan)
+
+### Customers & Communication
+
+- [Seller Customers](/customers/customer-management)
+- [Communications](/customers/communications)
+
+### Storefront
+
+- [Marketplace Landing Page](/storefront/marketplace-landing-page)
+- [Seller Shop Page](/storefront/seller-shop-page)
+- [Shopping Across Sellers](/storefront/shopping-across-sellers)
+- [Featured Sellers](/storefront/featured-sellers)
+
+### Reviews & Moderation
+
+- [Reviews & Ratings](/moderation/rating-management)
+- [Seller & Product Flagging](/moderation/seller-product-flagging)
+
+### Reporting
+
+- [Seller Reports](/reporting/seller-reporting)
+
+### Configuration
+
+- [Overview](/configuration/overview)
+- [General](/configuration/general)
+- [Sellers](/configuration/sellers)
+- [Products](/configuration/products)
+- [Moderation & Health](/configuration/moderation-and-health)
+- [Marketing](/configuration/marketing)
+- [Fulfilment Carriers](/configuration/fulfilment-carriers)
+- [Featured Sellers](/configuration/featured-sellers)
+- [Landing Page](/configuration/landing-page)
+- [Generative AI (Magic AI)](/configuration/generative-ai)
