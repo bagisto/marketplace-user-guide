@@ -12,7 +12,7 @@ Go to **Reporting** in the Seller Panel and choose a report.
 Use the date picker at the top right. Pick a preset, such as **Today**,
 **Last 7 Days**, **Last 30 Days**, **This Month** or **Last Year**, or choose your own
 dates. Reports open on the last 30 days. If you sell on more than one channel, choose
-the channel too.
+a channel or **All Channels** too.
 
 Cards with a total, such as **Total Sales**, show the figure for the period, how much it
 changed from the period before, in green or red, and a chart. Cards that list products
@@ -58,14 +58,15 @@ details.
 ## See the details and export
 
 1. Click **View Details** on a card.
-2. Choose the start and end dates, and the channel. For most charts, also choose
-   whether to group by **Day**, **Month** or **Year**. **Total Commission Paid** is
-   always shown by day.
+2. Choose the start and end dates, and the channel. For the charts over time, such as
+   **Total Sales**, **Total Orders** or **Total Customers**, also choose whether to group
+   by **Day**, **Month** or **Year**. **Total Commission Paid** is always shown by day.
 3. To download the table, click the export icon and choose **Export CSV** or
    **Export XLS**.
 
 <ImagePopup src="/images/seller-reporting/report-details.png" alt="The Total Sales details page with the export icon, interval and date fields" />
 
-**Purchase Funnel** has no details page, so it can't be exported.
+**Purchase Funnel** has no details page, so it can't be exported. The details of
+**Customers With Most Sales** list the top six customers only.
 
 Team members need **Reporting**, with **Sales**, **Customers** and **Products** as needed.

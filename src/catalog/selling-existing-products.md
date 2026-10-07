@@ -27,8 +27,8 @@ You can't sell a product when:
 ## Create your offer
 
 1. On **Assign Product**, choose the **Condition**: **New** or **Old**.
-2. Enter your **Price**. For a product with variations, you set it for each variant
-   instead.
+2. Enter your **Price**. This field appears for simple, virtual and downloadable
+   products. For a product with variations, you set it for each variant instead.
 3. Enter a **Description** of your offer, up to 300 characters.
 4. Under **Inventories**, enter how many you have in each inventory source. This
    appears for simple and virtual products only.
@@ -58,7 +58,9 @@ For a downloadable product, add your own **Downloadable Links** and
 ## Update or remove your offer
 
 - To change the price, stock or condition, open the product from
-  **Catalog >> Products** and click **Save**.
+  **Catalog >> Products** and click **Save**. For an offer that is still a draft,
+  click **Save as Draft** or **Submit** instead. You'll see
+  **Assigned product updated successfully**.
 - To stop selling it, delete it from **Catalog >> Products**. Only your offer is
   removed. The catalog product stays in the store.
 

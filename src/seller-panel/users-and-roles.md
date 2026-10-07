@@ -67,8 +67,12 @@ any other seller or team member on the marketplace.
 ## What team members can do
 
 - They see only the menus their role allows. If their role includes **Dashboard**,
-  they land on the dashboard. Otherwise they land on the first page they are allowed
-  to open.
+  they land on the dashboard, except as described next. Otherwise they land on the
+  first page they are allowed to open.
+- When the store uses subscription plans, a team member whose role includes
+  **Dashboard** is sent to **My Profile** after signing in. Team members can't open
+  that page, so they see an unauthorized error. They can carry on by going to
+  `/seller/dashboard` on your store's address.
 - They work with your shop's products, orders and customers.
 - They can't open **My Profile**. Shop details are for the owner only.
 - They can change their own password and language under **Settings >> General**,
@@ -89,5 +93,8 @@ If the store uses subscription plans:
 - Your plan's **Max Staff** limits how many team members you can add. Once you reach
   it, you'll see **You have reached max limit of … Users.**
 - A team member can only use what both their role and your plan allow.
+- You can't save a role with permissions your plan doesn't include, and the **Role**
+  list only offers roles you are allowed to give. Otherwise you'll see
+  **You cannot grant permissions you do not have.**
 
 See [Choosing a Plan](../subscriptions/choosing-a-plan.md).

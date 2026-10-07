@@ -29,7 +29,7 @@ Removing a seller from **Sellers** withdraws them from the discount. Switching
 1. In the Seller Panel, go to **Marketing >> Product Discounts**.
 2. Click **Join Product Discounts**.
 3. To see a discount's conditions, amount and dates, click the view icon on its row.
-4. Click **Enroll**.
+4. Click the enroll icon on the discount's row, or **Enroll** on its details page.
 
 <ImagePopup src="/images/join-product-discounts/join-list.png" alt="The Join Product Discounts list in the Seller Panel" />
 
@@ -56,8 +56,9 @@ The **Participation** badge shows where you stand:
 - You join with all of your own products that match the discount's conditions. You
   can't choose products one by one.
 - Catalog products you sell as your own aren't discounted.
-- To leave, click **Withdraw** on the discount's row, or use
-  **Select Action >> Withdraw**.
+- To leave, click the withdraw icon on the discount's row, **Withdraw** on its details
+  page, or use **Select Action >> Withdraw**. While you have a request of any status,
+  the row offers only the withdraw icon.
 
 ## Approve join requests
 

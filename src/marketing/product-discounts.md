@@ -69,7 +69,12 @@ In **Settings**:
 | **Customer Groups** | The customer groups who get the discount. All groups are selected at first. If none is selected, every group gets it. |
 | **Priority** | The order discounts are applied in, starting from the lowest number. This covers your own discounts and the store discounts you've joined. |
 | **Stop Further Rules** | Choose **Yes** so that, once this discount applies, no discount with a higher priority number applies, including store discounts you've joined. |
-| **Status** | Switches the discount on or off. |
+| **Status** | Switches the discount on or off. A new discount saved with it off starts switched off. |
+
+::: warning Switching off an existing discount
+In this version, turning **Status** off on a discount you are editing isn't saved: the
+discount stays active. To stop it, set its **Ends Till** date or delete it.
+:::
 
 When several discounts match a product, each one comes off the price left by the one
 before, until a discount with **Stop Further Rules** set to **Yes**.
@@ -78,7 +83,7 @@ before, until a discount with **Stop Further Rules** set to **Yes**.
 
 The **Product Discounts** list shows each discount's name, whether it is active, its
 priority and its dates. Click the edit icon to change a discount, or the delete icon
-to remove it. Removing or switching off a discount returns your products to their
+to remove it. Removing a discount, or letting it end, returns your products to their
 normal price.
 
 <ImagePopup src="/images/product-discounts/product-discounts-list.png" alt="The seller's Product Discounts list" />
@@ -87,7 +92,7 @@ normal price.
 
 Go to **Marketplace >> Marketing >> Product Discounts** to see the discounts sellers
 have created, with the **Seller**, status, priority and dates. You can filter the list
-by status. To delete a seller's discount, click its delete icon, or tick several and use
+by name or status. To delete a seller's discount, click its delete icon, or tick several and use
 **Select Action >> Delete**. Seller discounts aren't listed under
 **Marketing >> Promotions >> Catalog Rules**. To create a discount sellers can join, see
 [Joining Admin Discounts](join-product-discounts.md).

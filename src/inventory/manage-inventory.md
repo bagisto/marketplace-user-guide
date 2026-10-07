@@ -23,7 +23,7 @@ Each row shows:
   [Manage Pricing](../pricing/manage-pricing.md) for that product;
 - the **Listing Status**: **Active** when the product is on and approved,
   **Unapproved** when it is on but not yet approved, and **Inactive** when it is
-  switched off;
+  switched off, with the date the product was last updated;
 - how many were **Sold**, how many are **Undelivered** and how many were
   **Canceled**;
 - the total **Stock**, or **Stock Not Managed** when the product doesn't track stock.
@@ -49,7 +49,7 @@ You'll see **Inventories saved successfully.**
 1. Tick the products.
 2. In **Inventory Source**, choose **All Sources** or one source.
 3. In **Action**, choose **Set to**, **Increase by** or **Decrease by**.
-4. Enter the **Value**.
+4. Enter the **Value**, a whole number.
 5. Click **Apply**.
 6. Click **Save Inventories**.
 

@@ -22,7 +22,8 @@ Switch **Subscription Plans** on and enter your terms in
 1. Go to **Marketplace >> Subscription Plans >> Plans**.
 2. Click **Add Plan**.
 3. Fill in the fields below. **Name**, **Code**, **Price**, **Permissions** and
-   **Position** are required.
+   **Position** are required, and the form also marks **Allowed Product Types** as
+   required.
 4. Switch **Status** on so sellers can see the plan.
 5. Click **Save**.
 

@@ -22,7 +22,8 @@ The marketplace adds three places to your store, one for each kind of user.
 As the store owner, you get a **Marketplace** menu in the admin panel. From there
 you approve sellers and their products, keep an eye on seller orders, pay sellers,
 run subscription plans, answer seller messages and moderate reviews and reports.
-The settings sit under **Configure >> Marketplace**.
+The settings sit under **Configure >> Marketplace**, and the Generative AI settings
+under **Configure >> Magic AI >> Marketplace Features**.
 
 <ImagePopup src="/images/introduction/admin-marketplace-menu.png" alt="The Marketplace menu in the admin panel" />
 
@@ -69,6 +70,18 @@ Sellers can have Generative AI (Magic AI) write their product listings from a sh
 description and a photo. You choose the AI provider and how much each seller can
 use it, and the seller reviews every suggestion before saving. See
 [Generative AI](../generative-ai/introduction.md).
+
+## Version and requirements
+
+This guide covers **Marketplace v2.5.0.0** on **Bagisto v2.5.0**.
+
+| Requirement | Version |
+|---|---|
+| Bagisto | v2.5.0 (Laravel 13) |
+| PHP | 8.4 or later |
+| Database | MySQL 8.0, MariaDB 10.11 or PostgreSQL 16 |
+| Queue worker | Any queue driver other than `sync`, in production |
+| Task scheduler | Cron, for subscription plans, account health and Generative AI usage history |
 
 ## Badges on each page
 
@@ -418,7 +431,7 @@ already filled may be left out too.
 | Message | What it means |
 |---|---|
 | **You have used all … generations for this period** | Your limit is used up. The dialog says when it resets. Ask the store admin if you need more. |
-| **Generation unavailable** | Generative AI is switched off for the store or for your shop. |
+| **Generation unavailable** | Read the message under it. **A generation is already running** means another request from your shop hasn't finished, so wait and try again. Otherwise Generative AI was switched off for the store or for your shop after you opened the page; while it is off, the **Generate content** button isn't shown. |
 | **Nothing left to fill** | Every field that can be generated already has a value. Clear a field, or ask the admin to allow overwriting. |
 | **Couldn't generate content just now** | The AI service didn't respond. Click **Try again**. The failed attempt doesn't count towards your limit. |
 
@@ -467,10 +480,12 @@ Sellers can't change these fields themselves.
 
 ## What sellers see
 
-Sellers find their usage on **My Profile**, in the **Magic AI** block of
-**Shop Information**: whether Generative AI is on for their shop, their
+Sellers find their usage by choosing **My Profile** in the account menu at the top
+right of the Seller Panel, which opens **Manage Profile**. The **Magic AI** block of
+**Shop Information** shows whether Generative AI is on for their shop, their
 **Generation Limit**, how many they have **Used In Current Period**, and the
-**Limit Period**.
+**Limit Period**. When subscription plans are on, **Shop Information** appears only
+once the seller has a plan.
 
 - The block appears only while Generative AI is switched on for sellers.
 - When **Magic AI Enabled** is off for a seller, the block shows only
@@ -488,7 +503,7 @@ when it resets.
 - There is no admin report of generations. Sellers see their own count on their
   profile.
 - Usage records older than the previous month are removed automatically each
-  month.
+  month by the store's scheduler, so make sure it is running.
 
 # Becoming a Seller
 
@@ -510,6 +525,9 @@ page.
 <ImagePopup src="/images/becoming-a-seller/landing-page-banner.png" alt="The marketplace landing page, with the Open Store button in the banner" />
 
 You can also open **Seller Login** and click **Create your account**.
+
+The banner button's text is set by the admin. If you are already signed in to the
+Seller Panel, the button reads **Visit Shop** and opens your dashboard instead.
 
 ## Create your account
 
@@ -603,8 +621,8 @@ Each row shows:
 The icons at the end of a row are **Assign Product**, **Login as Seller**,
 **Refresh Account Health**, **Edit** and **Delete**.
 
-Search by name or email, or use **Filter** to narrow the list by account health,
-status, suspension or joining date.
+Search by name or email, or use **Filter** to narrow the list by seller name, email,
+account health, status, suspension, ID or joining date.
 
 ## Approve or disapprove sellers
 
@@ -698,7 +716,8 @@ is no longer available and they are left out of the featured sellers. Switch
 
 Click the **Login as Seller** icon on the seller's row. The Seller Panel opens in a
 new tab, signed in as that seller, so you can see exactly what they see or help them
-set up.
+set up. It opens on the dashboard, or on **My Profile** when the store uses
+subscription plans. The icon appears for admins with the **Edit** permission.
 
 ## Assign a product to a seller
 
@@ -706,13 +725,16 @@ You can list a catalog product for a seller, at the seller's own price and stock
 
 1. Click the **Assign Product** icon on the seller's row.
 2. Search for the product and choose it.
-3. On **Assign Product**, choose the **Condition**, and enter the **Price**,
-   **Quantities** and **Description**.
+3. On **Assign Product**, choose the **Condition** (**New** or **Old**), and enter
+   the **Price**, **Quantities** and **Description**. You can also add **Images** and
+   **Videos**.
 4. Click **Save**.
 
 <ImagePopup src="/images/seller-management/assign-product.png" alt="The Assign Product form for a seller, with condition, price, quantities and description" />
 
-The seller's profile must be complete first. See
+The seller's profile must be complete first, or you'll see
+**Seller has incomplete profile!**. A seller can't be given a product they already
+sell, or a product type they aren't allowed to sell. See
 [Selling Existing Products](../catalog/selling-existing-products.md) for how the
 offer works.
 
@@ -732,6 +754,9 @@ records are removed and they receive a **Seller Good Bye Notification** email.
 | **Approved** | You approve the seller, or approval isn't required | Sign in and sell. Their shop page is public when **Show Publicly** is on. |
 | **Disapproved** | New sellers when approval is required, or you disapprove them | Can't sign in. Their shop page isn't available. |
 | **Suspended** | You switch **Suspended** on | Signed out and can't use the Seller Panel. Their shop page isn't available. |
+
+When the store uses subscription plans, an approved seller's shop page is also
+hidden while they have no active plan.
 
 ## Seller emails
 
@@ -891,8 +916,8 @@ Each metric is marked **Good**, **Needs Attention** or **Critical**, or
 
 ### Refresh the figures
 
-Click **Refresh now** to recalculate. You can refresh again after 60 minutes. Team
-members need the **Refresh Account Health** permission.
+Click **Refresh now** to recalculate. You can refresh again 60 minutes after the last
+refresh. Team members need the **Refresh Account Health** permission.
 
 ### See how the score is worked out
 
@@ -907,10 +932,13 @@ calculator where you can try different values. Nothing you enter is saved.
 |---|---|---|---|
 | **Order Cancellation Rate** | Below the warning rate | At or above the warning rate | Above the critical rate |
 | **Customer Feedback** | 4.0 or higher | 3.0 to 3.9 | Below 3.0 |
-| **Flags** | Well under the red flag limit | Approaching the limit | Close to or over the limit |
+| **Flags** | Up to a third of the red flag limit | Over a third, up to two-thirds of the limit | More than two-thirds of the limit |
 
-The warning and critical cancellation rates and the red flag limit are set by the
-admin in [Moderation & Health](../configuration/moderation-and-health.md).
+The warning and critical cancellation rates (2.5% and 5% unless the admin changes
+them) and the red flag limit are set by the admin in
+[Moderation & Health](../configuration/moderation-and-health.md). The flag bands are
+approximate: with a red flag limit of 3, one flag already counts as
+**Needs Attention**.
 
 ## How the score works
 
@@ -929,7 +957,7 @@ Account health is stored when it is refreshed:
 
 - the seller clicks **Refresh now**;
 - the admin clicks **Refresh Account Health** on the seller's row, or uses it as a
-  bulk action.
+  bulk action. The admin doesn't have to wait 60 minutes between refreshes.
 
 When subscription plans are on, every seller is also refreshed once a day by the
 store's scheduler. Until a seller is refreshed for the first time, the admin's list
@@ -1034,8 +1062,9 @@ Go to **Dashboard**.
 ## Choose the period
 
 Use the date picker at the top right to change the period the figures cover. Pick
-a preset, such as **Today**, **Last 7 Days**, **Last 30 Days**, **This Month** or
-**This Year**, or choose your own start and end dates.
+a preset (**Today**, **Last 7 Days**, **Last 30 Days**, **This Month**,
+**Last Month**, **Last 6 Months**, **This Year** or **Last Year**), or choose your own
+start and end dates.
 
 ## What the dashboard shows
 
@@ -1067,7 +1096,8 @@ A list of what is waiting for you, with a link to each:
 - **Products low on stock** — products at or below the store's low-stock level.
 - **Unread buyer messages** — messages from customers and the admin.
 
-When nothing is waiting, it shows **You are all caught up!**
+Only the items with something waiting are listed. When nothing is waiting, it shows
+**You are all caught up!**
 
 ### Overall Details
 
@@ -1153,8 +1183,9 @@ uses subscription plans, it appears only while you have an active plan. You can'
 change it here:
 
 - **Admin Commission** — the commission the store takes from your invoiced sales.
-- **Magic AI** — whether Generative AI is on for your shop, your limit, and how many
-  generations you have used. It appears when the store uses Generative AI. See
+- **Magic AI** — whether Generative AI is on for your shop, your **Generation Limit**,
+  how many generations you have used in the current period, and whether the limit is
+  **Daily** or **Monthly**. It appears when the store uses Generative AI. See
   [Usage Limits](../generative-ai/usage-limits.md).
 - **Restricted Categories** — categories you can't use.
 - **Allowed Product Type** — the product types you can sell.
@@ -1201,7 +1232,7 @@ Leave these fields empty to keep your current password.
 
 In **Communication Settings**, switch **Receive email for customer messages** off if
 you don't want an email each time a customer writes to you. Only the shop owner gets
-these emails. You still see the messages under **Communication >> Customers**. Click
+these emails, so the switch has no effect when a team member changes it. You still see the messages under **Communication >> Customers**. Click
 **Save** to keep the change.
 
 When you save, you'll see **General settings updated successfully**. If you are the
@@ -1276,8 +1307,12 @@ any other seller or team member on the marketplace.
 ## What team members can do
 
 - They see only the menus their role allows. If their role includes **Dashboard**,
-  they land on the dashboard. Otherwise they land on the first page they are allowed
-  to open.
+  they land on the dashboard, except as described next. Otherwise they land on the
+  first page they are allowed to open.
+- When the store uses subscription plans, a team member whose role includes
+  **Dashboard** is sent to **My Profile** after signing in. Team members can't open
+  that page, so they see an unauthorized error. They can carry on by going to
+  `/seller/dashboard` on your store's address.
 - They work with your shop's products, orders and customers.
 - They can't open **My Profile**. Shop details are for the owner only.
 - They can change their own password and language under **Settings >> General**,
@@ -1298,6 +1333,9 @@ If the store uses subscription plans:
 - Your plan's **Max Staff** limits how many team members you can add. Once you reach
   it, you'll see **You have reached max limit of … Users.**
 - A team member can only use what both their role and your plan allow.
+- You can't save a role with permissions your plan doesn't include, and the **Role**
+  list only offers roles you are allowed to give. Otherwise you'll see
+  **You cannot grant permissions you do not have.**
 
 See [Choosing a Plan](../subscriptions/choosing-a-plan.md).
 
@@ -1415,9 +1453,9 @@ differ. With the default family they are:
 | **Meta Description** | Meta title, keywords and description for search engines |
 | **Settings** | **New**, **Featured**, **Visible Individually**, **Status** and **Guest Checkout** |
 | **Inventories** | **Manage Stock**, and the quantity in each of your inventory sources |
-| **RMA** | **Allow RMA** and the return rule for the product |
+| **RMA** | **Allow RMA** and the **RMA Rules** for the product. Shown for simple products and for the types the store accepts returns on. |
 | **Barcode** | **Barcode Value**. See [Product Barcode](product-barcode.md). |
-| **Media** | Images (PNG or JPEG) and videos (MP4, WebM or MKV) |
+| **Media** | Images (JPEG, PNG, WebP or BMP) and videos (MP4, WebM or MOV) |
 | The product type | The details for the kind of product, such as variations or bundle items |
 | **Organization** | Channels, categories, and related, up-sell and cross-sell products |
 
@@ -1444,7 +1482,7 @@ different price for a customer group or for larger quantities. Choose the
 | Bundle | **Bundle Items** | Options with their products and default quantities |
 | Grouped Products | **Group Products** | The products in the group and their default quantities |
 | Bookable | **Booking Type** | The booking type and its availability |
-| Physical Product without variations | **Customizable Item** | Options customers can choose or fill in, such as engraving text |
+| Physical Product without variations | **Customizable Item** | Options customers can choose or fill in, such as engraving text. Not shown for a product that is part of a bundle or grouped product. |
 
 <ImagePopup src="/images/product-management/edit-customizable-item.png" alt="The Customizable Item step with its Add Option button" />
 
@@ -1453,7 +1491,7 @@ different price for a customer group or for larger quantities. Choose the
 - Click **Save as Draft** to finish later, or **Submit** when the product is ready.
 - For a product you have already submitted, click **Save Product**.
 
-You'll see **Product updated successfully**. See
+You return to **Catalog >> Products** and see **Product updated successfully**. See
 [Product Approval](product-approval.md) for what happens after you submit.
 
 ## Delete a product
@@ -1498,8 +1536,8 @@ You can't sell a product when:
 ## Create your offer
 
 1. On **Assign Product**, choose the **Condition**: **New** or **Old**.
-2. Enter your **Price**. For a product with variations, you set it for each variant
-   instead.
+2. Enter your **Price**. This field appears for simple, virtual and downloadable
+   products. For a product with variations, you set it for each variant instead.
 3. Enter a **Description** of your offer, up to 300 characters.
 4. Under **Inventories**, enter how many you have in each inventory source. This
    appears for simple and virtual products only.
@@ -1529,7 +1567,9 @@ For a downloadable product, add your own **Downloadable Links** and
 ## Update or remove your offer
 
 - To change the price, stock or condition, open the product from
-  **Catalog >> Products** and click **Save**.
+  **Catalog >> Products** and click **Save**. For an offer that is still a draft,
+  click **Save as Draft** or **Submit** instead. You'll see
+  **Assigned product updated successfully**.
 - To stop selling it, delete it from **Catalog >> Products**. Only your offer is
   removed. The catalog product stays in the store.
 
@@ -1617,13 +1657,15 @@ customers have reported it.
 
 A product is skipped if its seller isn't approved. When the store uses subscription
 plans, it is also skipped if the seller has no plan, or if approving it would take the
-seller past their plan's product limit.
+seller past their plan's product limit. The message then says how many products were
+skipped due to the seller plan limit.
 
 ## Reject a product
 
 1. Go to **Marketplace >> Catalog >> Products**.
 2. Click the reject icon on the product's row.
-3. In **Rejection Reason**, explain what the seller needs to fix.
+3. In **Rejection Reason**, explain what the seller needs to fix, in up to 1,000
+   characters.
 4. Click **Reject Product**.
 
 <ImagePopup src="/images/product-approval/reject-product.png" alt="The Reject Product dialog" />
@@ -1729,7 +1771,7 @@ appear for them.
 | **Validation Strategy** | **Stop on Errors** blocks the import when the file has more errors than **Allowed Errors**. Up to that number, the bad rows are skipped and the rest are imported. **Skip Errors** skips every bad row and imports the rest. |
 | **Allowed Errors** | Used only with **Stop on Errors**: the most errors the file can have and still be imported. Starts at 10. |
 | **Field Separator** | The character between columns in a CSV file, usually a comma. |
-| **Process in Background** | Keeps the import running after you leave the page. It appears when the store can run imports in the background. |
+| **Process in Background** | Keeps the import running after you leave the page. It appears, switched on, when the store can run imports in the background. |
 
 ## Check and run the import
 
@@ -1789,7 +1831,8 @@ The sheet has five columns:
 A row fails when no catalog product has the SKU, when you already sell it, when the
 SKU appears twice in the file, when the store doesn't allow sellers to sell catalog
 products, when you aren't allowed to sell that product type, or when `price`, `qty` or
-`condition` has an invalid value.
+`condition` has an invalid value. With the **Delete** action, a row fails when you
+don't sell that SKU.
 
 ## Change or rerun an upload
 
@@ -1825,7 +1868,8 @@ Click **Download Barcode** for a PDF of it. No two products can have the same ba
 value.
 
 The barcode uses **Code 128** unless you create it with another format from the
-products list.
+products list. A Code 128 value can use letters, digits, spaces and common symbols.
+A value with other characters, such as accented letters, gets no barcode.
 
 ## Create barcodes for many products
 
@@ -1905,7 +1949,7 @@ To change several families at once, tick them, click **Select Action**, and use
 ## Configure one family
 
 1. Go to **Marketplace >> Catalog >> Product Form**.
-2. Click **Configure** on the family's row.
+2. Click the edit icon (**Configure**) on the family's row.
 3. In **General**, choose the **Form Layout**.
 4. If the layout is stepped, choose the **Step Navigation**.
 5. In **Step Order**, drag the steps into the order sellers should see them.
@@ -1959,7 +2003,7 @@ Each row shows:
   [Manage Pricing](../pricing/manage-pricing.md) for that product;
 - the **Listing Status**: **Active** when the product is on and approved,
   **Unapproved** when it is on but not yet approved, and **Inactive** when it is
-  switched off;
+  switched off, with the date the product was last updated;
 - how many were **Sold**, how many are **Undelivered** and how many were
   **Canceled**;
 - the total **Stock**, or **Stock Not Managed** when the product doesn't track stock.
@@ -1985,7 +2029,7 @@ You'll see **Inventories saved successfully.**
 1. Tick the products.
 2. In **Inventory Source**, choose **All Sources** or one source.
 3. In **Action**, choose **Set to**, **Increase by** or **Decrease by**.
-4. Enter the **Value**.
+4. Enter the **Value**, a whole number.
 5. Click **Apply**.
 6. Click **Save Inventories**.
 
@@ -2244,7 +2288,12 @@ In **Settings**:
 | **Customer Groups** | The customer groups who get the discount. All groups are selected at first. If none is selected, every group gets it. |
 | **Priority** | The order discounts are applied in, starting from the lowest number. This covers your own discounts and the store discounts you've joined. |
 | **Stop Further Rules** | Choose **Yes** so that, once this discount applies, no discount with a higher priority number applies, including store discounts you've joined. |
-| **Status** | Switches the discount on or off. |
+| **Status** | Switches the discount on or off. A new discount saved with it off starts switched off. |
+
+::: warning Switching off an existing discount
+In this version, turning **Status** off on a discount you are editing isn't saved: the
+discount stays active. To stop it, set its **Ends Till** date or delete it.
+:::
 
 When several discounts match a product, each one comes off the price left by the one
 before, until a discount with **Stop Further Rules** set to **Yes**.
@@ -2253,7 +2302,7 @@ before, until a discount with **Stop Further Rules** set to **Yes**.
 
 The **Product Discounts** list shows each discount's name, whether it is active, its
 priority and its dates. Click the edit icon to change a discount, or the delete icon
-to remove it. Removing or switching off a discount returns your products to their
+to remove it. Removing a discount, or letting it end, returns your products to their
 normal price.
 
 <ImagePopup src="/images/product-discounts/product-discounts-list.png" alt="The seller's Product Discounts list" />
@@ -2262,7 +2311,7 @@ normal price.
 
 Go to **Marketplace >> Marketing >> Product Discounts** to see the discounts sellers
 have created, with the **Seller**, status, priority and dates. You can filter the list
-by status. To delete a seller's discount, click its delete icon, or tick several and use
+by name or status. To delete a seller's discount, click its delete icon, or tick several and use
 **Select Action >> Delete**. Seller discounts aren't listed under
 **Marketing >> Promotions >> Catalog Rules**. To create a discount sellers can join, see
 [Joining Admin Discounts](join-product-discounts.md).
@@ -2308,7 +2357,7 @@ Removing a seller from **Sellers** withdraws them from the discount. Switching
 1. In the Seller Panel, go to **Marketing >> Product Discounts**.
 2. Click **Join Product Discounts**.
 3. To see a discount's conditions, amount and dates, click the view icon on its row.
-4. Click **Enroll**.
+4. Click the enroll icon on the discount's row, or **Enroll** on its details page.
 
 <ImagePopup src="/images/join-product-discounts/join-list.png" alt="The Join Product Discounts list in the Seller Panel" />
 
@@ -2335,8 +2384,9 @@ The **Participation** badge shows where you stand:
 - You join with all of your own products that match the discount's conditions. You
   can't choose products one by one.
 - Catalog products you sell as your own aren't discounted.
-- To leave, click **Withdraw** on the discount's row, or use
-  **Select Action >> Withdraw**.
+- To leave, click the withdraw icon on the discount's row, **Withdraw** on its details
+  page, or use **Select Action >> Withdraw**. While you have a request of any status,
+  the row offers only the withdraw icon.
 
 ## Approve join requests
 
@@ -2482,7 +2532,12 @@ Under **Who should it apply to?**:
 | **Priority** | The order your deals are applied in, starting from the lowest number |
 | **Stop Further Rules** | Choose **Yes** to stop your deals with a higher priority number from applying once this one does |
 | **Uses Per Customer** | How many times one signed-in customer can use the deal. Guests aren't limited. Leave it at 0 for no limit. |
-| **Status** | Switches the deal on or off |
+| **Status** | Switches the deal on or off. A new deal saved with it off starts switched off. |
+
+::: warning Switching off an existing deal
+In this version, turning **Status** off on a deal you are editing isn't saved: the deal
+stays active. To stop a deal, set its **Ends Till** date or delete it.
+:::
 
 When several of your deals match, they all apply, in priority order, until a deal with
 **Stop Further Rules** set to **Yes**. A cart can hold only one coupon code at a time.
@@ -2521,7 +2576,7 @@ and its dates, with icons to edit, copy or delete it.
 
 Go to **Marketplace >> Marketing >> Checkout Deals** to see the deals sellers have
 created, with the **Seller**, status, priority and dates. You can filter the list by
-status. To delete a seller's deal, click its delete icon, or tick several deals and use
+name or status. To delete a seller's deal, click its delete icon, or tick several deals and use
 **Select Action >> Delete**.
 
 <ImagePopup src="/images/checkout-deals/admin-checkout-deals.png" alt="Seller checkout deals in the admin panel" />
@@ -2868,8 +2923,8 @@ The page shows:
 ### Reply to the customer
 
 1. Under **Conversation**, type your message.
-2. To add a file, click **Attachments**. You can attach PDF, JPG or PNG files up to
-   2 MB.
+2. To add a file, click **Attachments**. You can attach a PDF, JPG, PNG, GIF or WebP
+   file up to 2 MB.
 3. Click **Send Message**.
 
 The customer receives a **New RMA Message Received** email. When the customer replies,
@@ -2881,7 +2936,7 @@ the reply appears in the conversation; the store admin is emailed about it, not 
 2. Click **Save Changes**.
 
 The customer sees the new status on the return, with a note about the change in the
-conversation.
+conversation, and receives an **RMA status has been updated** email.
 
 | From | You can choose |
 |---|---|
@@ -3085,7 +3140,8 @@ The page lists only orders sellers have requested payment for. At the top:
 | **Unpaid Sellers** | How many sellers are waiting to be paid, out of all sellers with requests or payments |
 
 Each order shows its number, date and status, the customer, the amounts, the seller and
-shop, and how much has been paid so far.
+shop, and how much has been paid so far. Click the view icon to open the order in
+**Sales >> Orders**.
 
 ### Pay several sellers at once
 
@@ -3122,7 +3178,10 @@ stands. Team members see it only with the **Payment Request** permission.
 ## Permissions
 
 - Team members need **Orders** with **Payment Request** to request payment.
-- Admins need **Marketplace >> Sales >> Payment Request** with **Pay**.
+- Admins need **Marketplace >> Sales >> Payment Request** with **Pay**. In this
+  version, **Select Action >> Pay Now** appears only for admins whose role has
+  **All** permissions; other admins pay orders one at a time with **Pay Now**.
+- The view icon needs **Marketplace >> Sales >> Orders >> View**.
 
 # Transactions
 
@@ -3152,7 +3211,7 @@ last 30 days.
 | **Total Commission (Admin)** | The commission the store kept on those sales |
 | **Total Sale (Invoiced)** | Your invoiced sales including tax, less discounts and refunds, before commission |
 | **Total Payout** | What the store paid you in the period, and what share of **Total Sale (Seller)** that is. Payouts on orders refunded later aren't counted. |
-| **Remaining Payout** | What you have requested for completed orders and haven't been paid yet |
+| **Remaining Payout** | What you have requested for completed orders and haven't been paid yet, and what share of **Total Sale (Seller)** that is |
 
 Below the cards, the list shows each transaction's **Id**, **Transaction Id**,
 **Comment** and **Total**. Use **Filter** to find a transaction.
@@ -3211,7 +3270,8 @@ Switch **Subscription Plans** on and enter your terms in
 1. Go to **Marketplace >> Subscription Plans >> Plans**.
 2. Click **Add Plan**.
 3. Fill in the fields below. **Name**, **Code**, **Price**, **Permissions** and
-   **Position** are required.
+   **Position** are required, and the form also marks **Allowed Product Types** as
+   required.
 4. Switch **Status** on so sellers can see the plan.
 5. Click **Save**.
 
@@ -3475,8 +3535,9 @@ file attachments.
 
 <ImagePopup src="/images/communications/communication.png" alt="A seller's conversation with the admin" />
 
-- Use **Search Message** to find a message, or the history icon to show only the last
-  7, 15 or 30 days, the last 6 months, or **All Messages**.
+- Use **Search Message** to find a message, or the history icon to show only
+  **Previous 7 Days**, **Previous 15 Days**, **Previous 30 Days**,
+  **Previous 6 Months** or **All Messages**.
 - A message can be up to 255 characters.
 - If the admin blocks you, the page shows **You are blocked by admin** and you can't
   send messages.
@@ -3487,8 +3548,9 @@ replies.
 ### Message sellers
 
 1. In the admin panel, go to **Marketplace >> Communications**.
-2. Click a seller in **Sellers**, or search for one. You can start a conversation with
-   any seller.
+2. Click a seller in **Sellers**, or search for one by business name, name or email.
+   You can start a conversation with any seller. The list shows up to 20 sellers, with
+   the most recent conversations first.
 3. Type your message, add a file if needed, and click the send icon.
 
 <ImagePopup src="/images/communications/admin-communications.png" alt="The admin's Communications page with a seller conversation open" />
@@ -3497,7 +3559,7 @@ Sellers with unread messages show a count. The menu at the top of a conversation
 
 - **Block Seller** or **Unblock Seller**, once the conversation has a message. While a
   seller is blocked, neither of you can send messages;
-- **Clear Chat History** — deletes every message in the conversation;
+- **Clear Chat History** — deletes every message in the conversation for both of you;
 - **Exit** — closes the conversation.
 
 ## Customers and sellers
@@ -3505,7 +3567,9 @@ Sellers with unread messages show a count. The menu at the top of a conversation
 ### Message a seller
 
 1. Sign in to your customer account and go to **Communications**.
-2. In **Search**, type the seller's business name and click the seller.
+2. Click a seller you have already written to, or type the seller's business name in
+   **Search** and click the seller. Only approved sellers who aren't suspended are
+   found.
 3. Type your message, add a file if needed, and click the send icon.
 
 <ImagePopup src="/images/communications/customer-communications.png" alt="A customer's conversation with a seller" />
@@ -3604,7 +3668,7 @@ The page isn't available while the marketplace is switched off. See
 
 Every seller has a public shop page with their products, reviews and store policies.
 It opens at `/marketplace/` followed by the seller's slug, for example
-`/marketplace/urban-threads`.
+`/marketplace/urban-threads-co`.
 
 Customers reach it from the **Sold By** link on a product, from the featured sellers,
 or from a link the seller shares. Sellers open their own with **Visit Shop** in the
@@ -3616,10 +3680,11 @@ Seller Panel.
 
 - The seller's banner, logo, business name and address.
 - Their star rating and number of reviews.
-- **Share**, which lists the seller's social media links.
+- **Share**, which lists the seller's social media links, such as Facebook or
+  Instagram, when the seller has added them.
 - **Contact**, to send the seller a message by email.
-- **Report Issue**, for customers who bought from the seller, when the store lets
-  customers report sellers. See
+- **Report Issue**, shown only to signed-in customers who bought from the seller, when
+  the store lets customers report sellers. See
   [Seller & Product Flagging](../moderation/seller-product-flagging.md).
 
 When the store has **Show Red Flag** switched on, a red flag next to the name means
@@ -3659,13 +3724,20 @@ offers on the product's own page. See [Shopping Across Sellers](shopping-across-
 
 The **Reviews** tab shows the seller's average rating, how the ratings split across one
 to five stars, and the five latest approved reviews. When there are five or more, click
-**View All Reviews** to see the rest.
+**View All Reviews** to see the rest, five to a page.
+
+::: warning
+The **View All Reviews** page lists every review of the seller, including reviews still
+waiting for approval and disapproved ones. The rating, the count and the reviews on the
+**Reviews** tab use approved reviews only.
+:::
 
 <ImagePopup src="/images/seller-shop-page/reviews-tab.png" alt="The Reviews tab on a seller's shop page" />
 
 ### Review a seller
 
-Customers who have ordered from the seller can review them once.
+Customers who have ordered from the seller can review them once. **Write a Review**
+appears on the **Reviews** tab only for them.
 
 1. Sign in to your customer account.
 2. Open the seller's shop page and click the **Reviews** tab.
@@ -3713,11 +3785,13 @@ When the store shows seller shops publicly, customers see these on the page of a
 product a seller created:
 
 - **Sold By** with the seller's business name, which opens their shop page, and the
-  seller's star rating;
-- **Report Product**, to report a problem with the product. See
-  [Seller & Product Flagging](../moderation/seller-product-flagging.md);
-- **Top Selling**, a row of the seller's best-selling products, at the bottom of the
-  page.
+  seller's star rating from approved reviews;
+- **Report Product**, to report a problem with the product, when the store lets
+  customers report products. See
+  [Seller & Product Flagging](../moderation/seller-product-flagging.md).
+
+**Top Selling**, a row of the seller's best-selling products, appears at the bottom of
+the page of every product a seller created, even when seller shops aren't public.
 
 <ImagePopup src="/images/shopping-across-sellers/product-sold-by.png" alt="The Sold By block on a product page" />
 
@@ -3727,8 +3801,9 @@ When other sellers sell the same product, the product page shows a link such as
 **2 more seller selling same product**.
 
 1. Click the link. A page opens with the other sellers' offers that are in stock,
-   cheapest first.
-2. Compare each seller's price, rating and description.
+   cheapest first, five at a time.
+2. Compare each seller's price, rating and description. The rating on an offer
+   averages all of the seller's reviews, including reviews that aren't approved yet.
 3. For a simple or virtual product, enter the quantity on the offer you want. For a
    downloadable product, choose the links.
 4. Click **Add to Cart**.
@@ -3741,7 +3816,8 @@ choice.
 
 ## The cart
 
-- Each seller's product shows **Sold By** with the seller's name.
+- Each seller's product shows **Sold By** with the seller's business name under
+  **See Details**.
 - The same product bought from two sellers stays on two separate lines.
 - Each product is charged at the price of the seller you chose.
 
@@ -3818,7 +3894,7 @@ The eligible sellers are then ranked by the **Popularity Criteria** you choose:
 | **Maximum Orders** | Number of orders, whatever their status |
 | **Maximum Products** | Number of products they list, including products waiting for approval and offers on other products |
 | **Maximum Rating** | Average rating from approved reviews |
-| **Maximum Sale** | Total value of their orders |
+| **Maximum Sale** | Total value of their orders. The total is counted once for each of the seller's products and approved reviews, so sellers with more products and reviews rank higher than their sales alone would place them. |
 | **All** | Orders first, then products, rating and sales to break ties |
 
 The top sellers, up to the **Limit Count**, are shown. When no seller qualifies, the
@@ -3852,6 +3928,9 @@ the admin to approve it before it counts towards a rating.
   their products, the featured sellers, and the **Customer Feedback** part of the
   seller's [Account Health](../sellers/seller-account-health.md), which uses approved
   reviews from the last 90 days.
+- **Where every review shows:** the **View All Reviews** page of the shop and the
+  rating on each seller's offer on the offers page also include reviews that are
+  pending or disapproved.
 
 ## Product reviews
 
@@ -3878,10 +3957,10 @@ or tick several and use **Select Action >> Delete**.
 ### Product reviews
 
 1. Go to **Marketplace >> Catalog >> Product Reviews**.
-2. Click the view icon on a review. **Review Details** opens with the rating, title,
-   comment and any photos.
+2. Click the arrow on a review. **Review Details** opens with the customer, product,
+   date, rating, title, comment and any images.
 3. Choose the **Status**: **Approved**, **Disapproved** or **Pending**.
-4. Save.
+4. Click **Save**.
 
 <ImagePopup src="/images/rating-management/admin-product-reviews.png" alt="Product reviews of seller products in the admin panel" />
 
@@ -3941,8 +4020,13 @@ Customers who have ordered from a seller can report the seller once.
 
 1. Sign in to your customer account.
 2. On the seller's shop page, click **Report Issue**.
-3. Choose a **Reason**, or **Other Reason**.
+3. Choose a **Reason**, or **Other Reason** and type it.
 4. Click **Submit**.
+
+::: warning
+When you choose **Other Reason** for a seller, the report is saved with the reason
+**other**. The text you type isn't kept, so the admin doesn't see it.
+:::
 
 <ImagePopup src="/images/seller-product-flagging/report-seller.png" alt="The Report Issue form on a seller's shop page" />
 
@@ -3983,10 +4067,12 @@ The marketplace starts with these reasons:
 
 ## Review reports
 
-- **Seller reports** — go to **Marketplace >> Sellers** and click **Flags** on the seller's
-  row. The **Seller Flags** list shows the customer, their email, the reason and the date.
+- **Seller reports** — go to **Marketplace >> Sellers** and click the flags count,
+  such as **2 Flags**, under the seller's account health. The **Seller Flags** list
+  shows the customer, their email, the reason and the date.
 - **Product reports** — go to **Marketplace >> Catalog >> Products** and click
-  **Total Flags** under the product. The **Product Flags** list shows the same details.
+  **Total Flags** under the product. The **Product Flags** list shows the same details,
+  including the text a customer typed for **Other Reason**.
 
 <ImagePopup src="/images/seller-product-flagging/seller-flags.png" alt="The Seller Flags list for a seller" />
 
@@ -4027,7 +4113,7 @@ Go to **Reporting** in the Seller Panel and choose a report.
 Use the date picker at the top right. Pick a preset, such as **Today**,
 **Last 7 Days**, **Last 30 Days**, **This Month** or **Last Year**, or choose your own
 dates. Reports open on the last 30 days. If you sell on more than one channel, choose
-the channel too.
+a channel or **All Channels** too.
 
 Cards with a total, such as **Total Sales**, show the figure for the period, how much it
 changed from the period before, in green or red, and a chart. Cards that list products
@@ -4073,15 +4159,16 @@ details.
 ## See the details and export
 
 1. Click **View Details** on a card.
-2. Choose the start and end dates, and the channel. For most charts, also choose
-   whether to group by **Day**, **Month** or **Year**. **Total Commission Paid** is
-   always shown by day.
+2. Choose the start and end dates, and the channel. For the charts over time, such as
+   **Total Sales**, **Total Orders** or **Total Customers**, also choose whether to group
+   by **Day**, **Month** or **Year**. **Total Commission Paid** is always shown by day.
 3. To download the table, click the export icon and choose **Export CSV** or
    **Export XLS**.
 
 <ImagePopup src="/images/seller-reporting/report-details.png" alt="The Total Sales details page with the export icon, interval and date fields" />
 
-**Purchase Funnel** has no details page, so it can't be exported.
+**Purchase Funnel** has no details page, so it can't be exported. The details of
+**Customers With Most Sales** list the top six customers only.
 
 Team members need **Reporting**, with **Sales**, **Customers** and **Products** as needed.
 
@@ -4133,9 +4220,9 @@ language.
 
 ## Save your changes
 
-Click **Save Configuration** at the top of the screen. Saving marketplace
-settings also refreshes the storefront pages the marketplace keeps in its cache,
-so customers see the change straight away.
+Click **Save Configuration** at the top of the screen. Saving a marketplace tile
+also clears the cached copy of the marketplace landing page, so visitors see your
+changes there straight away.
 
 ### Turning the marketplace off
 
@@ -4179,8 +4266,8 @@ Go to **Configure >> Marketplace >> General**.
 | Setting | What it does |
 |---|---|
 | **Status** | Switches the whole marketplace on or off for the channel. See [Turning the marketplace off](overview.md#turning-the-marketplace-off). |
-| **Admin Commission Percentage** | The commission taken from every seller sale, between 1 and 100. A seller with their own rate uses that instead. The rate is fixed on each order when it is placed. See [Commission](../payments/commission-management.md). |
-| **Seller Panel Logo** | The logo in the Seller Panel header. Upload a square image for the best fit. Without one, the Bagisto icon is shown. |
+| **Admin Commission Percentage** | The commission taken from every seller sale, as a percentage from 1 to 100. The field is required, but the form doesn't stop a number above 100, so check the value before you save. A seller with their own rate uses that instead. The rate is fixed on each order when it is placed. See [Commission](../payments/commission-management.md). |
+| **Seller Panel Logo** | The logo in the Seller Panel header, for every channel. Upload a square image for the best fit, as a BMP, JPEG, JPG, PNG, WebP, SVG or ICO file. Without one, the Bagisto icon is shown. |
 
 ### Set the commission
 
@@ -4226,8 +4313,8 @@ to create plans.
 
 ## Module Information
 
-Shows the version of the marketplace module installed on your store. There is
-nothing to change here.
+Shows the version of the marketplace module installed on your store, such as
+**Application Version:- v2.5.0.0**. There is nothing to change here.
 
 # Sellers
 
@@ -4267,7 +4354,7 @@ See [Order Management](../orders/order-management.md) and
 
 | Setting | What it does |
 |---|---|
-| **Max File Upload Size** | The largest file, in MB, a seller can upload for profile fields and for the image ZIP in bulk upload. Leave it empty to allow 10 MB. |
+| **Max File Upload Size** | The largest file, in MB, a seller can upload for profile fields and for the image ZIP in bulk upload. Enter a whole number. Leave it empty to allow 10 MB. This setting applies to every channel. |
 
 # Products
 
@@ -4306,7 +4393,7 @@ layout or step order, see [Product Form Layout](../catalog/product-form-layout.m
 
 | Setting | What it does |
 |---|---|
-| **Low Stock Threshold** | A simple or virtual product that manages its stock counts as low on stock on the seller's dashboard when its total stock is at or below this number. It is 10 until this screen is first saved. Enter a number here; don't leave it empty. |
+| **Low Stock Threshold** | A simple or virtual product that manages its stock counts as low on stock on the seller's dashboard when its total stock is at or below this number. It is 10 until this screen is first saved. Enter a number here: if you save it empty, it counts as 0, so only products with no stock are shown as low, even though the hint under the field says it defaults to 10. |
 
 See [Dashboard](../seller-panel/dashboard.md).
 
@@ -4325,10 +4412,10 @@ Go to **Configure >> Marketplace >> Moderation & Health**.
 
 | Section | Setting | What it does |
 |---|---|---|
-| Product Flags | **Enable Flag** | Lets customers report a product from its storefront page. |
+| Product Flags | **Enable Flag** | Lets customers report a product from its storefront page. The section description says it lets admins flag products, but the switch controls the customer **Report** option. |
 | Seller Flags | **Enable Flag** | Lets customers who bought from a seller report that seller from the seller's shop page. Flags also count towards the seller's account health and show in your sellers list. |
 | Seller Flags | **Show red flag on profile if limit exceeds** | Shows a red flag on a seller's shop page once they have more flags than the limit below. |
-| Seller Flags | **Red Flag Limit** | The number of flags a seller can have before the red flag shows. Account health also scores flags against this number. |
+| Seller Flags | **Red Flag Limit** | The number of flags a seller can have before the red flag shows. Required, a whole number of at least 1, and it applies to every channel. Account health also scores flags against this number. |
 
 The reasons customers pick from are managed under **Marketplace >> Configure >>
 Flag Reasons**. See [Seller & Product Flagging](../moderation/seller-product-flagging.md).
@@ -4412,10 +4499,15 @@ Go to **Configure >> Marketplace >> Featured Sellers**.
 | Setting | What it does |
 |---|---|
 | **Status** | Shows the **Our Featured Sellers** block on the landing page. |
-| **Limit Count** | How many sellers the block shows. |
+| **Limit Count** | How many sellers the block shows. Required. |
 | **Popularity Criteria** | How sellers are ranked: **Maximum Orders**, **Maximum Products**, **Maximum Rating** or **Maximum Sale**. **All** ranks by orders first, then products, rating and sales. |
 
 All three are saved for each channel.
+
+**Maximum Sale** is meant to rank sellers by the total of their orders. At the
+moment that total is multiplied by the seller's number of products and approved
+reviews, so sellers with many products or reviews rank higher than their sales alone
+would put them. The same total is the last tie-breaker for **All**.
 
 The block only appears while **Show Publicly** is on in
 [Sellers](sellers.md). It lists only approved sellers who aren't suspended, sell on
@@ -4562,6 +4654,11 @@ generates content.
 | Scope | **Suggest Categories** | Lets the AI suggest categories for the product. |
 
 All of these settings apply to every channel.
+
+Right after the marketplace is installed, **Enable** is off, **Allow Reference
+Images** is on with 3 photos allowed, **Let Sellers Choose Fields**,
+**Overwrite Filled Attributes** and **Select Attributes** are off, **Limit Period**
+is **Monthly** and **Suggest Categories** is on.
 
 Images, files, Yes/No switches, SKU, URL key, product number, tax category, RMA
 rule and barcode value are never generated, whatever you choose here.

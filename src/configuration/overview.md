@@ -46,9 +46,9 @@ language.
 
 ## Save your changes
 
-Click **Save Configuration** at the top of the screen. Saving marketplace
-settings also refreshes the storefront pages the marketplace keeps in its cache,
-so customers see the change straight away.
+Click **Save Configuration** at the top of the screen. Saving a marketplace tile
+also clears the cached copy of the marketplace landing page, so visitors see your
+changes there straight away.
 
 ### Turning the marketplace off
 

@@ -19,6 +19,9 @@ page.
 
 You can also open **Seller Login** and click **Create your account**.
 
+The banner button's text is set by the admin. If you are already signed in to the
+Seller Panel, the button reads **Visit Shop** and opens your dashboard instead.
+
 ## Create your account
 
 1. On the **Become Seller** form, enter your **Name** and **Email**.

@@ -36,4 +36,4 @@ See [Order Management](../orders/order-management.md) and
 
 | Setting | What it does |
 |---|---|
-| **Max File Upload Size** | The largest file, in MB, a seller can upload for profile fields and for the image ZIP in bulk upload. Leave it empty to allow 10 MB. |
+| **Max File Upload Size** | The largest file, in MB, a seller can upload for profile fields and for the image ZIP in bulk upload. Enter a whole number. Leave it empty to allow 10 MB. This setting applies to every channel. |

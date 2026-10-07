@@ -112,9 +112,9 @@ differ. With the default family they are:
 | **Meta Description** | Meta title, keywords and description for search engines |
 | **Settings** | **New**, **Featured**, **Visible Individually**, **Status** and **Guest Checkout** |
 | **Inventories** | **Manage Stock**, and the quantity in each of your inventory sources |
-| **RMA** | **Allow RMA** and the return rule for the product |
+| **RMA** | **Allow RMA** and the **RMA Rules** for the product. Shown for simple products and for the types the store accepts returns on. |
 | **Barcode** | **Barcode Value**. See [Product Barcode](product-barcode.md). |
-| **Media** | Images (PNG or JPEG) and videos (MP4, WebM or MKV) |
+| **Media** | Images (JPEG, PNG, WebP or BMP) and videos (MP4, WebM or MOV) |
 | The product type | The details for the kind of product, such as variations or bundle items |
 | **Organization** | Channels, categories, and related, up-sell and cross-sell products |
 
@@ -141,7 +141,7 @@ different price for a customer group or for larger quantities. Choose the
 | Bundle | **Bundle Items** | Options with their products and default quantities |
 | Grouped Products | **Group Products** | The products in the group and their default quantities |
 | Bookable | **Booking Type** | The booking type and its availability |
-| Physical Product without variations | **Customizable Item** | Options customers can choose or fill in, such as engraving text |
+| Physical Product without variations | **Customizable Item** | Options customers can choose or fill in, such as engraving text. Not shown for a product that is part of a bundle or grouped product. |
 
 <ImagePopup src="/images/product-management/edit-customizable-item.png" alt="The Customizable Item step with its Add Option button" />
 
@@ -150,7 +150,7 @@ different price for a customer group or for larger quantities. Choose the
 - Click **Save as Draft** to finish later, or **Submit** when the product is ready.
 - For a product you have already submitted, click **Save Product**.
 
-You'll see **Product updated successfully**. See
+You return to **Catalog >> Products** and see **Product updated successfully**. See
 [Product Approval](product-approval.md) for what happens after you submit.
 
 ## Delete a product

@@ -57,8 +57,8 @@ The page shows:
 ### Reply to the customer
 
 1. Under **Conversation**, type your message.
-2. To add a file, click **Attachments**. You can attach PDF, JPG or PNG files up to
-   2 MB.
+2. To add a file, click **Attachments**. You can attach a PDF, JPG, PNG, GIF or WebP
+   file up to 2 MB.
 3. Click **Send Message**.
 
 The customer receives a **New RMA Message Received** email. When the customer replies,
@@ -70,7 +70,7 @@ the reply appears in the conversation; the store admin is emailed about it, not 
 2. Click **Save Changes**.
 
 The customer sees the new status on the return, with a note about the change in the
-conversation.
+conversation, and receives an **RMA status has been updated** email.
 
 | From | You can choose |
 |---|---|

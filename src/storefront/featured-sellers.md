@@ -36,7 +36,7 @@ The eligible sellers are then ranked by the **Popularity Criteria** you choose:
 | **Maximum Orders** | Number of orders, whatever their status |
 | **Maximum Products** | Number of products they list, including products waiting for approval and offers on other products |
 | **Maximum Rating** | Average rating from approved reviews |
-| **Maximum Sale** | Total value of their orders |
+| **Maximum Sale** | Total value of their orders. The total is counted once for each of the seller's products and approved reviews, so sellers with more products and reviews rank higher than their sales alone would place them. |
 | **All** | Orders first, then products, rating and sales to break ties |
 
 The top sellers, up to the **Limit Count**, are shown. When no seller qualifies, the

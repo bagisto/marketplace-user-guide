@@ -13,10 +13,10 @@ Go to **Configure >> Marketplace >> Moderation & Health**.
 
 | Section | Setting | What it does |
 |---|---|---|
-| Product Flags | **Enable Flag** | Lets customers report a product from its storefront page. |
+| Product Flags | **Enable Flag** | Lets customers report a product from its storefront page. The section description says it lets admins flag products, but the switch controls the customer **Report** option. |
 | Seller Flags | **Enable Flag** | Lets customers who bought from a seller report that seller from the seller's shop page. Flags also count towards the seller's account health and show in your sellers list. |
 | Seller Flags | **Show red flag on profile if limit exceeds** | Shows a red flag on a seller's shop page once they have more flags than the limit below. |
-| Seller Flags | **Red Flag Limit** | The number of flags a seller can have before the red flag shows. Account health also scores flags against this number. |
+| Seller Flags | **Red Flag Limit** | The number of flags a seller can have before the red flag shows. Required, a whole number of at least 1, and it applies to every channel. Account health also scores flags against this number. |
 
 The reasons customers pick from are managed under **Marketplace >> Configure >>
 Flag Reasons**. See [Seller & Product Flagging](../moderation/seller-product-flagging.md).

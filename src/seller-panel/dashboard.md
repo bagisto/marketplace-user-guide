@@ -13,8 +13,9 @@ Go to **Dashboard**.
 ## Choose the period
 
 Use the date picker at the top right to change the period the figures cover. Pick
-a preset, such as **Today**, **Last 7 Days**, **Last 30 Days**, **This Month** or
-**This Year**, or choose your own start and end dates.
+a preset (**Today**, **Last 7 Days**, **Last 30 Days**, **This Month**,
+**Last Month**, **Last 6 Months**, **This Year** or **Last Year**), or choose your own
+start and end dates.
 
 ## What the dashboard shows
 
@@ -46,7 +47,8 @@ A list of what is waiting for you, with a link to each:
 - **Products low on stock** — products at or below the store's low-stock level.
 - **Unread buyer messages** — messages from customers and the admin.
 
-When nothing is waiting, it shows **You are all caught up!**
+Only the items with something waiting are listed. When nothing is waiting, it shows
+**You are all caught up!**
 
 ### Overall Details
 

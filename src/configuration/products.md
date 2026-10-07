@@ -35,6 +35,6 @@ layout or step order, see [Product Form Layout](../catalog/product-form-layout.m
 
 | Setting | What it does |
 |---|---|
-| **Low Stock Threshold** | A simple or virtual product that manages its stock counts as low on stock on the seller's dashboard when its total stock is at or below this number. It is 10 until this screen is first saved. Enter a number here; don't leave it empty. |
+| **Low Stock Threshold** | A simple or virtual product that manages its stock counts as low on stock on the seller's dashboard when its total stock is at or below this number. It is 10 until this screen is first saved. Enter a number here: if you save it empty, it counts as 0, so only products with no stock are shown as low, even though the hint under the field says it defaults to 10. |
 
 See [Dashboard](../seller-panel/dashboard.md).

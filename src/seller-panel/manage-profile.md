@@ -61,8 +61,9 @@ uses subscription plans, it appears only while you have an active plan. You can'
 change it here:
 
 - **Admin Commission** — the commission the store takes from your invoiced sales.
-- **Magic AI** — whether Generative AI is on for your shop, your limit, and how many
-  generations you have used. It appears when the store uses Generative AI. See
+- **Magic AI** — whether Generative AI is on for your shop, your **Generation Limit**,
+  how many generations you have used in the current period, and whether the limit is
+  **Daily** or **Monthly**. It appears when the store uses Generative AI. See
   [Usage Limits](../generative-ai/usage-limits.md).
 - **Restricted Categories** — categories you can't use.
 - **Allowed Product Type** — the product types you can sell.
