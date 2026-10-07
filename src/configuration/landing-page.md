@@ -14,7 +14,7 @@ every language your store uses. Images and the four highlight figures, including
 
 ## Banner
 
-<ImagePopup src="/images/configuration/landing-banner-highlights.png" alt="Banner and Highlights sections of the Landing Page settings" />
+<ImagePopup src="/images/configuration/landing-banner-highlights.png" alt="The Banner section and the start of the Highlights section of the Landing Page settings" />
 
 | Setting | What it does |
 |---|---|

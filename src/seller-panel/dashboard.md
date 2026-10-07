@@ -66,3 +66,5 @@ The categories that sold the most in the period.
 
 Team members with the **Dashboard** permission see the same figures for the shop,
 without the **Profile Score** card.
+
+<ImagePopup src="/images/seller-panel/dashboard-team-member.png" alt="The dashboard as a team member sees it, without the Profile Score card" />

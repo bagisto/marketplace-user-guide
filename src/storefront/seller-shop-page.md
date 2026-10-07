@@ -61,6 +61,8 @@ The **Reviews** tab shows the seller's average rating, how the ratings split acr
 to five stars, and the five latest approved reviews. When there are five or more, click
 **View All Reviews** to see the rest.
 
+<ImagePopup src="/images/seller-shop-page/reviews-tab.png" alt="The Reviews tab on a seller's shop page" />
+
 ### Review a seller
 
 Customers who have ordered from the seller can review them once.

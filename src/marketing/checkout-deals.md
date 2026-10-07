@@ -123,12 +123,16 @@ code or generate new ones.
 The **Checkout Deals** list shows each deal's name, whether it is active, its priority
 and its dates, with icons to edit, copy or delete it.
 
+<ImagePopup src="/images/checkout-deals/checkout-deals-list.png" alt="The seller's Checkout Deals list" />
+
 ## For the admin
 
 Go to **Marketplace >> Marketing >> Checkout Deals** to see the deals sellers have
 created, with the **Seller**, status, priority and dates. You can filter the list by
 status. To delete a seller's deal, click its delete icon, or tick several deals and use
 **Select Action >> Delete**.
+
+<ImagePopup src="/images/checkout-deals/admin-checkout-deals.png" alt="Seller checkout deals in the admin panel" />
 
 ## Permissions
 

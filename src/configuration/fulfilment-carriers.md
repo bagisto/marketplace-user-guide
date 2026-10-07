@@ -8,7 +8,7 @@ from your store's shipping methods.
 
 Go to **Configure >> Marketplace >> Fulfilment Carriers**.
 
-<ImagePopup src="/images/configuration/fulfilment-carriers.png" alt="Self Ship (Manual) section of the Fulfilment Carriers settings" />
+<ImagePopup src="/images/configuration/fulfilment-carriers.png" alt="The Self Ship (Manual) section of the Fulfilment Carriers settings" />
 
 ## Self Ship (Manual)
 

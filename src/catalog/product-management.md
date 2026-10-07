@@ -77,7 +77,7 @@ You only see the kinds of product the store allows you to sell.
 
 ## Fill in the product form
 
-<ImagePopup src="/images/product-management/edit-general.png" alt="The General step of the product form" />
+<ImagePopup src="/images/product-management/edit-general.png" alt="The product form open on its General step, with Listing Completeness at the top" />
 
 At the top of the page you'll find:
 
@@ -142,6 +142,8 @@ different price for a customer group or for larger quantities. Choose the
 | Grouped Products | **Group Products** | The products in the group and their default quantities |
 | Bookable | **Booking Type** | The booking type and its availability |
 | Physical Product without variations | **Customizable Item** | Options customers can choose or fill in, such as engraving text |
+
+<ImagePopup src="/images/product-management/edit-customizable-item.png" alt="The Customizable Item step with its Add Option button" />
 
 ### Save the product
 

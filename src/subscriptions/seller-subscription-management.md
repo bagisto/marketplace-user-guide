@@ -26,7 +26,7 @@ Switch **Subscription Plans** on and enter your terms in
 4. Switch **Status** on so sellers can see the plan.
 5. Click **Save**.
 
-<ImagePopup src="/images/seller-subscription-management/edit-plan.png" alt="The plan form with its fields, open on a monthly plan" />
+<ImagePopup src="/images/seller-subscription-management/create-plan.png" alt="The Create Plan form with its fields" />
 
 | Field | What it does |
 |---|---|
@@ -90,6 +90,8 @@ waits as **Pending**. Cash On Delivery isn't offered for plans.
 To cancel a pending or active plan, click **Cancel**. To decide on several at once, tick
 them and use **Select Action >> Update Status**. A plan can't be approved while the
 seller already has an active plan for the same dates.
+
+<ImagePopup src="/images/seller-subscription-management/active-subscription.png" alt="An active subscription with the Cancel button" />
 
 ## What happens automatically
 

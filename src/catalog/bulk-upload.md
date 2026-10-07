@@ -41,6 +41,8 @@ an upload, and download the **Error File** when some rows failed.
 
 ### Images
 
+<ImagePopup src="/images/bulk-upload/create-images.png" alt="The Images step with its two options" />
+
 - **Image URLs in the sheet** — add public links to the images, separated by commas,
   in the `images` column. The store downloads them for you. This is the recommended
   option.
@@ -52,6 +54,8 @@ Products you sell from the catalog use the catalog's images, so this step doesn'
 appear for them.
 
 ### Settings
+
+<ImagePopup src="/images/bulk-upload/create-settings.png" alt="The Settings step of the bulk upload wizard" />
 
 | Setting | What it does |
 |---|---|
@@ -126,6 +130,8 @@ products, when you aren't allowed to sell that product type, or when `price`, `q
 Click the edit icon on an upload in **Past Uploads**, replace the file or change the
 settings, then click **Reimport** and confirm. The file is checked again from the
 start.
+
+<ImagePopup src="/images/bulk-upload/edit-import.png" alt="Editing an upload, with the Reimport button" />
 
 If the store uses subscription plans, products over your plan's limit aren't
 imported.

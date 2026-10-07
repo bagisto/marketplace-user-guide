@@ -7,9 +7,9 @@ keeps from seller sales, and switches subscription plans on or off.
 
 Go to **Configure >> Marketplace >> General**.
 
-## General
+<ImagePopup src="/images/configuration/general.png" alt="The Marketplace General settings with the General, Subscription and Module Information sections" />
 
-<ImagePopup src="/images/configuration/general-general.png" alt="General section of the Marketplace General settings" />
+## General
 
 | Setting | What it does |
 |---|---|
@@ -30,8 +30,6 @@ rate they were placed with.
 
 Subscription plans let you charge sellers for selling on the marketplace and
 limit what each plan includes.
-
-<ImagePopup src="/images/configuration/general-subscription.png" alt="Subscription and Module Information sections" />
 
 | Setting | What it does |
 |---|---|

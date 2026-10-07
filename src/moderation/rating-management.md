@@ -62,6 +62,8 @@ managed in **Customers >> Reviews**.
 
 <ImagePopup src="/images/rating-management/seller-reviews.png" alt="The seller's Seller Reviews page" />
 
+<ImagePopup src="/images/rating-management/seller-product-reviews.png" alt="The seller's Product Reviews page" />
+
 Both lists are read-only. Sellers can't approve, reply to or delete reviews. Customer
 email addresses are masked when the store doesn't let sellers see customer details.
 

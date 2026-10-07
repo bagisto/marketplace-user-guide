@@ -35,7 +35,7 @@ replies.
    any seller.
 3. Type your message, add a file if needed, and click the send icon.
 
-<ImagePopup src="/images/communications/admin-communications.png" alt="The admin's Communications page with the sellers list" />
+<ImagePopup src="/images/communications/admin-communications.png" alt="The admin's Communications page with a seller conversation open" />
 
 Sellers with unread messages show a count. The menu at the top of a conversation has:
 

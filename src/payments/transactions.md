@@ -53,6 +53,8 @@ with the **Id**, **Seller Name**, **Seller Id**, **Transaction Id**, **Comment**
 
 <ImagePopup src="/images/transactions/admin-transactions.png" alt="All seller transactions in the admin panel" />
 
+<ImagePopup src="/images/transactions/admin-transaction-view.png" alt="A seller transaction opened in the admin panel" />
+
 ## Permissions
 
 - Team members need **Transactions**, with **View** to open a transaction and

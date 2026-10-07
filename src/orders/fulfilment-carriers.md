@@ -29,6 +29,8 @@ store's shipping methods at checkout.
 You'll see **Shipment created successfully**. The order's **Shipments** tab shows the
 carrier, the tracking number and the inventory source.
 
+<ImagePopup src="/images/order-management/order-view-shipments.png" alt="The Shipments tab of an order with the carrier, tracking number and inventory source" />
+
 | Message | What it means |
 |---|---|
 | **This order has nothing left to ship** | Everything in your part of the order has shipped, or what's left is cancelled, refunded or has nothing to ship, such as a booking. |

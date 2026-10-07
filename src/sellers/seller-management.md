@@ -132,6 +132,8 @@ You can list a catalog product for a seller, at the seller's own price and stock
    **Quantities** and **Description**.
 4. Click **Save**.
 
+<ImagePopup src="/images/seller-management/assign-product.png" alt="The Assign Product form for a seller, with condition, price, quantities and description" />
+
 The seller's profile must be complete first. See
 [Selling Existing Products](../catalog/selling-existing-products.md) for how the
 offer works.

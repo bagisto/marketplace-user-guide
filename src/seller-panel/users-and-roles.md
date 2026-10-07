@@ -56,6 +56,8 @@ A role that a team member uses can't be deleted, and neither can your only role.
 6. Leave **Status** switched on so the account is active.
 7. Click **Save User**.
 
+<ImagePopup src="/images/users-and-roles/create-user.png" alt="The Create User form" />
+
 <ImagePopup src="/images/users-and-roles/settings-users.png" alt="The Users list" />
 
 No invitation email is sent. Give the team member their email and password, and ask

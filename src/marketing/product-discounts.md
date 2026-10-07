@@ -81,6 +81,8 @@ priority and its dates. Click the edit icon to change a discount, or the delete 
 to remove it. Removing or switching off a discount returns your products to their
 normal price.
 
+<ImagePopup src="/images/product-discounts/product-discounts-list.png" alt="The seller's Product Discounts list" />
+
 ## For the admin
 
 Go to **Marketplace >> Marketing >> Product Discounts** to see the discounts sellers

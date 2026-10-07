@@ -15,7 +15,7 @@ page.
    marketplace landing page opens.
 2. Click the button in the banner, such as **Open Store**.
 
-<ImagePopup src="/images/becoming-a-seller/landing-page-banner.png" alt="The marketplace landing page banner with the Open Store button" />
+<ImagePopup src="/images/becoming-a-seller/landing-page-banner.png" alt="The marketplace landing page, with the Open Store button in the banner" />
 
 You can also open **Seller Login** and click **Create your account**.
 

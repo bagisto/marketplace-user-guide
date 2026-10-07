@@ -7,9 +7,9 @@ their shops are public, and what they can do with their orders.
 
 Go to **Configure >> Marketplace >> Sellers**.
 
-## Registration & Visibility
+<ImagePopup src="/images/configuration/sellers.png" alt="The Marketplace Sellers settings with the Registration & Visibility, Order Capabilities and Uploads sections" />
 
-<ImagePopup src="/images/configuration/sellers-registration.png" alt="Registration & Visibility section of the Sellers settings" />
+## Registration & Visibility
 
 | Setting | What it does |
 |---|---|
@@ -20,8 +20,6 @@ Go to **Configure >> Marketplace >> Sellers**.
 To approve sellers, see [Seller Management](../sellers/seller-management.md).
 
 ## Order Capabilities
-
-<ImagePopup src="/images/configuration/sellers-order-capabilities.png" alt="Order Capabilities and Uploads sections" />
 
 | Setting | What it does |
 |---|---|

@@ -64,7 +64,7 @@ details.
 3. To download the table, click the export icon and choose **Export CSV** or
    **Export XLS**.
 
-<ImagePopup src="/images/seller-reporting/report-details.png" alt="The details of a report with the export menu" />
+<ImagePopup src="/images/seller-reporting/report-details.png" alt="The Total Sales details page with the export icon, interval and date fields" />
 
 **Purchase Funnel** has no details page, so it can't be exported.
 

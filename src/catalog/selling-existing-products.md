@@ -34,8 +34,6 @@ You can't sell a product when:
    appears for simple and virtual products only.
 5. Click **Submit**, or **Save as Draft** to finish later.
 
-<ImagePopup src="/images/selling-existing-products/assign-form.png" alt="The Assign Product form for selling a catalog product" />
-
 **Product Details** on the right shows the catalog product you are selling. The
 **Condition**, **Price** and **Description** are needed when you submit, but you can
 leave them empty in a draft.
@@ -49,6 +47,8 @@ products, your offer waits for approval like any other product. See
 For a product that comes in sizes or colours, you choose which variants to sell. For
 each one, set its **Price**, **Quantities**, **Description** and **Images**. The
 condition you choose applies to all of them.
+
+<ImagePopup src="/images/selling-existing-products/assign-form.png" alt="The Assign Product form for a product with variations, with Product Details on the right" />
 
 ### Downloadable products
 

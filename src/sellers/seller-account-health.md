@@ -83,6 +83,8 @@ score and band, their cancellation rate, rating and flags.
 - To recalculate, click the **Refresh Account Health** icon on a row, or tick
   several sellers and use **Select Action >> Refresh Account Health**.
 
+<ImagePopup src="/images/seller-account-health/admin-sellers-filter.png" alt="The Sellers list with the Filters drawer open, showing the Account Health filter" />
+
 The list shows the band of the score, so it can say **Healthy** while one of the
 seller's metrics is critical. Open the seller's Account Health page with
 **Login as Seller** to see each metric.

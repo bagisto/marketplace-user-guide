@@ -7,9 +7,9 @@ and sets the cancellation rates that decide a seller's account health.
 
 Go to **Configure >> Marketplace >> Moderation & Health**.
 
-## Product Flags and Seller Flags
+<ImagePopup src="/images/configuration/moderation-and-health.png" alt="The Moderation & Health settings with the Product Flags, Seller Flags and Account Health sections" />
 
-<ImagePopup src="/images/configuration/moderation-flags.png" alt="Product Flags and Seller Flags sections" />
+## Product Flags and Seller Flags
 
 | Section | Setting | What it does |
 |---|---|---|
@@ -22,8 +22,6 @@ The reasons customers pick from are managed under **Marketplace >> Configure >>
 Flag Reasons**. See [Seller & Product Flagging](../moderation/seller-product-flagging.md).
 
 ## Account Health
-
-<ImagePopup src="/images/configuration/moderation-account-health.png" alt="Account Health section" />
 
 | Setting | What it does |
 |---|---|

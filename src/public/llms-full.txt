@@ -6,6 +6,8 @@ A reference for store admins who run a marketplace, sellers who run a shop on it
 
 # Bagisto Multi-Vendor Marketplace
 
+<div class="page-roles"><span class="role role--admin">Admin</span><span class="role role--seller">Seller</span><span class="role role--customer">Customer</span></div>
+
 The [Multi-Vendor Marketplace](https://store.webkul.com/laravel-multi-vendor-marketplace.html)
 turns a Bagisto store into a marketplace where many sellers sell under one roof.
 You run the platform, sellers run their own shops, and customers buy from any of
@@ -74,6 +76,150 @@ Each page starts with badges that show whose panel the steps happen in:
 <span class="role role--admin">Admin</span> for the admin panel,
 <span class="role role--seller">Seller</span> for the Seller Panel, and
 <span class="role role--customer">Customer</span> for the storefront.
+
+# Admin Quick Start
+
+<div class="page-roles"><span class="role role--admin">Admin</span></div>
+
+This page walks you through setting up the marketplace and the work that follows,
+in the order you'll usually need it. Each step links to the page with the details.
+
+## Set up the marketplace
+
+### 1. Turn it on and set your commission
+
+Make sure the marketplace is on, and choose the commission your store keeps from
+each seller sale.
+See [General](../configuration/general.md) and [Commission](../payments/commission-management.md).
+
+### 2. Decide how sellers join
+
+Choose whether new sellers wait for your approval, whether their shops are public,
+and what they can do with orders.
+See [Sellers settings](../configuration/sellers.md).
+
+### 3. Decide how products are added
+
+Choose whether sellers create their own products, sell products from your catalog,
+or both, and whether you approve each product first.
+See [Products settings](../configuration/products.md).
+
+### 4. Set up the landing page
+
+Write the page that invites visitors to become sellers, and choose which sellers to
+feature on it.
+See [Landing Page](../configuration/landing-page.md) and
+[Featured Sellers](../configuration/featured-sellers.md).
+
+### 5. Add what your marketplace needs
+
+- **Subscription plans** to charge sellers. See [Plans & Subscriptions](../subscriptions/seller-subscription-management.md).
+- **Generative AI** for seller listings. See [Generative AI Configuration](../configuration/generative-ai.md).
+- **Reporting** of products and sellers, and account-health thresholds. See [Moderation & Health](../configuration/moderation-and-health.md).
+- **Extra seller fields**, such as a tax number. See [Seller Attributes](../sellers/seller-attributes.md).
+
+## Run the marketplace
+
+### Approve sellers
+
+Review new sign-ups and approve or disapprove them.
+See [Seller Management](../sellers/seller-management.md).
+
+### Approve products
+
+Approve or reject the products sellers submit.
+See [Product Approval](../catalog/product-approval.md).
+
+### Follow orders and returns
+
+See every seller's part of each order, and handle returns.
+See [Order Management](../orders/order-management.md) and [Returns (RMA)](../orders/return-merchandise-authorization.md).
+
+### Pay sellers
+
+Pay sellers for completed orders when they request it, one at a time or several at
+once.
+See [Payment Requests & Payouts](../payments/payment-management.md).
+
+### Keep the marketplace healthy
+
+- Watch each seller's cancellations, ratings and flags in [Account Health](../sellers/seller-account-health.md).
+- Approve reviews in [Reviews & Ratings](../moderation/rating-management.md).
+- Look into reports in [Seller & Product Flagging](../moderation/seller-product-flagging.md).
+- Answer sellers in [Communications](../customers/communications.md).
+
+# Seller Quick Start
+
+<div class="page-roles"><span class="role role--seller">Seller</span></div>
+
+This page follows a new seller from sign-up to their first payout. Each step links
+to the page with the details.
+
+## 1. Create your seller account
+
+Open the marketplace landing page from the store icon in the storefront header,
+and fill in the **Become Seller** form.
+See [Becoming a Seller](../sellers/becoming-a-seller.md).
+
+## 2. Wait for approval and sign in
+
+If the store approves new sellers, you can sign in at **Seller Login** once your
+account is approved. You'll get an email when that happens.
+
+## 3. Complete your profile
+
+Add your phone number, business name and description, and your full address:
+address, city, state, postcode and country. You can't list products or use bulk
+upload until these are filled in. A logo, banner and policies are optional, but they
+help customers trust your shop.
+See [Manage Profile](../seller-panel/manage-profile.md).
+
+## 4. Choose a plan
+
+If the store uses subscription plans, choose one before you start selling.
+See [Choosing a Plan](../subscriptions/choosing-a-plan.md).
+
+## 5. Add your products
+
+- Create your own products. See [Product Management](../catalog/product-management.md).
+- Sell products already in the store's catalog at your own price. See [Selling Existing Products](../catalog/selling-existing-products.md).
+- Add many at once from a spreadsheet. See [Bulk Upload](../catalog/bulk-upload.md).
+- Let Generative AI write the listing. See [Generate Product Content](../generative-ai/generate-product-content.md).
+
+## 6. Set stock and prices
+
+Keep quantities and prices up to date across all your products on one screen.
+See [Manage Inventory](../inventory/manage-inventory.md) and [Manage Pricing](../pricing/manage-pricing.md).
+
+## 7. Submit for approval
+
+Submit each product when it is ready. If the store approves products, it goes on
+sale once approved.
+See [Product Approval](../catalog/product-approval.md).
+
+## 8. Promote your shop
+
+Run discounts on your products, create checkout deals and coupons, and join the
+store's own discounts.
+See [Product Discounts](../marketing/product-discounts.md) and [Checkout Deals](../marketing/checkout-deals.md).
+
+## 9. Fulfil your orders
+
+Invoice each order, schedule the pickup, and handle returns.
+See [Order Management](../orders/order-management.md) and [Shipments & Carriers](../orders/fulfilment-carriers.md).
+
+## 10. Get paid
+
+When an order is complete, request payment for it. The store pays you what you
+earned, less its commission.
+See [Payment Requests & Payouts](../payments/payment-management.md) and [Transactions](../payments/transactions.md).
+
+## 11. Track how you are doing
+
+Follow sales on your dashboard, keep your account health good, read reviews and
+check your reports.
+See [Dashboard](../seller-panel/dashboard.md), [Account Health](../sellers/seller-account-health.md)
+and [Seller Reports](../reporting/seller-reporting.md).
 
 # Generative AI (Magic AI)
 
@@ -173,146 +319,6 @@ Bagisto's own Generative AI features, such as writing content and images in the
 admin panel and image search on the storefront, are store features that sellers
 don't get. They are described in the
 [Bagisto User Guide](https://docs.bagisto.com/generative-ai/introduction).
-
-# Admin Quick Start
-
-This page walks you through setting up the marketplace and the work that follows,
-in the order you'll usually need it. Each step links to the page with the details.
-
-## Set up the marketplace
-
-### 1. Turn it on and set your commission
-
-Make sure the marketplace is on, and choose the commission your store keeps from
-each seller sale.
-See [General](../configuration/general.md) and [Commission](../payments/commission-management.md).
-
-### 2. Decide how sellers join
-
-Choose whether new sellers wait for your approval, whether their shops are public,
-and what they can do with orders.
-See [Sellers settings](../configuration/sellers.md).
-
-### 3. Decide how products are added
-
-Choose whether sellers create their own products, sell products from your catalog,
-or both, and whether you approve each product first.
-See [Products settings](../configuration/products.md).
-
-### 4. Set up the landing page
-
-Write the page that invites visitors to become sellers, and choose which sellers to
-feature on it.
-See [Landing Page](../configuration/landing-page.md) and
-[Featured Sellers](../configuration/featured-sellers.md).
-
-### 5. Add what your marketplace needs
-
-- **Subscription plans** to charge sellers. See [Plans & Subscriptions](../subscriptions/seller-subscription-management.md).
-- **Generative AI** for seller listings. See [Generative AI Configuration](../configuration/generative-ai.md).
-- **Reporting** of products and sellers, and account-health thresholds. See [Moderation & Health](../configuration/moderation-and-health.md).
-- **Extra seller fields**, such as a tax number. See [Seller Attributes](../sellers/seller-attributes.md).
-
-## Run the marketplace
-
-### Approve sellers
-
-Review new sign-ups and approve or disapprove them.
-See [Seller Management](../sellers/seller-management.md).
-
-### Approve products
-
-Approve or reject the products sellers submit.
-See [Product Approval](../catalog/product-approval.md).
-
-### Follow orders and returns
-
-See every seller's part of each order, and handle returns.
-See [Order Management](../orders/order-management.md) and [Returns (RMA)](../orders/return-merchandise-authorization.md).
-
-### Pay sellers
-
-Pay sellers for completed orders when they request it, one at a time or several at
-once.
-See [Payment Requests & Payouts](../payments/payment-management.md).
-
-### Keep the marketplace healthy
-
-- Watch each seller's cancellations, ratings and flags in [Account Health](../sellers/seller-account-health.md).
-- Approve reviews in [Reviews & Ratings](../moderation/rating-management.md).
-- Look into reports in [Seller & Product Flagging](../moderation/seller-product-flagging.md).
-- Answer sellers in [Communications](../customers/communications.md).
-
-# Seller Quick Start
-
-This page follows a new seller from sign-up to their first payout. Each step links
-to the page with the details.
-
-## 1. Create your seller account
-
-Open the marketplace landing page from the store icon in the storefront header,
-and fill in the **Become Seller** form.
-See [Becoming a Seller](../sellers/becoming-a-seller.md).
-
-## 2. Wait for approval and sign in
-
-If the store approves new sellers, you can sign in at **Seller Login** once your
-account is approved. You'll get an email when that happens.
-
-## 3. Complete your profile
-
-Add your phone number, business name and description, and your full address:
-address, city, state, postcode and country. You can't list products or use bulk
-upload until these are filled in. A logo, banner and policies are optional, but they
-help customers trust your shop.
-See [Manage Profile](../seller-panel/manage-profile.md).
-
-## 4. Choose a plan
-
-If the store uses subscription plans, choose one before you start selling.
-See [Choosing a Plan](../subscriptions/choosing-a-plan.md).
-
-## 5. Add your products
-
-- Create your own products. See [Product Management](../catalog/product-management.md).
-- Sell products already in the store's catalog at your own price. See [Selling Existing Products](../catalog/selling-existing-products.md).
-- Add many at once from a spreadsheet. See [Bulk Upload](../catalog/bulk-upload.md).
-- Let Generative AI write the listing. See [Generate Product Content](../generative-ai/generate-product-content.md).
-
-## 6. Set stock and prices
-
-Keep quantities and prices up to date across all your products on one screen.
-See [Manage Inventory](../inventory/manage-inventory.md) and [Manage Pricing](../pricing/manage-pricing.md).
-
-## 7. Submit for approval
-
-Submit each product when it is ready. If the store approves products, it goes on
-sale once approved.
-See [Product Approval](../catalog/product-approval.md).
-
-## 8. Promote your shop
-
-Run discounts on your products, create checkout deals and coupons, and join the
-store's own discounts.
-See [Product Discounts](../marketing/product-discounts.md) and [Checkout Deals](../marketing/checkout-deals.md).
-
-## 9. Fulfil your orders
-
-Invoice each order, schedule the pickup, and handle returns.
-See [Order Management](../orders/order-management.md) and [Shipments & Carriers](../orders/fulfilment-carriers.md).
-
-## 10. Get paid
-
-When an order is complete, request payment for it. The store pays you what you
-earned, less its commission.
-See [Payment Requests & Payouts](../payments/payment-management.md) and [Transactions](../payments/transactions.md).
-
-## 11. Track how you are doing
-
-Follow sales on your dashboard, keep your account health good, read reviews and
-check your reports.
-See [Dashboard](../seller-panel/dashboard.md), [Account Health](../sellers/seller-account-health.md)
-and [Seller Reports](../reporting/seller-reporting.md).
 
 # Generate Product Content
 
@@ -486,6 +492,8 @@ when it resets.
 
 # Becoming a Seller
 
+<div class="page-roles"><span class="role role--seller">Seller</span></div>
+
 Anyone can apply to sell on the marketplace from the storefront. This page covers
 creating a seller account, signing in, and resetting a forgotten password.
 
@@ -499,7 +507,7 @@ page.
    marketplace landing page opens.
 2. Click the button in the banner, such as **Open Store**.
 
-<ImagePopup src="/images/becoming-a-seller/landing-page-banner.png" alt="The marketplace landing page banner with the Open Store button" />
+<ImagePopup src="/images/becoming-a-seller/landing-page-banner.png" alt="The marketplace landing page, with the Open Store button in the banner" />
 
 You can also open **Seller Login** and click **Create your account**.
 
@@ -569,6 +577,8 @@ profile instead, where you can choose a plan.
 Click your profile icon at the top right of the Seller Panel, then click **Logout**.
 
 # Seller Management
+
+<div class="page-roles"><span class="role role--admin">Admin</span></div>
 
 As the admin, you approve new sellers, edit their details, set their commission and
 limits, and suspend or remove them when needed.
@@ -700,6 +710,8 @@ You can list a catalog product for a seller, at the seller's own price and stock
    **Quantities** and **Description**.
 4. Click **Save**.
 
+<ImagePopup src="/images/seller-management/assign-product.png" alt="The Assign Product form for a seller, with condition, price, quantities and description" />
+
 The seller's profile must be complete first. See
 [Selling Existing Products](../catalog/selling-existing-products.md) for how the
 offer works.
@@ -740,6 +752,8 @@ role, along with **Create**, **Edit**, **Delete**, **Assign Product** and
 **Refresh Account Health** as needed.
 
 # Seller Attributes
+
+<div class="page-roles"><span class="role role--admin">Admin</span></div>
 
 Seller attributes are the fields that make up a seller's details: what they fill
 in when they sign up, what they see on their profile, and what customers see on
@@ -848,6 +862,8 @@ as needed.
 
 # Account Health
 
+<div class="page-roles"><span class="role role--seller">Seller</span><span class="role role--admin">Admin</span></div>
+
 Account health shows how well a seller is serving customers, based on cancelled
 orders, customer ratings and reports. Sellers use it to spot problems early, and
 the admin uses it to find sellers who need attention.
@@ -929,6 +945,8 @@ score and band, their cancellation rate, rating and flags.
 - To recalculate, click the **Refresh Account Health** icon on a row, or tick
   several sellers and use **Select Action >> Refresh Account Health**.
 
+<ImagePopup src="/images/seller-account-health/admin-sellers-filter.png" alt="The Sellers list with the Filters drawer open, showing the Account Health filter" />
+
 The list shows the band of the score, so it can say **Healthy** while one of the
 seller's metrics is critical. Open the seller's Account Health page with
 **Login as Seller** to see each metric.
@@ -941,6 +959,8 @@ seller's metrics is critical. Open the seller's Account Health page with
 - Read reviews and flags to see what customers are unhappy about.
 
 # Seller Panel Overview
+
+<div class="page-roles"><span class="role role--seller">Seller</span></div>
 
 The Seller Panel is where sellers and their team run their shop. It opens at
 `/seller` on your store's address, and you sign in on **Seller Login**. See
@@ -1000,6 +1020,8 @@ The Seller Panel uses the language chosen under **Settings >> General**. See
 [Account Settings](account-settings.md).
 
 # Dashboard
+
+<div class="page-roles"><span class="role role--seller">Seller</span></div>
 
 The dashboard is usually the first page you see after you sign in. When the store
 uses subscription plans, you land on **My Profile** instead. The dashboard shows how
@@ -1066,7 +1088,11 @@ The categories that sold the most in the period.
 Team members with the **Dashboard** permission see the same figures for the shop,
 without the **Profile Score** card.
 
+<ImagePopup src="/images/seller-panel/dashboard-team-member.png" alt="The dashboard as a team member sees it, without the Profile Score card" />
+
 # Manage Profile
+
+<div class="page-roles"><span class="role role--seller">Seller</span></div>
 
 Your profile holds your shop's details: the name and logo customers see, your
 description and policies, your address and your contact details. Customers see much
@@ -1143,6 +1169,8 @@ Your description and the policies you filled in appear in its **About** tab. See
 
 # Account Settings
 
+<div class="page-roles"><span class="role role--seller">Seller</span></div>
+
 Account settings belong to the person signed in, whether that is the shop owner or
 a team member. Use them to change your password and the language of the Seller
 Panel. The shop owner can also choose whether to get emails about customer messages.
@@ -1180,6 +1208,8 @@ When you save, you'll see **General settings updated successfully**. If you are 
 shop owner, you also receive a profile update email.
 
 # Users & Roles
+
+<div class="page-roles"><span class="role role--seller">Seller</span></div>
 
 A shop owner can add team members who sign in to the Seller Panel with their own
 email and password. A role decides what each team member can see and do.
@@ -1235,6 +1265,8 @@ A role that a team member uses can't be deleted, and neither can your only role.
 6. Leave **Status** switched on so the account is active.
 7. Click **Save User**.
 
+<ImagePopup src="/images/users-and-roles/create-user.png" alt="The Create User form" />
+
 <ImagePopup src="/images/users-and-roles/settings-users.png" alt="The Users list" />
 
 No invitation email is sent. Give the team member their email and password, and ask
@@ -1270,6 +1302,8 @@ If the store uses subscription plans:
 See [Choosing a Plan](../subscriptions/choosing-a-plan.md).
 
 # Product Management
+
+<div class="page-roles"><span class="role role--seller">Seller</span></div>
 
 Sellers create and look after their products in the Seller Panel. This page covers
 the products list, creating a product, and each step of the product form.
@@ -1346,7 +1380,7 @@ You only see the kinds of product the store allows you to sell.
 
 ## Fill in the product form
 
-<ImagePopup src="/images/product-management/edit-general.png" alt="The General step of the product form" />
+<ImagePopup src="/images/product-management/edit-general.png" alt="The product form open on its General step, with Listing Completeness at the top" />
 
 At the top of the page you'll find:
 
@@ -1412,6 +1446,8 @@ different price for a customer group or for larger quantities. Choose the
 | Bookable | **Booking Type** | The booking type and its availability |
 | Physical Product without variations | **Customizable Item** | Options customers can choose or fill in, such as engraving text |
 
+<ImagePopup src="/images/product-management/edit-customizable-item.png" alt="The Customizable Item step with its Add Option button" />
+
 ### Save the product
 
 - Click **Save as Draft** to finish later, or **Submit** when the product is ready.
@@ -1434,6 +1470,8 @@ and which kinds you can create. Once you reach the limit, you'll see
 [Choosing a Plan](../subscriptions/choosing-a-plan.md).
 
 # Selling Existing Products
+
+<div class="page-roles"><span class="role role--seller">Seller</span></div>
 
 When a product is already in the store's catalog, you don't need to create it again.
 You can sell it as your own, with your own price, stock, condition and description.
@@ -1467,8 +1505,6 @@ You can't sell a product when:
    appears for simple and virtual products only.
 5. Click **Submit**, or **Save as Draft** to finish later.
 
-<ImagePopup src="/images/selling-existing-products/assign-form.png" alt="The Assign Product form for selling a catalog product" />
-
 **Product Details** on the right shows the catalog product you are selling. The
 **Condition**, **Price** and **Description** are needed when you submit, but you can
 leave them empty in a draft.
@@ -1482,6 +1518,8 @@ products, your offer waits for approval like any other product. See
 For a product that comes in sizes or colours, you choose which variants to sell. For
 each one, set its **Price**, **Quantities**, **Description** and **Images**. The
 condition you choose applies to all of them.
+
+<ImagePopup src="/images/selling-existing-products/assign-form.png" alt="The Assign Product form for a product with variations, with Product Details on the right" />
 
 ### Downloadable products
 
@@ -1512,6 +1550,8 @@ To change prices or stock for many products at once, use
 
 # Product Approval
 
+<div class="page-roles"><span class="role role--seller">Seller</span><span class="role role--admin">Admin</span></div>
+
 A seller's product starts as a draft, is submitted when it is ready and, if the
 store requires it, is approved by the admin before customers can buy it. This page
 follows a product through each step, from both sides.
@@ -1532,6 +1572,8 @@ Sellers see the status as a badge on each product in **Catalog >> Products**.
 To find products by status, click **Filter** and use **Is Approved**
 (**Approved**, **Waiting For Approval** or **Rejected**) or **Draft Status**
 (**Draft** or **Submitted**).
+
+<ImagePopup src="/images/product-approval/seller-products-filter.png" alt="The products filter with Is Approved and Draft Status" />
 
 ## Save a draft
 
@@ -1564,7 +1606,7 @@ go back to being a draft.
 3. Click **Select Action**, point to **Update Status** and click **Approved**.
 4. Click **Agree** to confirm.
 
-<ImagePopup src="/images/product-approval/admin-products.png" alt="Seller products waiting for approval in the admin panel" />
+<ImagePopup src="/images/product-approval/admin-products.png" alt="Seller products in the admin panel, with the seller, Is Owner and status on each row" />
 
 Each seller receives an email saying their product has been approved.
 
@@ -1624,6 +1666,8 @@ seller sells from your catalog removes only the seller's offer.
 
 # Bulk Upload
 
+<div class="page-roles"><span class="role role--seller">Seller</span></div>
+
 Bulk upload adds many products at once from a spreadsheet. You can create your own
 new products, or sell products that are already in the store's catalog. The file is
 checked before anything is imported, and you get a report when it's done.
@@ -1663,6 +1707,8 @@ an upload, and download the **Error File** when some rows failed.
 
 ### Images
 
+<ImagePopup src="/images/bulk-upload/create-images.png" alt="The Images step with its two options" />
+
 - **Image URLs in the sheet** — add public links to the images, separated by commas,
   in the `images` column. The store downloads them for you. This is the recommended
   option.
@@ -1674,6 +1720,8 @@ Products you sell from the catalog use the catalog's images, so this step doesn'
 appear for them.
 
 ### Settings
+
+<ImagePopup src="/images/bulk-upload/create-settings.png" alt="The Settings step of the bulk upload wizard" />
 
 | Setting | What it does |
 |---|---|
@@ -1749,10 +1797,14 @@ Click the edit icon on an upload in **Past Uploads**, replace the file or change
 settings, then click **Reimport** and confirm. The file is checked again from the
 start.
 
+<ImagePopup src="/images/bulk-upload/edit-import.png" alt="Editing an upload, with the Reimport button" />
+
 If the store uses subscription plans, products over your plan's limit aren't
 imported.
 
 # Product Barcode
+
+<div class="page-roles"><span class="role role--seller">Seller</span></div>
 
 Every product can have a barcode for scanning when you pick, pack or count stock. You
 set the value, and the barcode image is created for you. You can also create and print
@@ -1766,7 +1818,7 @@ barcodes for many products at once.
 4. Enter the **Barcode Value**, such as the product code or GTIN you already use.
 5. Click **Save Product**, or **Submit** for a draft.
 
-<ImagePopup src="/images/product-barcode/barcode-tab.png" alt="The Barcode step with a generated barcode" />
+<ImagePopup src="/images/product-barcode/barcode-tab.png" alt="The Barcode step of the product form" />
 
 The **Barcode** image is created when you save and updated whenever the value changes.
 Click **Download Barcode** for a PDF of it. No two products can have the same barcode
@@ -1813,6 +1865,8 @@ The **Barcode** column shows each product's barcode and its value, or
   barcodes, and **Print** to print them or use **Download Barcode**.
 
 # Product Form Layout
+
+<div class="page-roles"><span class="role role--admin">Admin</span></div>
 
 The product form sellers fill in can be shown as guided steps or as a classic page
 with two columns. You set the default for every product, and you can give each
@@ -1882,6 +1936,8 @@ and **Edit** in their role.
 
 # Manage Inventory
 
+<div class="page-roles"><span class="role role--seller">Seller</span></div>
+
 Manage Inventory lets you update the stock of all your products on one screen, for
 each of your inventory sources, and save every change at once.
 
@@ -1933,8 +1989,6 @@ You'll see **Inventories saved successfully.**
 5. Click **Apply**.
 6. Click **Save Inventories**.
 
-<ImagePopup src="/images/manage-inventory/bulk-stock.png" alt="Changing the stock of several products at once" />
-
 **Apply** changes only the ticked products on the current page, and stock never goes
 below 0. Nothing is saved until you click **Save Inventories**.
 
@@ -1965,6 +2019,8 @@ Products at or below the store's low-stock level are listed under
   **Update Status** to switch products on or off.
 
 # Inventory Sources
+
+<div class="page-roles"><span class="role role--seller">Seller</span><span class="role role--admin">Admin</span></div>
 
 An inventory source is a place where a seller keeps stock, such as a warehouse or a
 shop. Stock is recorded for each source, and sellers choose a source when they ship an
@@ -2026,10 +2082,14 @@ own sources, so this list is read-only.
 
 <ImagePopup src="/images/inventory-source-management/admin-inventory-sources.png" alt="The admin's read-only list of seller inventory sources" />
 
+<ImagePopup src="/images/inventory-source-management/admin-source-view.png" alt="The details of a seller's inventory source" />
+
 Your store's own sources, under **Settings >> Inventory Sources**, don't include
 seller sources.
 
 # Manage Pricing
+
+<div class="page-roles"><span class="role role--seller">Seller</span></div>
 
 Manage Pricing lets you update prices, sale prices and customer group prices for all
 your products on one screen, and save every change at once.
@@ -2092,8 +2152,6 @@ than 100%.
 5. Click **Apply**.
 6. Click **Save Prices**.
 
-<ImagePopup src="/images/manage-pricing/bulk-price.png" alt="Changing the price of several products at once" />
-
 **Apply** changes only the **Price** of the ticked products on the current page. It
 doesn't change sale prices or customer group prices.
 
@@ -2116,6 +2174,8 @@ Search by product name or SKU, or click **Filter** to narrow the list by **Produ
 Team members need **Manage Pricing** with **Save Prices** to save changes.
 
 # Product Discounts
+
+<div class="page-roles"><span class="role role--seller">Seller</span><span class="role role--admin">Admin</span></div>
 
 A product discount lowers the price of your products automatically, with no coupon.
 Customers see the reduced price on the storefront while the discount runs.
@@ -2196,6 +2256,8 @@ priority and its dates. Click the edit icon to change a discount, or the delete 
 to remove it. Removing or switching off a discount returns your products to their
 normal price.
 
+<ImagePopup src="/images/product-discounts/product-discounts-list.png" alt="The seller's Product Discounts list" />
+
 ## For the admin
 
 Go to **Marketplace >> Marketing >> Product Discounts** to see the discounts sellers
@@ -2216,6 +2278,8 @@ by status. To delete a seller's discount, click its delete icon, or tick several
   delete sellers' discounts.
 
 # Joining Admin Discounts
+
+<div class="page-roles"><span class="role role--admin">Admin</span><span class="role role--seller">Seller</span></div>
 
 The admin can open a store product discount to sellers. Sellers who join, and are
 approved, get that discount on their own products. This lets you run store-wide sales
@@ -2327,6 +2391,8 @@ When joining is switched off in Marketing settings, these permissions and menus 
 hidden.
 
 # Checkout Deals
+
+<div class="page-roles"><span class="role role--seller">Seller</span><span class="role role--admin">Admin</span></div>
 
 A checkout deal is a discount on the cart. It can apply automatically, or only when
 the customer enters a coupon code. Use it for offers such as 10% off when a customer
@@ -2449,12 +2515,16 @@ code or generate new ones.
 The **Checkout Deals** list shows each deal's name, whether it is active, its priority
 and its dates, with icons to edit, copy or delete it.
 
+<ImagePopup src="/images/checkout-deals/checkout-deals-list.png" alt="The seller's Checkout Deals list" />
+
 ## For the admin
 
 Go to **Marketplace >> Marketing >> Checkout Deals** to see the deals sellers have
 created, with the **Seller**, status, priority and dates. You can filter the list by
 status. To delete a seller's deal, click its delete icon, or tick several deals and use
 **Select Action >> Delete**.
+
+<ImagePopup src="/images/checkout-deals/admin-checkout-deals.png" alt="Seller checkout deals in the admin panel" />
 
 ## Permissions
 
@@ -2464,6 +2534,8 @@ status. To delete a seller's deal, click its delete icon, or tick several deals 
   sellers' deals.
 
 # Order Management
+
+<div class="page-roles"><span class="role role--seller">Seller</span><span class="role role--admin">Admin</span></div>
 
 A customer can buy from several sellers in one checkout. Once the order is placed, it
 is split so that each seller sees and handles only their own products. This page covers
@@ -2542,6 +2614,8 @@ show.
 You'll see **Invoice created successfully**. To download an invoice, open the
 **Invoices** tab and click **Print**.
 
+<ImagePopup src="/images/order-management/order-view-invoices.png" alt="The Invoices tab of an order with the Print link" />
+
 ## Ship the order
 
 Click **Schedule Pickup** on the order row or on the order page. See
@@ -2566,6 +2640,8 @@ Cancelled products count towards your cancellation rate in
 
 Sellers can't refund an order. The store admin issues refunds, and they then appear on
 the order's **Refunds** tab.
+
+<ImagePopup src="/images/order-management/order-view-refunds.png" alt="The Refunds tab of an order" />
 
 After any refund, even a partial one, the order's **Seller Payment Status** shows
 **Refunded**, and the order can no longer be requested for payment.
@@ -2609,6 +2685,8 @@ there also appear in the seller's view.
 
 # Shipments & Carriers
 
+<div class="page-roles"><span class="role role--seller">Seller</span><span class="role role--admin">Admin</span></div>
+
 Sellers ship their products by scheduling a pickup for the order. The carrier decides
 how the parcel travels. **Self Ship** is always available: the seller arranges their
 own courier and enters the tracking number. A courier integration can also buy labels
@@ -2635,6 +2713,8 @@ store's shipping methods at checkout.
 
 You'll see **Shipment created successfully**. The order's **Shipments** tab shows the
 carrier, the tracking number and the inventory source.
+
+<ImagePopup src="/images/order-management/order-view-shipments.png" alt="The Shipments tab of an order with the carrier, tracking number and inventory source" />
 
 | Message | What it means |
 |---|---|
@@ -2681,6 +2761,8 @@ saved and marked **Not Booked**.
 - Team members need **Orders** with **Shipment**.
 
 # Bookings
+
+<div class="page-roles"><span class="role role--seller">Seller</span></div>
 
 Sellers can sell bookable products, such as appointments, rentals, event tickets or
 table reservations. Each reservation a customer makes appears under
@@ -2729,6 +2811,8 @@ Team members need **Bookings**, and **Orders** with **View** to open the order.
 
 # Returns (RMA)
 
+<div class="page-roles"><span class="role role--customer">Customer</span><span class="role role--seller">Seller</span><span class="role role--admin">Admin</span></div>
+
 Returns use the store's RMA (return merchandise authorization) system. When a customer
 asks to return a product, the request goes to the seller who sold it. The seller talks
 to the customer and moves the request along, and the admin can see and act on every
@@ -2751,6 +2835,8 @@ time. A product can be returned once it is invoiced, and cancelled while it isn'
 invoiced yet. Customers choose what they want, the reason, the quantity and the package
 condition, can add details and photos, and must accept the return policy. See
 [RMA](https://docs.bagisto.com/orders/rma) in the Bagisto User Guide.
+
+<ImagePopup src="/images/return-merchandise-authorization/customer-rma.png" alt="The RMA page in the customer's account" />
 
 Sellers aren't emailed about new returns, so check **Sales >> RMA** regularly.
 
@@ -2859,6 +2945,8 @@ the admin panel.
 
 # Commission
 
+<div class="page-roles"><span class="role role--admin">Admin</span><span class="role role--seller">Seller</span></div>
+
 Commission is the share of each seller sale the store keeps. The seller is paid the
 rest. The rate is fixed on each order when it is placed.
 
@@ -2939,6 +3027,8 @@ subscriptions off. If the admin cancels a plan instead, the seller keeps the pla
 rate. See [Choosing a Plan](../subscriptions/choosing-a-plan.md).
 
 # Payment Requests & Payouts
+
+<div class="page-roles"><span class="role role--seller">Seller</span><span class="role role--admin">Admin</span></div>
 
 Customers pay the store, and the store pays each seller what they earned. A seller
 requests payment for each completed order. The admin pays the seller outside the store,
@@ -3036,6 +3126,8 @@ stands. Team members see it only with the **Payment Request** permission.
 
 # Transactions
 
+<div class="page-roles"><span class="role role--seller">Seller</span><span class="role role--admin">Admin</span></div>
+
 A transaction is a record of a payment the store made to a seller for an order.
 Sellers use their transactions page to follow what they have earned and been paid.
 The admin sees every seller's transactions.
@@ -3087,6 +3179,8 @@ with the **Id**, **Seller Name**, **Seller Id**, **Transaction Id**, **Comment**
 
 <ImagePopup src="/images/transactions/admin-transactions.png" alt="All seller transactions in the admin panel" />
 
+<ImagePopup src="/images/transactions/admin-transaction-view.png" alt="A seller transaction opened in the admin panel" />
+
 ## Permissions
 
 - Team members need **Transactions**, with **View** to open a transaction and
@@ -3094,6 +3188,8 @@ with the **Id**, **Seller Name**, **Seller Id**, **Transaction Id**, **Comment**
 - Admins need **Marketplace >> Sales >> Transactions** with **View**.
 
 # Plans & Subscriptions
+
+<div class="page-roles"><span class="role role--admin">Admin</span></div>
 
 Subscription plans let you charge sellers for selling on your marketplace. Each plan
 sets a price and a length, how many products and team members the seller can have, the
@@ -3119,7 +3215,7 @@ Switch **Subscription Plans** on and enter your terms in
 4. Switch **Status** on so sellers can see the plan.
 5. Click **Save**.
 
-<ImagePopup src="/images/seller-subscription-management/edit-plan.png" alt="The plan form with its fields, open on a monthly plan" />
+<ImagePopup src="/images/seller-subscription-management/create-plan.png" alt="The Create Plan form with its fields" />
 
 | Field | What it does |
 |---|---|
@@ -3184,6 +3280,8 @@ To cancel a pending or active plan, click **Cancel**. To decide on several at on
 them and use **Select Action >> Update Status**. A plan can't be approved while the
 seller already has an active plan for the same dates.
 
+<ImagePopup src="/images/seller-subscription-management/active-subscription.png" alt="An active subscription with the Cancel button" />
+
 ## What happens automatically
 
 These run on the store's scheduler, so make sure it is running on your server:
@@ -3211,6 +3309,8 @@ To give another admin access, tick **Marketplace >> Subscription Plans** in thei
 with **View** and **Edit**.
 
 # Choosing a Plan
+
+<div class="page-roles"><span class="role role--seller">Seller</span></div>
 
 When the store uses subscription plans, each seller needs an active plan to sell. A
 plan sets how many products and team members you can have, the commission the store
@@ -3315,6 +3415,8 @@ For how the admin sets up plans, see
 
 # Seller Customers
 
+<div class="page-roles"><span class="role role--seller">Seller</span></div>
+
 The **Customers** page lists the registered customers who have bought from you, with
 how much they have spent and how many orders they have placed.
 
@@ -3354,6 +3456,8 @@ email.
 
 # Communications
 
+<div class="page-roles"><span class="role role--seller">Seller</span><span class="role role--admin">Admin</span><span class="role role--customer">Customer</span></div>
+
 Communications keeps conversations inside the marketplace. Sellers talk to the store
 admin, and customers talk to sellers. Each conversation is a thread of messages, with
 file attachments.
@@ -3387,7 +3491,7 @@ replies.
    any seller.
 3. Type your message, add a file if needed, and click the send icon.
 
-<ImagePopup src="/images/communications/admin-communications.png" alt="The admin's Communications page with the sellers list" />
+<ImagePopup src="/images/communications/admin-communications.png" alt="The admin's Communications page with a seller conversation open" />
 
 Sellers with unread messages show a count. The menu at the top of a conversation has:
 
@@ -3446,6 +3550,8 @@ includes **Communication >> Customers**.
 
 # Marketplace Landing Page
 
+<div class="page-roles"><span class="role role--customer">Customer</span><span class="role role--admin">Admin</span></div>
+
 The marketplace landing page invites visitors to open a shop on your marketplace. It
 explains why sellers should join, shows your featured sellers, and links to the seller
 sign-up form.
@@ -3493,6 +3599,8 @@ The page isn't available while the marketplace is switched off. See
 [Turning the marketplace off](../configuration/overview.md#turning-the-marketplace-off).
 
 # Seller Shop Page
+
+<div class="page-roles"><span class="role role--customer">Customer</span><span class="role role--seller">Seller</span></div>
 
 Every seller has a public shop page with their products, reviews and store policies.
 It opens at `/marketplace/` followed by the seller's slug, for example
@@ -3553,6 +3661,8 @@ The **Reviews** tab shows the seller's average rating, how the ratings split acr
 to five stars, and the five latest approved reviews. When there are five or more, click
 **View All Reviews** to see the rest.
 
+<ImagePopup src="/images/seller-shop-page/reviews-tab.png" alt="The Reviews tab on a seller's shop page" />
+
 ### Review a seller
 
 Customers who have ordered from the seller can review them once.
@@ -3590,6 +3700,8 @@ A shop page can't be opened when:
 - the marketplace is switched off.
 
 # Shopping Across Sellers
+
+<div class="page-roles"><span class="role role--customer">Customer</span></div>
 
 Customers shop from every seller in one store. They can see who sells a product,
 compare sellers who sell the same product, and pay for products from several sellers
@@ -3670,6 +3782,8 @@ To review a seller, customers open the seller's shop page. See
 
 # Featured Sellers
 
+<div class="page-roles"><span class="role role--customer">Customer</span><span class="role role--admin">Admin</span></div>
+
 Featured sellers give your best sellers extra visibility. The
 **Our Featured Sellers** block appears on the marketplace landing page, between
 the features and the seller journey. It isn't shown on the store's home page.
@@ -3722,6 +3836,8 @@ The block also needs **Show Publicly** switched on in
 [Featured Sellers settings](../configuration/featured-sellers.md).
 
 # Reviews & Ratings
+
+<div class="page-roles"><span class="role role--customer">Customer</span><span class="role role--seller">Seller</span><span class="role role--admin">Admin</span></div>
 
 Customers can review a seller and the products they sell. Every new review waits for
 the admin to approve it before it counts towards a rating.
@@ -3783,6 +3899,8 @@ managed in **Customers >> Reviews**.
 
 <ImagePopup src="/images/rating-management/seller-reviews.png" alt="The seller's Seller Reviews page" />
 
+<ImagePopup src="/images/rating-management/seller-product-reviews.png" alt="The seller's Product Reviews page" />
+
 Both lists are read-only. Sellers can't approve, reply to or delete reviews. Customer
 email addresses are masked when the store doesn't let sellers see customer details.
 
@@ -3795,6 +3913,8 @@ No emails are sent when a review is written or approved.
 - Team members need **Performance**, with **Seller Reviews** and **Product Reviews**.
 
 # Seller & Product Flagging
+
+<div class="page-roles"><span class="role role--customer">Customer</span><span class="role role--admin">Admin</span></div>
 
 Customers can report a problem with a product or a seller, such as a damaged,
 wrong or overpriced product. The admin chooses the reasons customers pick from and
@@ -3870,6 +3990,8 @@ The marketplace starts with these reasons:
 
 <ImagePopup src="/images/seller-product-flagging/seller-flags.png" alt="The Seller Flags list for a seller" />
 
+<ImagePopup src="/images/seller-product-flagging/product-flags.png" alt="The Product Flags list for a product" />
+
 Reports can't be deleted. The flags count on the sellers list covers the last 90 days
 and is updated once a day, or when you use **Refresh Account Health**. The
 **Seller Flags** list shows every report.
@@ -3892,6 +4014,8 @@ Turning reporting on or off, **Show Red Flag** and the red flag limit are in
 [Moderation & Health settings](../configuration/moderation-and-health.md).
 
 # Seller Reports
+
+<div class="page-roles"><span class="role role--seller">Seller</span></div>
 
 Reports show how your shop is doing over any period, with each figure compared with the
 period before. There are three reports: **Sales**, **Customers** and **Products**.
@@ -3955,13 +4079,15 @@ details.
 3. To download the table, click the export icon and choose **Export CSV** or
    **Export XLS**.
 
-<ImagePopup src="/images/seller-reporting/report-details.png" alt="The details of a report with the export menu" />
+<ImagePopup src="/images/seller-reporting/report-details.png" alt="The Total Sales details page with the export icon, interval and date fields" />
 
 **Purchase Funnel** has no details page, so it can't be exported.
 
 Team members need **Reporting**, with **Sales**, **Customers** and **Products** as needed.
 
 # Marketplace Configuration
+
+<div class="page-roles"><span class="role role--admin">Admin</span></div>
 
 The marketplace adds its own settings to the admin's **Configure** page. They
 decide how sellers join, what they can do with products and orders, how the
@@ -4039,14 +4165,16 @@ tiles. The marketplace doesn't add a separate permission for them.
 
 # General
 
+<div class="page-roles"><span class="role role--admin">Admin</span></div>
+
 The **General** screen turns the marketplace on, sets the commission the store
 keeps from seller sales, and switches subscription plans on or off.
 
 Go to **Configure >> Marketplace >> General**.
 
-## General
+<ImagePopup src="/images/configuration/general.png" alt="The Marketplace General settings with the General, Subscription and Module Information sections" />
 
-<ImagePopup src="/images/configuration/general-general.png" alt="General section of the Marketplace General settings" />
+## General
 
 | Setting | What it does |
 |---|---|
@@ -4067,8 +4195,6 @@ rate they were placed with.
 
 Subscription plans let you charge sellers for selling on the marketplace and
 limit what each plan includes.
-
-<ImagePopup src="/images/configuration/general-subscription.png" alt="Subscription and Module Information sections" />
 
 | Setting | What it does |
 |---|---|
@@ -4105,14 +4231,16 @@ nothing to change here.
 
 # Sellers
 
+<div class="page-roles"><span class="role role--admin">Admin</span></div>
+
 The **Sellers** screen decides whether new sellers need your approval, whether
 their shops are public, and what they can do with their orders.
 
 Go to **Configure >> Marketplace >> Sellers**.
 
-## Registration & Visibility
+<ImagePopup src="/images/configuration/sellers.png" alt="The Marketplace Sellers settings with the Registration & Visibility, Order Capabilities and Uploads sections" />
 
-<ImagePopup src="/images/configuration/sellers-registration.png" alt="Registration & Visibility section of the Sellers settings" />
+## Registration & Visibility
 
 | Setting | What it does |
 |---|---|
@@ -4123,8 +4251,6 @@ Go to **Configure >> Marketplace >> Sellers**.
 To approve sellers, see [Seller Management](../sellers/seller-management.md).
 
 ## Order Capabilities
-
-<ImagePopup src="/images/configuration/sellers-order-capabilities.png" alt="Order Capabilities and Uploads sections" />
 
 | Setting | What it does |
 |---|---|
@@ -4145,14 +4271,16 @@ See [Order Management](../orders/order-management.md) and
 
 # Products
 
+<div class="page-roles"><span class="role role--admin">Admin</span></div>
+
 The **Products** screen decides how sellers add products, whether you approve
 them first, and how the seller product form looks.
 
 Go to **Configure >> Marketplace >> Products**.
 
-## Approval & Creation
+<ImagePopup src="/images/configuration/products.png" alt="The Marketplace Products settings with the Approval & Creation, Product Form and Inventory sections" />
 
-<ImagePopup src="/images/configuration/products-approval.png" alt="Approval & Creation section of the Products settings" />
+## Approval & Creation
 
 | Setting | What it does |
 |---|---|
@@ -4164,8 +4292,6 @@ See [Product Approval](../catalog/product-approval.md) and
 [Selling Existing Products](../catalog/selling-existing-products.md).
 
 ## Product Form
-
-<ImagePopup src="/images/configuration/products-form-inventory.png" alt="Product Form and Inventory sections" />
 
 | Setting | What it does |
 |---|---|
@@ -4186,14 +4312,16 @@ See [Dashboard](../seller-panel/dashboard.md).
 
 # Moderation & Health
 
+<div class="page-roles"><span class="role role--admin">Admin</span></div>
+
 The **Moderation & Health** screen lets customers report products and sellers,
 and sets the cancellation rates that decide a seller's account health.
 
 Go to **Configure >> Marketplace >> Moderation & Health**.
 
-## Product Flags and Seller Flags
+<ImagePopup src="/images/configuration/moderation-and-health.png" alt="The Moderation & Health settings with the Product Flags, Seller Flags and Account Health sections" />
 
-<ImagePopup src="/images/configuration/moderation-flags.png" alt="Product Flags and Seller Flags sections" />
+## Product Flags and Seller Flags
 
 | Section | Setting | What it does |
 |---|---|---|
@@ -4207,8 +4335,6 @@ Flag Reasons**. See [Seller & Product Flagging](../moderation/seller-product-fla
 
 ## Account Health
 
-<ImagePopup src="/images/configuration/moderation-account-health.png" alt="Account Health section" />
-
 | Setting | What it does |
 |---|---|
 | **Cancellation Rate Warning (%)** | When this share of a seller's ordered items, or more, was cancelled in the last 30 days, the seller's cancellation rate is marked **Needs Attention**. It counts every cancelled item, whoever cancelled it. Required, from 0 to 100. Until this screen is first saved, 2.5 is used. |
@@ -4219,12 +4345,14 @@ worked out.
 
 # Marketing
 
+<div class="page-roles"><span class="role role--admin">Admin</span></div>
+
 The **Marketing** screen decides whether sellers can join the product discounts
 you create, and whether you approve each request.
 
 Go to **Configure >> Marketplace >> Marketing**.
 
-<ImagePopup src="/images/configuration/marketing-join.png" alt="Join section of the Marketing settings" />
+<ImagePopup src="/images/configuration/marketing-join.png" alt="The Join section of the Marketplace Marketing settings" />
 
 | Setting | What it does |
 |---|---|
@@ -4240,13 +4368,15 @@ See [Joining Admin Discounts](../marketing/join-product-discounts.md).
 
 # Fulfilment Carriers
 
+<div class="page-roles"><span class="role role--admin">Admin</span></div>
+
 Fulfilment carriers are the couriers sellers use to ship an order after it is
 placed. They are never offered to customers at checkout: customers still choose
 from your store's shipping methods.
 
 Go to **Configure >> Marketplace >> Fulfilment Carriers**.
 
-<ImagePopup src="/images/configuration/fulfilment-carriers.png" alt="Self Ship (Manual) section of the Fulfilment Carriers settings" />
+<ImagePopup src="/images/configuration/fulfilment-carriers.png" alt="The Self Ship (Manual) section of the Fulfilment Carriers settings" />
 
 ## Self Ship (Manual)
 
@@ -4269,6 +4399,8 @@ See [Shipments & Carriers](../orders/fulfilment-carriers.md) for how sellers
 schedule a pickup.
 
 # Featured Sellers
+
+<div class="page-roles"><span class="role role--admin">Admin</span></div>
 
 The **Featured Sellers** screen controls the block of popular sellers on the
 marketplace landing page.
@@ -4294,6 +4426,8 @@ See [Featured Sellers](../storefront/featured-sellers.md) for what customers see
 
 # Landing Page
 
+<div class="page-roles"><span class="role role--admin">Admin</span></div>
+
 The **Landing Page** screen fills the marketplace landing page, the page that
 invites visitors to open a shop. Customers reach it from the store icon in the
 storefront header.
@@ -4306,7 +4440,7 @@ every language your store uses. Images and the four highlight figures, including
 
 ## Banner
 
-<ImagePopup src="/images/configuration/landing-banner-highlights.png" alt="Banner and Highlights sections of the Landing Page settings" />
+<ImagePopup src="/images/configuration/landing-banner-highlights.png" alt="The Banner section and the start of the Highlights section of the Landing Page settings" />
 
 | Setting | What it does |
 |---|---|

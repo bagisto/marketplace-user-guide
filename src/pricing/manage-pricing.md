@@ -63,8 +63,6 @@ than 100%.
 5. Click **Apply**.
 6. Click **Save Prices**.
 
-<ImagePopup src="/images/manage-pricing/bulk-price.png" alt="Changing the price of several products at once" />
-
 **Apply** changes only the **Price** of the ticked products on the current page. It
 doesn't change sale prices or customer group prices.
 

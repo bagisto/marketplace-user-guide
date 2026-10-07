@@ -53,8 +53,6 @@ You'll see **Inventories saved successfully.**
 5. Click **Apply**.
 6. Click **Save Inventories**.
 
-<ImagePopup src="/images/manage-inventory/bulk-stock.png" alt="Changing the stock of several products at once" />
-
 **Apply** changes only the ticked products on the current page, and stock never goes
 below 0. Nothing is saved until you click **Save Inventories**.
 

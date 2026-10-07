@@ -25,6 +25,8 @@ invoiced yet. Customers choose what they want, the reason, the quantity and the 
 condition, can add details and photos, and must accept the return policy. See
 [RMA](https://docs.bagisto.com/orders/rma) in the Bagisto User Guide.
 
+<ImagePopup src="/images/return-merchandise-authorization/customer-rma.png" alt="The RMA page in the customer's account" />
+
 Sellers aren't emailed about new returns, so check **Sales >> RMA** regularly.
 
 ## Your return requests

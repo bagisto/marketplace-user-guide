@@ -76,6 +76,8 @@ The marketplace starts with these reasons:
 
 <ImagePopup src="/images/seller-product-flagging/seller-flags.png" alt="The Seller Flags list for a seller" />
 
+<ImagePopup src="/images/seller-product-flagging/product-flags.png" alt="The Product Flags list for a product" />
+
 Reports can't be deleted. The flags count on the sellers list covers the last 90 days
 and is updated once a day, or when you use **Refresh Account Health**. The
 **Seller Flags** list shows every report.
