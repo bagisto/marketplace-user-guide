@@ -1,9 +1,11 @@
 import DefaultTheme from 'vitepress/theme';
 import { useRoute } from 'vitepress';
 import { h, nextTick, onMounted, watch } from 'vue';
+import './mp-brand.css';
 import './custom.css';
 import ImagePopup from './components/ImagePopup.vue';
 import MarketplacePromo from './components/MarketplacePromo.vue';
+import BuyNowButton from './components/BuyNowButton.vue';
 
 /**
  * Center the active sidebar entry within the sidebar's own scroll area, so a
@@ -37,11 +39,12 @@ function scrollSidebarToActive() {
 export default {
     extends: DefaultTheme,
 
-    // The Multi-Vendor Marketplace promotion sits under the page outline, as on
-    // the other Bagisto docs sites.
+    // The Multi-Vendor Marketplace promotion sits at the foot of the aside, as
+    // sponsors do on VitePress sites, and the Buy Now button closes the nav bar.
     Layout: () =>
         h(DefaultTheme.Layout, null, {
-            'aside-outline-after': () => h(MarketplacePromo),
+            'aside-bottom': () => h(MarketplacePromo),
+            'nav-bar-content-after': () => h(BuyNowButton),
         }),
 
     enhanceApp({ app }) {

@@ -662,3 +662,137 @@ color-scheme:initial!important;
     transition: none;
   }
 }
+
+/* ===== Responsive layout =====
+   Nothing may widen the page past the viewport: media scales down, while
+   wide tables and code scroll inside their own box. */
+html,
+body {
+  overflow-x: clip;
+}
+
+.vp-doc img,
+.vp-doc video,
+.vp-doc iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+.vp-doc table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.vp-doc div[class*='language-'] {
+  max-width: 100%;
+}
+
+.vp-doc div[class*='language-'] pre {
+  overflow-x: auto;
+}
+
+/* Long inline code, URLs and menu paths wrap instead of pushing the page wide. */
+.vp-doc :not(pre) > code,
+.vp-doc a,
+.vp-doc td,
+.vp-doc li,
+.vp-doc p {
+  overflow-wrap: anywhere;
+}
+
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3 {
+  overflow-wrap: break-word;
+}
+
+/* The popup locks page scroll while it is open. */
+html.image-popup-open {
+  overflow: hidden;
+}
+
+/* Tablets and small laptops: the five nav links, theme switch, GitHub link and
+   Buy Now don't fit beside the search box below 1320px, so the hamburger and its
+   menu screen, which VitePress keeps for phones, stay in use up to there. */
+@media (min-width: 768px) and (max-width: 1319.98px) {
+  .VPNavBar .menu.VPNavBarMenu,
+  .VPNavBar .extra.VPNavBarExtra,
+  .VPNavBar .appearance.VPNavBarAppearance,
+  .VPNavBar .social-links.VPNavBarSocialLinks {
+    display: none;
+  }
+
+  .VPNavBar .hamburger.VPNavBarHamburger {
+    display: flex;
+  }
+
+  .VPNav .VPNavScreen.VPNavScreen {
+    display: block;
+  }
+}
+
+/* The aside scrolls when the outline and the promo card are taller than the
+   window; a thin scrollbar shows that there is more below. */
+.VPDoc .aside-container {
+  scrollbar-width: thin;
+  scrollbar-color: var(--vp-c-divider) transparent;
+}
+
+.VPDoc .aside-container::-webkit-scrollbar {
+  display: block;
+  width: 6px;
+}
+
+.VPDoc .aside-container::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background-color: var(--vp-c-divider);
+}
+
+/* Phones: a narrower logo and gutter leave room for search, Buy Now and the menu. */
+@media (max-width: 480px) {
+  .VPNavBar .wrapper {
+    padding-left: 16px;
+    padding-right: 4px;
+  }
+
+  .VPNavBarTitle .logo {
+    height: 24px !important;
+  }
+}
+
+@media (max-width: 359px) {
+  .VPNavBarTitle .logo {
+    height: 20px !important;
+  }
+
+  .VPNavBar .hamburger.VPNavBarHamburger {
+    width: 40px;
+  }
+}
+
+/* Home hero: the gradient title and the large logo shrink on small screens. */
+@media (max-width: 639px) {
+  .VPHero .VPImage {
+    scale: 1;
+    padding: 0;
+  }
+
+  .VPHero .name,
+  .VPHero .text {
+    overflow-wrap: break-word;
+  }
+}
+
+@media (max-width: 374px) {
+  .VPHero .name,
+  .VPHero .text {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .VPHero .tagline {
+    font-size: 16px;
+  }
+}
