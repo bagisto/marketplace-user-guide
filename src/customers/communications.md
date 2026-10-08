@@ -65,6 +65,8 @@ To stop emails when a seller replies, click the menu next to **Sellers**, open
 **Communication Settings**, switch **Receive email for seller messages** off and click
 **Save**.
 
+<ImagePopup src="/images/communications/customer-communication-settings.png" alt="The Communication Settings menu on a customer's Communications page" />
+
 ### Reply to customers
 
 1. In the Seller Panel, go to **Communication >> Customers**.
