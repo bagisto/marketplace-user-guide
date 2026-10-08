@@ -81,11 +81,8 @@ conversation, and receives an **RMA status has been updated** email.
 After **Pending Review**, active statuses the store adds itself also appear. Choosing
 **Item Canceled** cancels the product's quantity on the order.
 
-::: warning Refunds
-Sellers can't issue refunds. Choosing **Refunded** in the Seller Panel doesn't refund the
-customer, and it hides the admin's refund option for that return. Leave the refund to
-the store admin, as described below.
-:::
+Choosing **Refunded** refunds the returned quantity to the customer: the refund is
+created on the order, and the customer gets the refund and status-update emails.
 
 **Update Status** is no longer shown once the request is **Refunded**, **Solved**,
 **Request Declined**, **Item Canceled** or **Request Canceled**, or when the order is

@@ -71,10 +71,7 @@ In **Settings**:
 | **Stop Further Rules** | Choose **Yes** so that, once this discount applies, no discount with a higher priority number applies, including store discounts you've joined. |
 | **Status** | Switches the discount on or off. A new discount saved with it off starts switched off. |
 
-::: warning Switching off an existing discount
-In this version, turning **Status** off on a discount you are editing isn't saved: the
-discount stays active. To stop it, set its **Ends Till** date or delete it.
-:::
+To stop a discount, switch its **Status** off and save; it stops applying straight away. You can also set an **Ends Till** date or delete it.
 
 When several discounts match a product, each one comes off the price left by the one
 before, until a discount with **Stop Further Rules** set to **Yes**.

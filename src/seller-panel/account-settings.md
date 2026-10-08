@@ -31,8 +31,8 @@ Leave these fields empty to keep your current password.
 ## Emails about customer messages
 
 In **Communication Settings**, switch **Receive email for customer messages** off if
-you don't want an email each time a customer writes to you. Only the shop owner gets
-these emails, so the switch has no effect when a team member changes it. You still see the messages under **Communication >> Customers**. Click
+you don't want an email each time a customer writes to you. These emails go to the shop
+owner, so this setting is managed from the owner's account. You still see the messages under **Communication >> Customers**. Click
 **Save** to keep the change.
 
 When you save, you'll see **General settings updated successfully**. If you are the

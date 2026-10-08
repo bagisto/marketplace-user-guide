@@ -92,10 +92,7 @@ Under **Who should it apply to?**:
 | **Uses Per Customer** | How many times one signed-in customer can use the deal. Guests aren't limited. Leave it at 0 for no limit. |
 | **Status** | Switches the deal on or off. A new deal saved with it off starts switched off. |
 
-::: warning Switching off an existing deal
-In this version, turning **Status** off on a deal you are editing isn't saved: the deal
-stays active. To stop a deal, set its **Ends Till** date or delete it.
-:::
+To stop a deal, switch its **Status** off and save; it stops applying straight away. You can also set an **Ends Till** date or delete it.
 
 When several of your deals match, they all apply, in priority order, until a deal with
 **Stop Further Rules** set to **Yes**. A cart can hold only one coupon code at a time.

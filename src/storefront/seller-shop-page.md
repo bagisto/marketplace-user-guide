@@ -60,13 +60,8 @@ offers on the product's own page. See [Shopping Across Sellers](shopping-across-
 
 The **Reviews** tab shows the seller's average rating, how the ratings split across one
 to five stars, and the five latest approved reviews. When there are five or more, click
-**View All Reviews** to see the rest, five to a page.
-
-::: warning
-The **View All Reviews** page lists every review of the seller, including reviews still
-waiting for approval and disapproved ones. The rating, the count and the reviews on the
-**Reviews** tab use approved reviews only.
-:::
+**View All Reviews** to see the rest, five to a page. Only approved reviews are shown,
+and the rating and review count are based on them too.
 
 <ImagePopup src="/images/seller-shop-page/reviews-tab.png" alt="The Reviews tab on a seller's shop page" />
 

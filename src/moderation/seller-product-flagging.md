@@ -30,10 +30,8 @@ Customers who have ordered from a seller can report the seller once.
 3. Choose a **Reason**, or **Other Reason** and type it.
 4. Click **Submit**.
 
-::: warning
-When you choose **Other Reason** for a seller, the report is saved with the reason
-**other**. The text you type isn't kept, so the admin doesn't see it.
-:::
+When you choose **Other Reason**, the text you type is saved as the reason, so the admin
+sees it in the flag list.
 
 <ImagePopup src="/images/seller-product-flagging/report-seller.png" alt="The Report Issue form on a seller's shop page" />
 

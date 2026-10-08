@@ -1231,8 +1231,8 @@ Leave these fields empty to keep your current password.
 ## Emails about customer messages
 
 In **Communication Settings**, switch **Receive email for customer messages** off if
-you don't want an email each time a customer writes to you. Only the shop owner gets
-these emails, so the switch has no effect when a team member changes it. You still see the messages under **Communication >> Customers**. Click
+you don't want an email each time a customer writes to you. These emails go to the shop
+owner, so this setting is managed from the owner's account. You still see the messages under **Communication >> Customers**. Click
 **Save** to keep the change.
 
 When you save, you'll see **General settings updated successfully**. If you are the
@@ -2290,10 +2290,7 @@ In **Settings**:
 | **Stop Further Rules** | Choose **Yes** so that, once this discount applies, no discount with a higher priority number applies, including store discounts you've joined. |
 | **Status** | Switches the discount on or off. A new discount saved with it off starts switched off. |
 
-::: warning Switching off an existing discount
-In this version, turning **Status** off on a discount you are editing isn't saved: the
-discount stays active. To stop it, set its **Ends Till** date or delete it.
-:::
+To stop a discount, switch its **Status** off and save; it stops applying straight away. You can also set an **Ends Till** date or delete it.
 
 When several discounts match a product, each one comes off the price left by the one
 before, until a discount with **Stop Further Rules** set to **Yes**.
@@ -2534,10 +2531,7 @@ Under **Who should it apply to?**:
 | **Uses Per Customer** | How many times one signed-in customer can use the deal. Guests aren't limited. Leave it at 0 for no limit. |
 | **Status** | Switches the deal on or off. A new deal saved with it off starts switched off. |
 
-::: warning Switching off an existing deal
-In this version, turning **Status** off on a deal you are editing isn't saved: the deal
-stays active. To stop a deal, set its **Ends Till** date or delete it.
-:::
+To stop a deal, switch its **Status** off and save; it stops applying straight away. You can also set an **Ends Till** date or delete it.
 
 When several of your deals match, they all apply, in priority order, until a deal with
 **Stop Further Rules** set to **Yes**. A cart can hold only one coupon code at a time.
@@ -2947,11 +2941,8 @@ conversation, and receives an **RMA status has been updated** email.
 After **Pending Review**, active statuses the store adds itself also appear. Choosing
 **Item Canceled** cancels the product's quantity on the order.
 
-::: warning Refunds
-Sellers can't issue refunds. Choosing **Refunded** in the Seller Panel doesn't refund the
-customer, and it hides the admin's refund option for that return. Leave the refund to
-the store admin, as described below.
-:::
+Choosing **Refunded** refunds the returned quantity to the customer: the refund is
+created on the order, and the customer gets the refund and status-update emails.
 
 **Update Status** is no longer shown once the request is **Refunded**, **Solved**,
 **Request Declined**, **Item Canceled** or **Request Canceled**, or when the order is
@@ -3724,13 +3715,8 @@ offers on the product's own page. See [Shopping Across Sellers](shopping-across-
 
 The **Reviews** tab shows the seller's average rating, how the ratings split across one
 to five stars, and the five latest approved reviews. When there are five or more, click
-**View All Reviews** to see the rest, five to a page.
-
-::: warning
-The **View All Reviews** page lists every review of the seller, including reviews still
-waiting for approval and disapproved ones. The rating, the count and the reviews on the
-**Reviews** tab use approved reviews only.
-:::
+**View All Reviews** to see the rest, five to a page. Only approved reviews are shown,
+and the rating and review count are based on them too.
 
 <ImagePopup src="/images/seller-shop-page/reviews-tab.png" alt="The Reviews tab on a seller's shop page" />
 
@@ -4023,10 +4009,8 @@ Customers who have ordered from a seller can report the seller once.
 3. Choose a **Reason**, or **Other Reason** and type it.
 4. Click **Submit**.
 
-::: warning
-When you choose **Other Reason** for a seller, the report is saved with the reason
-**other**. The text you type isn't kept, so the admin doesn't see it.
-:::
+When you choose **Other Reason**, the text you type is saved as the reason, so the admin
+sees it in the flag list.
 
 <ImagePopup src="/images/seller-product-flagging/report-seller.png" alt="The Report Issue form on a seller's shop page" />
 
@@ -4266,7 +4250,7 @@ Go to **Configure >> Marketplace >> General**.
 | Setting | What it does |
 |---|---|
 | **Status** | Switches the whole marketplace on or off for the channel. See [Turning the marketplace off](overview.md#turning-the-marketplace-off). |
-| **Admin Commission Percentage** | The commission taken from every seller sale, as a percentage from 1 to 100. The field is required, but the form doesn't stop a number above 100, so check the value before you save. A seller with their own rate uses that instead. The rate is fixed on each order when it is placed. See [Commission](../payments/commission-management.md). |
+| **Admin Commission Percentage** | The commission taken from every seller sale, as a percentage from 1 to 100. The field is required and accepts any number from 1 to 100, decimals included. A seller with their own rate uses that instead. The rate is fixed on each order when it is placed. See [Commission](../payments/commission-management.md). |
 | **Seller Panel Logo** | The logo in the Seller Panel header, for every channel. Upload a square image for the best fit, as a BMP, JPEG, JPG, PNG, WebP, SVG or ICO file. Without one, the Bagisto icon is shown. |
 
 ### Set the commission
@@ -4393,7 +4377,7 @@ layout or step order, see [Product Form Layout](../catalog/product-form-layout.m
 
 | Setting | What it does |
 |---|---|
-| **Low Stock Threshold** | A simple or virtual product that manages its stock counts as low on stock on the seller's dashboard when its total stock is at or below this number. It is 10 until this screen is first saved. Enter a number here: if you save it empty, it counts as 0, so only products with no stock are shown as low, even though the hint under the field says it defaults to 10. |
+| **Low Stock Threshold** | A simple or virtual product that manages its stock counts as low on stock on the seller's dashboard when its total stock is at or below this number. It defaults to 10, which is also used when the field is left empty. Enter 0 to flag only products that are out of stock. |
 
 See [Dashboard](../seller-panel/dashboard.md).
 
@@ -4504,10 +4488,8 @@ Go to **Configure >> Marketplace >> Featured Sellers**.
 
 All three are saved for each channel.
 
-**Maximum Sale** is meant to rank sellers by the total of their orders. At the
-moment that total is multiplied by the seller's number of products and approved
-reviews, so sellers with many products or reviews rank higher than their sales alone
-would put them. The same total is the last tie-breaker for **All**.
+**Maximum Sale** ranks sellers by the total value of their orders. The same total is the
+last tie-breaker for **All**.
 
 The block only appears while **Show Publicly** is on in
 [Sellers](sellers.md). It lists only approved sellers who aren't suspended, sell on

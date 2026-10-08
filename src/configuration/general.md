@@ -14,7 +14,7 @@ Go to **Configure >> Marketplace >> General**.
 | Setting | What it does |
 |---|---|
 | **Status** | Switches the whole marketplace on or off for the channel. See [Turning the marketplace off](overview.md#turning-the-marketplace-off). |
-| **Admin Commission Percentage** | The commission taken from every seller sale, as a percentage from 1 to 100. The field is required, but the form doesn't stop a number above 100, so check the value before you save. A seller with their own rate uses that instead. The rate is fixed on each order when it is placed. See [Commission](../payments/commission-management.md). |
+| **Admin Commission Percentage** | The commission taken from every seller sale, as a percentage from 1 to 100. The field is required and accepts any number from 1 to 100, decimals included. A seller with their own rate uses that instead. The rate is fixed on each order when it is placed. See [Commission](../payments/commission-management.md). |
 | **Seller Panel Logo** | The logo in the Seller Panel header, for every channel. Upload a square image for the best fit, as a BMP, JPEG, JPG, PNG, WebP, SVG or ICO file. Without one, the Bagisto icon is shown. |
 
 ### Set the commission
