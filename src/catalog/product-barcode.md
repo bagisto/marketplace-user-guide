@@ -14,14 +14,15 @@ barcodes for many products at once.
 4. Enter the **Barcode Value**, such as the product code or GTIN you already use.
 5. Click **Save Product**, or **Submit** for a draft.
 
-<ImagePopup src="/images/product-barcode/barcode-tab.png" alt="The Barcode step with a generated barcode" />
+<ImagePopup src="/images/product-barcode/barcode-tab.png" alt="The Barcode step of the product form" />
 
 The **Barcode** image is created when you save and updated whenever the value changes.
 Click **Download Barcode** for a PDF of it. No two products can have the same barcode
 value.
 
 The barcode uses **Code 128** unless you create it with another format from the
-products list.
+products list. A Code 128 value can use letters, digits, spaces and common symbols.
+A value with other characters, such as accented letters, gets no barcode.
 
 ## Create barcodes for many products
 

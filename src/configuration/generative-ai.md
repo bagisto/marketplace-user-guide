@@ -74,6 +74,11 @@ generates content.
 
 All of these settings apply to every channel.
 
+Right after the marketplace is installed, **Enable** is off, **Allow Reference
+Images** is on with 3 photos allowed, **Let Sellers Choose Fields**,
+**Overwrite Filled Attributes** and **Select Attributes** are off, **Limit Period**
+is **Monthly** and **Suggest Categories** is on.
+
 Images, files, Yes/No switches, SKU, URL key, product number, tax category, RMA
 rule and barcode value are never generated, whatever you choose here.
 

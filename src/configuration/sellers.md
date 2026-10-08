@@ -7,9 +7,9 @@ their shops are public, and what they can do with their orders.
 
 Go to **Configure >> Marketplace >> Sellers**.
 
-## Registration & Visibility
+<ImagePopup src="/images/configuration/sellers.png" alt="The Marketplace Sellers settings with the Registration & Visibility, Order Capabilities and Uploads sections" />
 
-<ImagePopup src="/images/configuration/sellers-registration.png" alt="Registration & Visibility section of the Sellers settings" />
+## Registration & Visibility
 
 | Setting | What it does |
 |---|---|
@@ -20,8 +20,6 @@ Go to **Configure >> Marketplace >> Sellers**.
 To approve sellers, see [Seller Management](../sellers/seller-management.md).
 
 ## Order Capabilities
-
-<ImagePopup src="/images/configuration/sellers-order-capabilities.png" alt="Order Capabilities and Uploads sections" />
 
 | Setting | What it does |
 |---|---|
@@ -38,4 +36,4 @@ See [Order Management](../orders/order-management.md) and
 
 | Setting | What it does |
 |---|---|
-| **Max File Upload Size** | The largest file, in MB, a seller can upload for profile fields and for the image ZIP in bulk upload. Leave it empty to allow 10 MB. |
+| **Max File Upload Size** | The largest file, in MB, a seller can upload for profile fields and for the image ZIP in bulk upload. Enter a whole number. Leave it empty to allow 10 MB. This setting applies to every channel. |

@@ -12,11 +12,13 @@ When the store shows seller shops publicly, customers see these on the page of a
 product a seller created:
 
 - **Sold By** with the seller's business name, which opens their shop page, and the
-  seller's star rating;
-- **Report Product**, to report a problem with the product. See
-  [Seller & Product Flagging](../moderation/seller-product-flagging.md);
-- **Top Selling**, a row of the seller's best-selling products, at the bottom of the
-  page.
+  seller's star rating from approved reviews;
+- **Report Product**, to report a problem with the product, when the store lets
+  customers report products. See
+  [Seller & Product Flagging](../moderation/seller-product-flagging.md).
+
+**Top Selling**, a row of the seller's best-selling products, appears at the bottom of
+the page of every product a seller created, even when seller shops aren't public.
 
 <ImagePopup src="/images/shopping-across-sellers/product-sold-by.png" alt="The Sold By block on a product page" />
 
@@ -26,8 +28,9 @@ When other sellers sell the same product, the product page shows a link such as
 **2 more seller selling same product**.
 
 1. Click the link. A page opens with the other sellers' offers that are in stock,
-   cheapest first.
-2. Compare each seller's price, rating and description.
+   cheapest first, five at a time.
+2. Compare each seller's price, rating and description. The rating on an offer
+   averages all of the seller's reviews, including reviews that aren't approved yet.
 3. For a simple or virtual product, enter the quantity on the offer you want. For a
    downloadable product, choose the links.
 4. Click **Add to Cart**.
@@ -40,7 +43,8 @@ choice.
 
 ## The cart
 
-- Each seller's product shows **Sold By** with the seller's name.
+- Each seller's product shows **Sold By** with the seller's business name under
+  **See Details**.
 - The same product bought from two sellers stays on two separate lines.
 - Each product is charged at the price of the seller you chose.
 

@@ -26,7 +26,7 @@ last 30 days.
 | **Total Commission (Admin)** | The commission the store kept on those sales |
 | **Total Sale (Invoiced)** | Your invoiced sales including tax, less discounts and refunds, before commission |
 | **Total Payout** | What the store paid you in the period, and what share of **Total Sale (Seller)** that is. Payouts on orders refunded later aren't counted. |
-| **Remaining Payout** | What you have requested for completed orders and haven't been paid yet |
+| **Remaining Payout** | What you have requested for completed orders and haven't been paid yet, and what share of **Total Sale (Seller)** that is |
 
 Below the cards, the list shows each transaction's **Id**, **Transaction Id**,
 **Comment** and **Total**. Use **Filter** to find a transaction.
@@ -52,6 +52,8 @@ with the **Id**, **Seller Name**, **Seller Id**, **Transaction Id**, **Comment**
 **Base Total**. Click the view icon to see the details of a transaction.
 
 <ImagePopup src="/images/transactions/admin-transactions.png" alt="All seller transactions in the admin panel" />
+
+<ImagePopup src="/images/transactions/admin-transaction-view.png" alt="A seller transaction opened in the admin panel" />
 
 ## Permissions
 

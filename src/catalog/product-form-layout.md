@@ -39,7 +39,7 @@ To change several families at once, tick them, click **Select Action**, and use
 ## Configure one family
 
 1. Go to **Marketplace >> Catalog >> Product Form**.
-2. Click **Configure** on the family's row.
+2. Click the edit icon (**Configure**) on the family's row.
 3. In **General**, choose the **Form Layout**.
 4. If the layout is stepped, choose the **Step Navigation**.
 5. In **Step Order**, drag the steps into the order sellers should see them.

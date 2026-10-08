@@ -29,8 +29,8 @@ Each metric is marked **Good**, **Needs Attention** or **Critical**, or
 
 ### Refresh the figures
 
-Click **Refresh now** to recalculate. You can refresh again after 60 minutes. Team
-members need the **Refresh Account Health** permission.
+Click **Refresh now** to recalculate. You can refresh again 60 minutes after the last
+refresh. Team members need the **Refresh Account Health** permission.
 
 ### See how the score is worked out
 
@@ -45,10 +45,13 @@ calculator where you can try different values. Nothing you enter is saved.
 |---|---|---|---|
 | **Order Cancellation Rate** | Below the warning rate | At or above the warning rate | Above the critical rate |
 | **Customer Feedback** | 4.0 or higher | 3.0 to 3.9 | Below 3.0 |
-| **Flags** | Well under the red flag limit | Approaching the limit | Close to or over the limit |
+| **Flags** | Up to a third of the red flag limit | Over a third, up to two-thirds of the limit | More than two-thirds of the limit |
 
-The warning and critical cancellation rates and the red flag limit are set by the
-admin in [Moderation & Health](../configuration/moderation-and-health.md).
+The warning and critical cancellation rates (2.5% and 5% unless the admin changes
+them) and the red flag limit are set by the admin in
+[Moderation & Health](../configuration/moderation-and-health.md). The flag bands are
+approximate: with a red flag limit of 3, one flag already counts as
+**Needs Attention**.
 
 ## How the score works
 
@@ -67,7 +70,7 @@ Account health is stored when it is refreshed:
 
 - the seller clicks **Refresh now**;
 - the admin clicks **Refresh Account Health** on the seller's row, or uses it as a
-  bulk action.
+  bulk action. The admin doesn't have to wait 60 minutes between refreshes.
 
 When subscription plans are on, every seller is also refreshed once a day by the
 store's scheduler. Until a seller is refreshed for the first time, the admin's list
@@ -82,6 +85,8 @@ score and band, their cancellation rate, rating and flags.
   **At Risk** under **Account Health**.
 - To recalculate, click the **Refresh Account Health** icon on a row, or tick
   several sellers and use **Select Action >> Refresh Account Health**.
+
+<ImagePopup src="/images/seller-account-health/admin-sellers-filter.png" alt="The Sellers list with the Filters drawer open, showing the Account Health filter" />
 
 The list shows the band of the score, so it can say **Healthy** while one of the
 seller's metrics is critical. Open the seller's Account Health page with

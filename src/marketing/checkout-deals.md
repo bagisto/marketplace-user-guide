@@ -90,7 +90,9 @@ Under **Who should it apply to?**:
 | **Priority** | The order your deals are applied in, starting from the lowest number |
 | **Stop Further Rules** | Choose **Yes** to stop your deals with a higher priority number from applying once this one does |
 | **Uses Per Customer** | How many times one signed-in customer can use the deal. Guests aren't limited. Leave it at 0 for no limit. |
-| **Status** | Switches the deal on or off |
+| **Status** | Switches the deal on or off. A new deal saved with it off starts switched off. |
+
+To stop a deal, switch its **Status** off and save; it stops applying straight away. You can also set an **Ends Till** date or delete it.
 
 When several of your deals match, they all apply, in priority order, until a deal with
 **Stop Further Rules** set to **Yes**. A cart can hold only one coupon code at a time.
@@ -123,12 +125,16 @@ code or generate new ones.
 The **Checkout Deals** list shows each deal's name, whether it is active, its priority
 and its dates, with icons to edit, copy or delete it.
 
+<ImagePopup src="/images/checkout-deals/checkout-deals-list.png" alt="The seller's Checkout Deals list" />
+
 ## For the admin
 
 Go to **Marketplace >> Marketing >> Checkout Deals** to see the deals sellers have
 created, with the **Seller**, status, priority and dates. You can filter the list by
-status. To delete a seller's deal, click its delete icon, or tick several deals and use
+name or status. To delete a seller's deal, click its delete icon, or tick several deals and use
 **Select Action >> Delete**.
+
+<ImagePopup src="/images/checkout-deals/admin-checkout-deals.png" alt="Seller checkout deals in the admin panel" />
 
 ## Permissions
 

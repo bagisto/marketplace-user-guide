@@ -4,7 +4,7 @@
 
 Every seller has a public shop page with their products, reviews and store policies.
 It opens at `/marketplace/` followed by the seller's slug, for example
-`/marketplace/urban-threads`.
+`/marketplace/urban-threads-co`.
 
 Customers reach it from the **Sold By** link on a product, from the featured sellers,
 or from a link the seller shares. Sellers open their own with **Visit Shop** in the
@@ -16,10 +16,11 @@ Seller Panel.
 
 - The seller's banner, logo, business name and address.
 - Their star rating and number of reviews.
-- **Share**, which lists the seller's social media links.
+- **Share**, which lists the seller's social media links, such as Facebook or
+  Instagram, when the seller has added them.
 - **Contact**, to send the seller a message by email.
-- **Report Issue**, for customers who bought from the seller, when the store lets
-  customers report sellers. See
+- **Report Issue**, shown only to signed-in customers who bought from the seller, when
+  the store lets customers report sellers. See
   [Seller & Product Flagging](../moderation/seller-product-flagging.md).
 
 When the store has **Show Red Flag** switched on, a red flag next to the name means
@@ -59,11 +60,15 @@ offers on the product's own page. See [Shopping Across Sellers](shopping-across-
 
 The **Reviews** tab shows the seller's average rating, how the ratings split across one
 to five stars, and the five latest approved reviews. When there are five or more, click
-**View All Reviews** to see the rest.
+**View All Reviews** to see the rest, five to a page. Only approved reviews are shown,
+and the rating and review count are based on them too.
+
+<ImagePopup src="/images/seller-shop-page/reviews-tab.png" alt="The Reviews tab on a seller's shop page" />
 
 ### Review a seller
 
-Customers who have ordered from the seller can review them once.
+Customers who have ordered from the seller can review them once. **Write a Review**
+appears on the **Reviews** tab only for them.
 
 1. Sign in to your customer account.
 2. Open the seller's shop page and click the **Reviews** tab.

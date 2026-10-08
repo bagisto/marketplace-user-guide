@@ -57,7 +57,8 @@ The page lists only orders sellers have requested payment for. At the top:
 | **Unpaid Sellers** | How many sellers are waiting to be paid, out of all sellers with requests or payments |
 
 Each order shows its number, date and status, the customer, the amounts, the seller and
-shop, and how much has been paid so far.
+shop, and how much has been paid so far. Click the view icon to open the order in
+**Sales >> Orders**.
 
 ### Pay several sellers at once
 
@@ -94,4 +95,7 @@ stands. Team members see it only with the **Payment Request** permission.
 ## Permissions
 
 - Team members need **Orders** with **Payment Request** to request payment.
-- Admins need **Marketplace >> Sales >> Payment Request** with **Pay**.
+- Admins need **Marketplace >> Sales >> Payment Request** with **Pay**. In this
+  version, **Select Action >> Pay Now** appears only for admins whose role has
+  **All** permissions; other admins pay orders one at a time with **Pay Now**.
+- The view icon needs **Marketplace >> Sales >> Orders >> View**.

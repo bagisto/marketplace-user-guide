@@ -1,0 +1,91 @@
+/* ===== Marketplace brand =====
+   The look shared by the Marketplace promo card (components/MarketplacePromo.vue)
+   and the Buy Now button (components/BuyNowButton.vue): the brand tokens, the
+   rotating gradient border, gradient text and the icon tile. */
+
+@property --mp-angle {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
+
+/* Brand tokens, light and dark. `--mp-surface` holds extra fill layers drawn
+   over `--mp-bg`; it is a no-op layer unless a component sets it. */
+.mp-brand {
+  --mp-surface: linear-gradient(transparent, transparent) padding-box;
+  --mp-bg: var(--vp-c-bg);
+  --mp-ink: linear-gradient(100deg, #6d28d9 0%, #1d4ed8 55%, #0369a1 100%);
+  --mp-accent: #6d28d9;
+  --mp-tint: rgba(124, 58, 237, 0.08);
+  --mp-glow-1: rgba(124, 58, 237, 0.13);
+  --mp-glow-2: rgba(14, 165, 233, 0.11);
+}
+
+.dark .mp-brand {
+  --mp-bg: var(--vp-c-bg-soft);
+  --mp-ink: linear-gradient(100deg, #a78bfa 0%, #60a5fa 55%, #22d3ee 100%);
+  --mp-accent: #a78bfa;
+  --mp-tint: rgba(167, 139, 250, 0.14);
+  --mp-glow-1: rgba(167, 139, 250, 0.2);
+  --mp-glow-2: rgba(34, 211, 238, 0.1);
+}
+
+/* A rotating conic-gradient border, one turn per `--mp-spin-duration` (8s
+   unless overridden). */
+.mp-spin-border {
+  border: 1px solid transparent;
+  background:
+    var(--mp-surface),
+    linear-gradient(var(--mp-bg), var(--mp-bg)) padding-box,
+    conic-gradient(from var(--mp-angle, 0deg), #7c3aed, #2563eb, #0ea5e9, #a855f7, #7c3aed) border-box;
+  animation: mp-spin var(--mp-spin-duration, 8s) linear infinite;
+}
+
+@keyframes mp-spin {
+  to {
+    --mp-angle: 360deg;
+  }
+}
+
+/* Gradient text. */
+.mp-ink {
+  background-image: var(--mp-ink);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* The gradient icon tile. */
+.mp-tile {
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #7c3aed 0%, #2563eb 60%, #0ea5e9 100%);
+  box-shadow: 0 6px 14px -6px rgba(37, 99, 235, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+.mp-tile svg {
+  width: 18px;
+  height: 18px;
+}
+
+.mp-tile--small {
+  width: 30px;
+  height: 30px;
+  border-radius: 9px;
+}
+
+.mp-tile--small svg {
+  width: 16px;
+  height: 16px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mp-spin-border {
+    animation: none;
+  }
+}

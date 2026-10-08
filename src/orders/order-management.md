@@ -79,6 +79,8 @@ show.
 You'll see **Invoice created successfully**. To download an invoice, open the
 **Invoices** tab and click **Print**.
 
+<ImagePopup src="/images/order-management/order-view-invoices.png" alt="The Invoices tab of an order with the Print link" />
+
 ## Ship the order
 
 Click **Schedule Pickup** on the order row or on the order page. See
@@ -103,6 +105,8 @@ Cancelled products count towards your cancellation rate in
 
 Sellers can't refund an order. The store admin issues refunds, and they then appear on
 the order's **Refunds** tab.
+
+<ImagePopup src="/images/order-management/order-view-refunds.png" alt="The Refunds tab of an order" />
 
 After any refund, even a partial one, the order's **Seller Payment Status** shows
 **Refunded**, and the order can no longer be requested for payment.

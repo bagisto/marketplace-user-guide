@@ -12,10 +12,13 @@ Go to **Configure >> Marketplace >> Featured Sellers**.
 | Setting | What it does |
 |---|---|
 | **Status** | Shows the **Our Featured Sellers** block on the landing page. |
-| **Limit Count** | How many sellers the block shows. |
+| **Limit Count** | How many sellers the block shows. Required. |
 | **Popularity Criteria** | How sellers are ranked: **Maximum Orders**, **Maximum Products**, **Maximum Rating** or **Maximum Sale**. **All** ranks by orders first, then products, rating and sales. |
 
 All three are saved for each channel.
+
+**Maximum Sale** ranks sellers by the total value of their orders. The same total is the
+last tie-breaker for **All**.
 
 The block only appears while **Show Publicly** is on in
 [Sellers](sellers.md). It lists only approved sellers who aren't suspended, sell on

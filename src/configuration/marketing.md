@@ -7,7 +7,7 @@ you create, and whether you approve each request.
 
 Go to **Configure >> Marketplace >> Marketing**.
 
-<ImagePopup src="/images/configuration/marketing-join.png" alt="Join section of the Marketing settings" />
+<ImagePopup src="/images/configuration/marketing-join.png" alt="The Join section of the Marketplace Marketing settings" />
 
 | Setting | What it does |
 |---|---|

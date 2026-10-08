@@ -7,9 +7,9 @@ them first, and how the seller product form looks.
 
 Go to **Configure >> Marketplace >> Products**.
 
-## Approval & Creation
+<ImagePopup src="/images/configuration/products.png" alt="The Marketplace Products settings with the Approval & Creation, Product Form and Inventory sections" />
 
-<ImagePopup src="/images/configuration/products-approval.png" alt="Approval & Creation section of the Products settings" />
+## Approval & Creation
 
 | Setting | What it does |
 |---|---|
@@ -21,8 +21,6 @@ See [Product Approval](../catalog/product-approval.md) and
 [Selling Existing Products](../catalog/selling-existing-products.md).
 
 ## Product Form
-
-<ImagePopup src="/images/configuration/products-form-inventory.png" alt="Product Form and Inventory sections" />
 
 | Setting | What it does |
 |---|---|
@@ -37,6 +35,6 @@ layout or step order, see [Product Form Layout](../catalog/product-form-layout.m
 
 | Setting | What it does |
 |---|---|
-| **Low Stock Threshold** | A simple or virtual product that manages its stock counts as low on stock on the seller's dashboard when its total stock is at or below this number. It is 10 until this screen is first saved. Enter a number here; don't leave it empty. |
+| **Low Stock Threshold** | A simple or virtual product that manages its stock counts as low on stock on the seller's dashboard when its total stock is at or below this number. It defaults to 10, which is also used when the field is left empty. Enter 0 to flag only products that are out of stock. |
 
 See [Dashboard](../seller-panel/dashboard.md).

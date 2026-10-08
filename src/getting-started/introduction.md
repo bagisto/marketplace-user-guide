@@ -16,7 +16,8 @@ The marketplace adds three places to your store, one for each kind of user.
 As the store owner, you get a **Marketplace** menu in the admin panel. From there
 you approve sellers and their products, keep an eye on seller orders, pay sellers,
 run subscription plans, answer seller messages and moderate reviews and reports.
-The settings sit under **Configure >> Marketplace**.
+The settings sit under **Configure >> Marketplace**, and the Generative AI settings
+under **Configure >> Magic AI >> Marketplace Features**.
 
 <ImagePopup src="/images/introduction/admin-marketplace-menu.png" alt="The Marketplace menu in the admin panel" />
 
@@ -63,6 +64,18 @@ Sellers can have Generative AI (Magic AI) write their product listings from a sh
 description and a photo. You choose the AI provider and how much each seller can
 use it, and the seller reviews every suggestion before saving. See
 [Generative AI](../generative-ai/introduction.md).
+
+## Version and requirements
+
+This guide covers **Marketplace v2.5.0.0** on **Bagisto v2.5.0**.
+
+| Requirement | Version |
+|---|---|
+| Bagisto | v2.5.0 (Laravel 13) |
+| PHP | 8.4 or later |
+| Database | MySQL 8.0, MariaDB 10.11 or PostgreSQL 16 |
+| Queue worker | Any queue driver other than `sync`, in production |
+| Task scheduler | Cron, for subscription plans, account health and Generative AI usage history |
 
 ## Badges on each page
 

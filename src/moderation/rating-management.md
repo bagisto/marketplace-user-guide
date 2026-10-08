@@ -15,6 +15,9 @@ the admin to approve it before it counts towards a rating.
   their products, the featured sellers, and the **Customer Feedback** part of the
   seller's [Account Health](../sellers/seller-account-health.md), which uses approved
   reviews from the last 90 days.
+- **Where every review shows:** the **View All Reviews** page of the shop and the
+  rating on each seller's offer on the offers page also include reviews that are
+  pending or disapproved.
 
 ## Product reviews
 
@@ -41,10 +44,10 @@ or tick several and use **Select Action >> Delete**.
 ### Product reviews
 
 1. Go to **Marketplace >> Catalog >> Product Reviews**.
-2. Click the view icon on a review. **Review Details** opens with the rating, title,
-   comment and any photos.
+2. Click the arrow on a review. **Review Details** opens with the customer, product,
+   date, rating, title, comment and any images.
 3. Choose the **Status**: **Approved**, **Disapproved** or **Pending**.
-4. Save.
+4. Click **Save**.
 
 <ImagePopup src="/images/rating-management/admin-product-reviews.png" alt="Product reviews of seller products in the admin panel" />
 
@@ -61,6 +64,8 @@ managed in **Customers >> Reviews**.
 - **Performance >> Product Reviews** lists the reviews of the products you created.
 
 <ImagePopup src="/images/rating-management/seller-reviews.png" alt="The seller's Seller Reviews page" />
+
+<ImagePopup src="/images/rating-management/seller-product-reviews.png" alt="The seller's Product Reviews page" />
 
 Both lists are read-only. Sellers can't approve, reply to or delete reviews. Customer
 email addresses are masked when the store doesn't let sellers see customer details.

@@ -62,5 +62,7 @@ own sources, so this list is read-only.
 
 <ImagePopup src="/images/inventory-source-management/admin-inventory-sources.png" alt="The admin's read-only list of seller inventory sources" />
 
+<ImagePopup src="/images/inventory-source-management/admin-source-view.png" alt="The details of a seller's inventory source" />
+
 Your store's own sources, under **Settings >> Inventory Sources**, don't include
 seller sources.

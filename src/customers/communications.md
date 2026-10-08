@@ -19,8 +19,9 @@ file attachments.
 
 <ImagePopup src="/images/communications/communication.png" alt="A seller's conversation with the admin" />
 
-- Use **Search Message** to find a message, or the history icon to show only the last
-  7, 15 or 30 days, the last 6 months, or **All Messages**.
+- Use **Search Message** to find a message, or the history icon to show only
+  **Previous 7 Days**, **Previous 15 Days**, **Previous 30 Days**,
+  **Previous 6 Months** or **All Messages**.
 - A message can be up to 255 characters.
 - If the admin blocks you, the page shows **You are blocked by admin** and you can't
   send messages.
@@ -31,17 +32,18 @@ replies.
 ### Message sellers
 
 1. In the admin panel, go to **Marketplace >> Communications**.
-2. Click a seller in **Sellers**, or search for one. You can start a conversation with
-   any seller.
+2. Click a seller in **Sellers**, or search for one by business name, name or email.
+   You can start a conversation with any seller. The list shows up to 20 sellers, with
+   the most recent conversations first.
 3. Type your message, add a file if needed, and click the send icon.
 
-<ImagePopup src="/images/communications/admin-communications.png" alt="The admin's Communications page with the sellers list" />
+<ImagePopup src="/images/communications/admin-communications.png" alt="The admin's Communications page with a seller conversation open" />
 
 Sellers with unread messages show a count. The menu at the top of a conversation has:
 
 - **Block Seller** or **Unblock Seller**, once the conversation has a message. While a
   seller is blocked, neither of you can send messages;
-- **Clear Chat History** — deletes every message in the conversation;
+- **Clear Chat History** — deletes every message in the conversation for both of you;
 - **Exit** — closes the conversation.
 
 ## Customers and sellers
@@ -49,7 +51,9 @@ Sellers with unread messages show a count. The menu at the top of a conversation
 ### Message a seller
 
 1. Sign in to your customer account and go to **Communications**.
-2. In **Search**, type the seller's business name and click the seller.
+2. Click a seller you have already written to, or type the seller's business name in
+   **Search** and click the seller. Only approved sellers who aren't suspended are
+   found.
 3. Type your message, add a file if needed, and click the send icon.
 
 <ImagePopup src="/images/communications/customer-communications.png" alt="A customer's conversation with a seller" />

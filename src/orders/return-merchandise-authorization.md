@@ -25,6 +25,8 @@ invoiced yet. Customers choose what they want, the reason, the quantity and the 
 condition, can add details and photos, and must accept the return policy. See
 [RMA](https://docs.bagisto.com/orders/rma) in the Bagisto User Guide.
 
+<ImagePopup src="/images/return-merchandise-authorization/customer-rma.png" alt="The RMA page in the customer's account" />
+
 Sellers aren't emailed about new returns, so check **Sales >> RMA** regularly.
 
 ## Your return requests
@@ -55,8 +57,8 @@ The page shows:
 ### Reply to the customer
 
 1. Under **Conversation**, type your message.
-2. To add a file, click **Attachments**. You can attach PDF, JPG or PNG files up to
-   2 MB.
+2. To add a file, click **Attachments**. You can attach a PDF, JPG, PNG, GIF or WebP
+   file up to 2 MB.
 3. Click **Send Message**.
 
 The customer receives a **New RMA Message Received** email. When the customer replies,
@@ -68,7 +70,7 @@ the reply appears in the conversation; the store admin is emailed about it, not 
 2. Click **Save Changes**.
 
 The customer sees the new status on the return, with a note about the change in the
-conversation.
+conversation, and receives an **RMA status has been updated** email.
 
 | From | You can choose |
 |---|---|
@@ -79,11 +81,8 @@ conversation.
 After **Pending Review**, active statuses the store adds itself also appear. Choosing
 **Item Canceled** cancels the product's quantity on the order.
 
-::: warning Refunds
-Sellers can't issue refunds. Choosing **Refunded** in the Seller Panel doesn't refund the
-customer, and it hides the admin's refund option for that return. Leave the refund to
-the store admin, as described below.
-:::
+Choosing **Refunded** refunds the returned quantity to the customer: the refund is
+created on the order, and the customer gets the refund and status-update emails.
 
 **Update Status** is no longer shown once the request is **Refunded**, **Solved**,
 **Request Declined**, **Item Canceled** or **Request Canceled**, or when the order is

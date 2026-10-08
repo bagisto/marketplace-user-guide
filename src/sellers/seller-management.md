@@ -25,8 +25,8 @@ Each row shows:
 The icons at the end of a row are **Assign Product**, **Login as Seller**,
 **Refresh Account Health**, **Edit** and **Delete**.
 
-Search by name or email, or use **Filter** to narrow the list by account health,
-status, suspension or joining date.
+Search by name or email, or use **Filter** to narrow the list by seller name, email,
+account health, status, suspension, ID or joining date.
 
 ## Approve or disapprove sellers
 
@@ -120,7 +120,8 @@ is no longer available and they are left out of the featured sellers. Switch
 
 Click the **Login as Seller** icon on the seller's row. The Seller Panel opens in a
 new tab, signed in as that seller, so you can see exactly what they see or help them
-set up.
+set up. It opens on the dashboard, or on **My Profile** when the store uses
+subscription plans. The icon appears for admins with the **Edit** permission.
 
 ## Assign a product to a seller
 
@@ -128,11 +129,16 @@ You can list a catalog product for a seller, at the seller's own price and stock
 
 1. Click the **Assign Product** icon on the seller's row.
 2. Search for the product and choose it.
-3. On **Assign Product**, choose the **Condition**, and enter the **Price**,
-   **Quantities** and **Description**.
+3. On **Assign Product**, choose the **Condition** (**New** or **Old**), and enter
+   the **Price**, **Quantities** and **Description**. You can also add **Images** and
+   **Videos**.
 4. Click **Save**.
 
-The seller's profile must be complete first. See
+<ImagePopup src="/images/seller-management/assign-product.png" alt="The Assign Product form for a seller, with condition, price, quantities and description" />
+
+The seller's profile must be complete first, or you'll see
+**Seller has incomplete profile!**. A seller can't be given a product they already
+sell, or a product type they aren't allowed to sell. See
 [Selling Existing Products](../catalog/selling-existing-products.md) for how the
 offer works.
 
@@ -152,6 +158,9 @@ records are removed and they receive a **Seller Good Bye Notification** email.
 | **Approved** | You approve the seller, or approval isn't required | Sign in and sell. Their shop page is public when **Show Publicly** is on. |
 | **Disapproved** | New sellers when approval is required, or you disapprove them | Can't sign in. Their shop page isn't available. |
 | **Suspended** | You switch **Suspended** on | Signed out and can't use the Seller Panel. Their shop page isn't available. |
+
+When the store uses subscription plans, an approved seller's shop page is also
+hidden while they have no active plan.
 
 ## Seller emails
 

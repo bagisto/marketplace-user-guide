@@ -7,15 +7,15 @@ keeps from seller sales, and switches subscription plans on or off.
 
 Go to **Configure >> Marketplace >> General**.
 
-## General
+<ImagePopup src="/images/configuration/general.png" alt="The Marketplace General settings with the General, Subscription and Module Information sections" />
 
-<ImagePopup src="/images/configuration/general-general.png" alt="General section of the Marketplace General settings" />
+## General
 
 | Setting | What it does |
 |---|---|
 | **Status** | Switches the whole marketplace on or off for the channel. See [Turning the marketplace off](overview.md#turning-the-marketplace-off). |
-| **Admin Commission Percentage** | The commission taken from every seller sale, between 1 and 100. A seller with their own rate uses that instead. The rate is fixed on each order when it is placed. See [Commission](../payments/commission-management.md). |
-| **Seller Panel Logo** | The logo in the Seller Panel header. Upload a square image for the best fit. Without one, the Bagisto icon is shown. |
+| **Admin Commission Percentage** | The commission taken from every seller sale, as a percentage from 1 to 100. The field is required and accepts any number from 1 to 100, decimals included. A seller with their own rate uses that instead. The rate is fixed on each order when it is placed. See [Commission](../payments/commission-management.md). |
+| **Seller Panel Logo** | The logo in the Seller Panel header, for every channel. Upload a square image for the best fit, as a BMP, JPEG, JPG, PNG, WebP, SVG or ICO file. Without one, the Bagisto icon is shown. |
 
 ### Set the commission
 
@@ -30,8 +30,6 @@ rate they were placed with.
 
 Subscription plans let you charge sellers for selling on the marketplace and
 limit what each plan includes.
-
-<ImagePopup src="/images/configuration/general-subscription.png" alt="Subscription and Module Information sections" />
 
 | Setting | What it does |
 |---|---|
@@ -63,5 +61,5 @@ to create plans.
 
 ## Module Information
 
-Shows the version of the marketplace module installed on your store. There is
-nothing to change here.
+Shows the version of the marketplace module installed on your store, such as
+**Application Version:- v2.5.0.0**. There is nothing to change here.

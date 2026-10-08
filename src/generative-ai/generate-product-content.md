@@ -96,7 +96,7 @@ already filled may be left out too.
 | Message | What it means |
 |---|---|
 | **You have used all … generations for this period** | Your limit is used up. The dialog says when it resets. Ask the store admin if you need more. |
-| **Generation unavailable** | Generative AI is switched off for the store or for your shop. |
+| **Generation unavailable** | Read the message under it. **A generation is already running** means another request from your shop hasn't finished, so wait and try again. Otherwise Generative AI was switched off for the store or for your shop after you opened the page; while it is off, the **Generate content** button isn't shown. |
 | **Nothing left to fill** | Every field that can be generated already has a value. Clear a field, or ask the admin to allow overwriting. |
 | **Couldn't generate content just now** | The AI service didn't respond. Click **Try again**. The failed attempt doesn't count towards your limit. |
 

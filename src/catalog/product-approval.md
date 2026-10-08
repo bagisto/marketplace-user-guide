@@ -23,6 +23,8 @@ To find products by status, click **Filter** and use **Is Approved**
 (**Approved**, **Waiting For Approval** or **Rejected**) or **Draft Status**
 (**Draft** or **Submitted**).
 
+<ImagePopup src="/images/product-approval/seller-products-filter.png" alt="The products filter with Is Approved and Draft Status" />
+
 ## Save a draft
 
 While a product is a draft, its edit page shows **Save as Draft** and **Submit**.
@@ -54,7 +56,7 @@ go back to being a draft.
 3. Click **Select Action**, point to **Update Status** and click **Approved**.
 4. Click **Agree** to confirm.
 
-<ImagePopup src="/images/product-approval/admin-products.png" alt="Seller products waiting for approval in the admin panel" />
+<ImagePopup src="/images/product-approval/admin-products.png" alt="Seller products in the admin panel, with the seller, Is Owner and status on each row" />
 
 Each seller receives an email saying their product has been approved.
 
@@ -65,13 +67,15 @@ customers have reported it.
 
 A product is skipped if its seller isn't approved. When the store uses subscription
 plans, it is also skipped if the seller has no plan, or if approving it would take the
-seller past their plan's product limit.
+seller past their plan's product limit. The message then says how many products were
+skipped due to the seller plan limit.
 
 ## Reject a product
 
 1. Go to **Marketplace >> Catalog >> Products**.
 2. Click the reject icon on the product's row.
-3. In **Rejection Reason**, explain what the seller needs to fix.
+3. In **Rejection Reason**, explain what the seller needs to fix, in up to 1,000
+   characters.
 4. Click **Reject Product**.
 
 <ImagePopup src="/images/product-approval/reject-product.png" alt="The Reject Product dialog" />

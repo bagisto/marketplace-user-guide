@@ -41,6 +41,8 @@ an upload, and download the **Error File** when some rows failed.
 
 ### Images
 
+<ImagePopup src="/images/bulk-upload/create-images.png" alt="The Images step with its two options" />
+
 - **Image URLs in the sheet** — add public links to the images, separated by commas,
   in the `images` column. The store downloads them for you. This is the recommended
   option.
@@ -53,13 +55,15 @@ appear for them.
 
 ### Settings
 
+<ImagePopup src="/images/bulk-upload/create-settings.png" alt="The Settings step of the bulk upload wizard" />
+
 | Setting | What it does |
 |---|---|
 | **Action** | **Create/Update** adds new products and updates existing ones. **Delete** removes the products in the file. For catalog products, it removes only your offers. |
 | **Validation Strategy** | **Stop on Errors** blocks the import when the file has more errors than **Allowed Errors**. Up to that number, the bad rows are skipped and the rest are imported. **Skip Errors** skips every bad row and imports the rest. |
 | **Allowed Errors** | Used only with **Stop on Errors**: the most errors the file can have and still be imported. Starts at 10. |
 | **Field Separator** | The character between columns in a CSV file, usually a comma. |
-| **Process in Background** | Keeps the import running after you leave the page. It appears when the store can run imports in the background. |
+| **Process in Background** | Keeps the import running after you leave the page. It appears, switched on, when the store can run imports in the background. |
 
 ## Check and run the import
 
@@ -119,13 +123,16 @@ The sheet has five columns:
 A row fails when no catalog product has the SKU, when you already sell it, when the
 SKU appears twice in the file, when the store doesn't allow sellers to sell catalog
 products, when you aren't allowed to sell that product type, or when `price`, `qty` or
-`condition` has an invalid value.
+`condition` has an invalid value. With the **Delete** action, a row fails when you
+don't sell that SKU.
 
 ## Change or rerun an upload
 
 Click the edit icon on an upload in **Past Uploads**, replace the file or change the
 settings, then click **Reimport** and confirm. The file is checked again from the
 start.
+
+<ImagePopup src="/images/bulk-upload/edit-import.png" alt="Editing an upload, with the Reimport button" />
 
 If the store uses subscription plans, products over your plan's limit aren't
 imported.

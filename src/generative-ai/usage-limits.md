@@ -40,10 +40,12 @@ Sellers can't change these fields themselves.
 
 ## What sellers see
 
-Sellers find their usage on **My Profile**, in the **Magic AI** block of
-**Shop Information**: whether Generative AI is on for their shop, their
+Sellers find their usage by choosing **My Profile** in the account menu at the top
+right of the Seller Panel, which opens **Manage Profile**. The **Magic AI** block of
+**Shop Information** shows whether Generative AI is on for their shop, their
 **Generation Limit**, how many they have **Used In Current Period**, and the
-**Limit Period**.
+**Limit Period**. When subscription plans are on, **Shop Information** appears only
+once the seller has a plan.
 
 - The block appears only while Generative AI is switched on for sellers.
 - When **Magic AI Enabled** is off for a seller, the block shows only
@@ -61,4 +63,4 @@ when it resets.
 - There is no admin report of generations. Sellers see their own count on their
   profile.
 - Usage records older than the previous month are removed automatically each
-  month.
+  month by the store's scheduler, so make sure it is running.

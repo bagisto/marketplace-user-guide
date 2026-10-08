@@ -27,8 +27,11 @@ Customers who have ordered from a seller can report the seller once.
 
 1. Sign in to your customer account.
 2. On the seller's shop page, click **Report Issue**.
-3. Choose a **Reason**, or **Other Reason**.
+3. Choose a **Reason**, or **Other Reason** and type it.
 4. Click **Submit**.
+
+When you choose **Other Reason**, the text you type is saved as the reason, so the admin
+sees it in the flag list.
 
 <ImagePopup src="/images/seller-product-flagging/report-seller.png" alt="The Report Issue form on a seller's shop page" />
 
@@ -69,12 +72,16 @@ The marketplace starts with these reasons:
 
 ## Review reports
 
-- **Seller reports** — go to **Marketplace >> Sellers** and click **Flags** on the seller's
-  row. The **Seller Flags** list shows the customer, their email, the reason and the date.
+- **Seller reports** — go to **Marketplace >> Sellers** and click the flags count,
+  such as **2 Flags**, under the seller's account health. The **Seller Flags** list
+  shows the customer, their email, the reason and the date.
 - **Product reports** — go to **Marketplace >> Catalog >> Products** and click
-  **Total Flags** under the product. The **Product Flags** list shows the same details.
+  **Total Flags** under the product. The **Product Flags** list shows the same details,
+  including the text a customer typed for **Other Reason**.
 
 <ImagePopup src="/images/seller-product-flagging/seller-flags.png" alt="The Seller Flags list for a seller" />
+
+<ImagePopup src="/images/seller-product-flagging/product-flags.png" alt="The Product Flags list for a product" />
 
 Reports can't be deleted. The flags count on the sellers list covers the last 90 days
 and is updated once a day, or when you use **Refresh Account Health**. The
