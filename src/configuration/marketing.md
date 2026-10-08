@@ -16,7 +16,6 @@ Go to **Configure >> Marketplace >> Marketing**.
 
 Both settings are on until you change them, and both are saved for each channel.
 
-Sellers can join product discounts only. Checkout deals can't be joined, even
-though the section's description mentions them.
+Sellers can join product discounts only.
 
 See [Joining Admin Discounts](../marketing/join-product-discounts.md).
