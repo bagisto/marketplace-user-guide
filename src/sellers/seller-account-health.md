@@ -68,7 +68,7 @@ and still be marked **Unhealthy** when one metric is critical.
 
 Account health is stored when it is refreshed:
 
-- the seller clicks **Refresh now**;
+- the seller clicks **Refresh now**,
 - the admin clicks **Refresh Account Health** on the seller's row, or uses it as a
   bulk action. The admin doesn't have to wait 60 minutes between refreshes.
 

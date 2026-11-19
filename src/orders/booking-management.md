@@ -19,11 +19,11 @@ arrows to move between weeks.
 Click a booking to see its **Booking Details**:
 
 - the **Booking Date**, which is the day the order was placed, and the booked
-  **Time Slot**;
+  **Time Slot**,
 - the **Order Id**, and the **Price**, which is the grand total of the customer's whole
-  order, including other sellers' products and shipping;
+  order, including other sellers' products and shipping,
 - the **Status** of the whole order, such as **Done**, **Pending**, **Canceled** or
-  **Closed**;
+  **Closed**,
 - the customer's name, email, phone number and billing address.
 
 Click **View Details** to open the order.

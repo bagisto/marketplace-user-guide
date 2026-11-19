@@ -431,7 +431,7 @@ already filled may be left out too.
 | Message | What it means |
 |---|---|
 | **You have used all … generations for this period** | Your limit is used up. The dialog says when it resets. Ask the store admin if you need more. |
-| **Generation unavailable** | Read the message under it. **A generation is already running** means another request from your shop hasn't finished, so wait and try again. Otherwise Generative AI was switched off for the store or for your shop after you opened the page; while it is off, the **Generate content** button isn't shown. |
+| **Generation unavailable** | Read the message under it. **A generation is already running** means another request from your shop hasn't finished, so wait and try again. Otherwise Generative AI was switched off for the store or for your shop after you opened the page. While it is off, the **Generate content** button isn't shown. |
 | **Nothing left to fill** | Every field that can be generated already has a value. Clear a field, or ask the admin to allow overwriting. |
 | **Couldn't generate content just now** | The AI service didn't respond. Click **Try again**. The failed attempt doesn't count towards your limit. |
 
@@ -870,12 +870,12 @@ password fields first, then every mapped attribute marked
 
 | Card | Attributes | Seen by |
 |---|---|---|
-| General | Name, Email, Phone, Slug, Business Name | Name, Email, Slug and Business Name are on the sign-up form; all are on the profile |
-| Description | Business Description | Profile; the shop page **About** tab |
-| Policies | Return Policy, Shipping Policy, Privacy Policy | Profile; the shop page **About** tab when filled |
-| Meta Description | Meta Title, Meta Keywords, Meta Description | Profile; used for the shop page in search engines |
-| Address | Address, City, Country, State, Postcode | Profile; shown on the shop page |
-| Social Links | Facebook, Instagram, YouTube | Profile; the **Share** menu on the shop page |
+| General | Name, Email, Phone, Slug, Business Name | Name, Email, Slug and Business Name are on the sign-up form. All are on the profile |
+| Description | Business Description | Profile, the shop page **About** tab |
+| Policies | Return Policy, Shipping Policy, Privacy Policy | Profile, the shop page **About** tab when filled |
+| Meta Description | Meta Title, Meta Keywords, Meta Description | Profile, used for the shop page in search engines |
+| Address | Address, City, Country, State, Postcode | Profile, shown on the shop page |
+| Social Links | Facebook, Instagram, YouTube | Profile, the **Share** menu on the shop page |
 | Settings | Minimum Order Amount, Google Analytics ID | Profile |
 | Settings | Commission Enabled, Commission Percentage, Allowed Product Types, Magic AI Enabled, Magic AI Generation Limit | Admin only, on **Edit Seller** |
 
@@ -955,7 +955,7 @@ and still be marked **Unhealthy** when one metric is critical.
 
 Account health is stored when it is refreshed:
 
-- the seller clicks **Refresh now**;
+- the seller clicks **Refresh now**,
 - the admin clicks **Refresh Account Health** on the seller's row, or uses it as a
   bulk action. The admin doesn't have to wait 60 minutes between refreshes.
 
@@ -1270,16 +1270,16 @@ no roles.
 |---|---|
 | **Dashboard** | The dashboard |
 | **Manage Profile** | Nothing for team members, because only the shop owner can open **My Profile** |
-| **Catalog** | List Your Product; Products, with Assign, Edit, Delete, Product Barcode (Generate and Print) and Generate Content With Magic AI; Bulk Upload, with Imports (Create, Edit, Delete and Import) |
-| **Inventories** | Manage Inventory, with Update Status and Save Inventories; Inventory Sources, with Create, Edit and Delete |
+| **Catalog** | List Your Product. Products, with Assign, Edit, Delete, Product Barcode (Generate and Print) and Generate Content With Magic AI. Bulk Upload, with Imports (Create, Edit, Delete and Import) |
+| **Inventories** | Manage Inventory, with Update Status and Save Inventories. Inventory Sources, with Create, Edit and Delete |
 | **Pricing** | Manage Pricing, with Save Prices |
-| **Marketing** | Product Discounts, with Create, Edit, Delete and Join (View, Enroll and Withdraw) for the store's discounts; Checkout Deals, with Create, Edit, Copy, Delete and Coupons |
-| **Sales** | Orders, with View, Cancel, Invoice, Print Invoice, Shipment and Payment Request; RMA, with View; Bookings; Transactions, with View and Print |
-| **Performance** | Account Health, with Refresh Account Health; Seller Reviews; Product Reviews |
+| **Marketing** | Product Discounts, with Create, Edit, Delete and Join (View, Enroll and Withdraw) for the store's discounts. Checkout Deals, with Create, Edit, Copy, Delete and Coupons |
+| **Sales** | Orders, with View, Cancel, Invoice, Print Invoice, Shipment and Payment Request. RMA, with View. Bookings. Transactions, with View and Print |
+| **Performance** | Account Health, with Refresh Account Health. Seller Reviews. Product Reviews |
 | **Reporting** | Sales, Customers, Products |
 | **Communication** | Admin, Customers |
 | **Customers** | The customers list |
-| **Settings** | General; Users, with Create, Edit and Delete; Roles, with Create, Edit and Delete |
+| **Settings** | General. Users, with Create, Edit and Delete. Roles, with Create, Edit and Delete |
 
 A **Custom** role needs at least one permission.
 
@@ -1355,10 +1355,10 @@ created and the catalog products you sell as your own.
 
 Each row shows:
 
-- the name, SKU and product number;
-- the image, price, stock and listing ID;
+- the name, SKU and product number,
+- the image, price, stock and listing ID,
 - the status (**Active** or **Disable**), the approval badge, the category and the
-  product type;
+  product type,
 - the barcode, or **Not Generated**.
 
 The approval badge is **Draft**, **Waiting For Approval**, **Approved** or
@@ -1529,8 +1529,8 @@ Customers see your offer next to other sellers' offers for the same product. See
 
 You can't sell a product when:
 
-- the store doesn't allow sellers to sell catalog products (**You are not allowed to assign this product**);
-- you already sell it (**You are already selling this product**);
+- the store doesn't allow sellers to sell catalog products (**You are not allowed to assign this product**),
+- you already sell it (**You are already selling this product**),
 - its product type isn't one you're allowed to sell.
 
 ## Create your offer
@@ -1967,7 +1967,7 @@ To change several families at once, tick them, click **Select Action**, and use
 
 - **Stepped** — one step at a time, with the steps in a scrolling row of tabs
   (**Horizontal Tabs**) or, on wide screens, in a list down the side
-  (**Vertical Rail**; smaller screens still show tabs). Sellers move
+  (**Vertical Rail**, smaller screens still show tabs). Sellers move
   with **Previous** and **Next**, and a step with a mistake is marked.
 - **Two Column** — the whole form on one page, in two columns.
 
@@ -1998,14 +1998,14 @@ products you sell as your own.
 Each row shows:
 
 - the image, name, SKU, type and ID, and for a variant a **Parent** link to the main
-  product;
+  product,
 - the category and the price, with an **Edit price** link that opens
-  [Manage Pricing](../pricing/manage-pricing.md) for that product;
+  [Manage Pricing](../pricing/manage-pricing.md) for that product,
 - the **Listing Status**: **Active** when the product is on and approved,
   **Unapproved** when it is on but not yet approved, and **Inactive** when it is
-  switched off, with the date the product was last updated;
+  switched off, with the date the product was last updated,
 - how many were **Sold**, how many are **Undelivered** and how many were
-  **Canceled**;
+  **Canceled**,
 - the total **Stock**, or **Stock Not Managed** when the product doesn't track stock.
 
 ## Update the stock of a product
@@ -2290,7 +2290,7 @@ In **Settings**:
 | **Stop Further Rules** | Choose **Yes** so that, once this discount applies, no discount with a higher priority number applies, including store discounts you've joined. |
 | **Status** | Switches the discount on or off. A new discount saved with it off starts switched off. |
 
-To stop a discount, switch its **Status** off and save; it stops applying straight away. You can also set an **Ends Till** date or delete it.
+To stop a discount, switch its **Status** off and save. It stops applying straight away. You can also set an **Ends Till** date or delete it.
 
 When several discounts match a product, each one comes off the price left by the one
 before, until a discount with **Stop Further Rules** set to **Yes**.
@@ -2416,9 +2416,9 @@ withdraws.
 
 A joined discount lowers a seller's prices only while all of these are true:
 
-- joining is switched on in [Marketing settings](../configuration/marketing.md);
-- the catalog rule still has **Allow Sellers to Join** on;
-- the seller's request is **Approved**;
+- joining is switched on in [Marketing settings](../configuration/marketing.md),
+- the catalog rule still has **Allow Sellers to Join** on,
+- the seller's request is **Approved**,
 - the rule itself is active, in date, and matches the channel and customer group.
 
 Prices are updated in the background, so a change can take a little while to show.
@@ -2531,7 +2531,7 @@ Under **Who should it apply to?**:
 | **Uses Per Customer** | How many times one signed-in customer can use the deal. Guests aren't limited. Leave it at 0 for no limit. |
 | **Status** | Switches the deal on or off. A new deal saved with it off starts switched off. |
 
-To stop a deal, switch its **Status** off and save; it stops applying straight away. You can also set an **Ends Till** date or delete it.
+To stop a deal, switch its **Status** off and save. It stops applying straight away. You can also set an **Ends Till** date or delete it.
 
 When several of your deals match, they all apply, in priority order, until a deal with
 **Stop Further Rules** set to **Yes**. A cart can hold only one coupon code at a time.
@@ -2607,11 +2607,11 @@ Go to **Sales >> Orders** in the Seller Panel.
 Each row shows:
 
 - **Id / Date / Status / Customer** — the order number and date, the status of your part
-  of the order, and the customer's name, email and location;
+  of the order, and the customer's name, email and location.
 - **Items / Payment / Shipment** — how many products, the payment method and the
-  shipping method;
+  shipping method.
 - **Gross Amt. / Discount / Commission** — the value of your products, the discount and
-  the store's commission;
+  the store's commission.
 - **Seller Earn / Seller Payment Status** — what you earn from the order, and where
   its payment stands. The payment status is shown only with the **Payment Request**
   permission. See [Payment statuses](../payments/payment-management.md#payment-statuses).
@@ -2677,7 +2677,7 @@ Click **Schedule Pickup** on the order row or on the order page. See
 3. Confirm.
 
 Your products that aren't invoiced yet are cancelled and their stock is returned.
-Invoiced products can't be cancelled; the store admin refunds them instead. The
+Invoiced products can't be cancelled. The store admin refunds them instead. The
 customer receives an **Order Cancellation Confirmation** email, with a copy to you and
 the store admin. The customer's whole order is cancelled only once every seller's
 products in it are cancelled.
@@ -2786,13 +2786,13 @@ to the page:
 After scheduling:
 
 - download the label with **Download** on the shipment, or **Print Label** on the
-  order's row;
-- the shipment shows the pickup's confirmation and time window, and the **Label Cost**;
+  order's row,
+- the shipment shows the pickup's confirmation and time window, and the **Label Cost**,
 - shipments from the same source for the same collection time share one pickup.
 
 The label cost is shown for your information and isn't taken from your payout.
 
-If the courier rejects the collection window, nothing is saved; choose another time and
+If the courier rejects the collection window, nothing is saved. Choose another time and
 try again. If the courier can't be booked for another reason, the shipment is still
 saved and marked **Not Booked**.
 
@@ -2830,11 +2830,11 @@ arrows to move between weeks.
 Click a booking to see its **Booking Details**:
 
 - the **Booking Date**, which is the day the order was placed, and the booked
-  **Time Slot**;
+  **Time Slot**,
 - the **Order Id**, and the **Price**, which is the grand total of the customer's whole
-  order, including other sellers' products and shipping;
+  order, including other sellers' products and shipping,
 - the **Status** of the whole order, such as **Done**, **Pending**, **Canceled** or
-  **Closed**;
+  **Closed**,
 - the customer's name, email, phone number and billing address.
 
 Click **View Details** to open the order.
@@ -2908,10 +2908,10 @@ Each request shows the **RMA ID**, the **Order ID**, the **Customer Name**, the
 
 The page shows:
 
-- **General** — the date, package condition, the customer's information and photos;
+- **General** — the date, package condition, the customer's information and photos.
 - **Items** — the product, its price, the return and order quantities, what the
-  customer wants and why;
-- **Conversation** — messages between you and the customer;
+  customer wants and why.
+- **Conversation** — messages between you and the customer.
 - the **Status**, the **Order Details** and the **Customer Details**.
 
 ### Reply to the customer
@@ -2922,7 +2922,7 @@ The page shows:
 3. Click **Send Message**.
 
 The customer receives a **New RMA Message Received** email. When the customer replies,
-the reply appears in the conversation; the store admin is emailed about it, not you.
+the reply appears in the conversation. The store admin is emailed about it, not you.
 
 ### Update the status
 
@@ -3171,7 +3171,7 @@ stands. Team members see it only with the **Payment Request** permission.
 - Team members need **Orders** with **Payment Request** to request payment.
 - Admins need **Marketplace >> Sales >> Payment Request** with **Pay**. In this
   version, **Select Action >> Pay Now** appears only for admins whose role has
-  **All** permissions; other admins pay orders one at a time with **Pay Now**.
+  **All** permissions. Other admins pay orders one at a time with **Pay Now**.
 - The view icon needs **Marketplace >> Sales >> Orders >> View**.
 
 # Transactions
@@ -3278,8 +3278,8 @@ Switch **Subscription Plans** on and enter your terms in
 | **Billing Cycle** | **Monthly** or **Yearly**. |
 | **Duration (days)** | How long the plan lasts. Leave it empty for 30 days on a monthly plan or 365 days on a yearly one. |
 | **Max Products (Empty = unlimited)** | How many products the seller can list. |
-| **Max Staff** | How many team members the seller can add. It starts at 1; clear it for no limit. |
-| **Commission Value** | The commission percentage you take from sellers on this plan. It replaces the seller's own rate. Always enter a value; see [Commission](../payments/commission-management.md). |
+| **Max Staff** | How many team members the seller can add. It starts at 1. Clear it for no limit. |
+| **Commission Value** | The commission percentage you take from sellers on this plan. It replaces the seller's own rate. Always enter a value. See [Commission](../payments/commission-management.md). |
 | **Is Featured** | Marks the plan with a star for sellers. |
 | **Status** | Shows the plan to sellers. It is off on a new plan. |
 | **Position** | The order the plan appears in. Enter 1 or more, and a different number for each plan. |
@@ -3383,9 +3383,9 @@ Go to **Plans >> Available Plans**.
 
 If you have a plan, the page starts with **Current Plan**. Each plan card shows:
 
-- the plan's name, with a star when the store recommends it;
-- its price and how many days it lasts;
-- **Max Products**, **Max Staff Ids** and **Admin Commission**;
+- the plan's name, with a star when the store recommends it,
+- its price and how many days it lasts,
+- **Max Products**, **Max Staff Ids** and **Admin Commission**,
 - under **Permissions**, every part of the Seller Panel. Parts the plan doesn't include
   are shown in red with a cross.
 
@@ -3477,9 +3477,9 @@ Go to **Customers** in the Seller Panel.
 
 Each row shows:
 
-- **Customer / Email / Gender** — the customer's name, email and gender;
+- **Customer / Email / Gender** — the customer's name, email and gender.
 - **Revenue / Order Count** — what the customer has spent with you and how many orders
-  they have placed;
+  they have placed.
 - **Status / Group** — whether their account is **Active** or **Inactive**, and their
   customer group.
 
@@ -3490,7 +3490,7 @@ closed ones.
 ## Find a customer
 
 Search by name, or click **Filter** to narrow the list by **Customer**, **Email**,
-**Status** or **Group**. Click a column heading to sort by it; **Revenue** and **Group**
+**Status** or **Group**. Click a column heading to sort by it. **Revenue** and **Group**
 can't be sorted. When email addresses are masked, you can't search, filter or sort by
 email.
 
@@ -3549,8 +3549,8 @@ replies.
 Sellers with unread messages show a count. The menu at the top of a conversation has:
 
 - **Block Seller** or **Unblock Seller**, once the conversation has a message. While a
-  seller is blocked, neither of you can send messages;
-- **Clear Chat History** — deletes every message in the conversation for both of you;
+  seller is blocked, neither of you can send messages.
+- **Clear Chat History** — deletes every message in the conversation for both of you.
 - **Exit** — closes the conversation.
 
 ## Customers and sellers
@@ -3753,10 +3753,10 @@ Sellers edit all of this on [Manage Profile](../seller-panel/manage-profile.md).
 A shop page can't be opened when:
 
 - the store doesn't make seller shops public (**Show Publicly** in
-  [Sellers settings](../configuration/sellers.md));
-- the seller isn't approved, or is suspended;
-- the seller doesn't sell on the channel you're browsing;
-- the store uses subscription plans and the seller has no active plan;
+  [Sellers settings](../configuration/sellers.md)),
+- the seller isn't approved, or is suspended,
+- the seller doesn't sell on the channel you're browsing,
+- the store uses subscription plans and the seller has no active plan,
 - the marketplace is switched off.
 
 # Shopping Across Sellers
@@ -3773,7 +3773,7 @@ When the store shows seller shops publicly, customers see these on the page of a
 product a seller created:
 
 - **Sold By** with the seller's business name, which opens their shop page, and the
-  seller's star rating from approved reviews;
+  seller's star rating from approved reviews.
 - **Report Product**, to report a problem with the product, when the store lets
   customers report products. See
   [Seller & Product Flagging](../moderation/seller-product-flagging.md).
@@ -3789,9 +3789,9 @@ When other sellers sell the same product, the product page shows a link such as
 **2 more seller selling same product**. The count includes only offers that customers
 can buy now:
 
-- the seller is approved and not suspended;
-- the seller's offer is approved and published;
-- the product is enabled in the store's channel;
+- the seller is approved and not suspended,
+- the seller's offer is approved and published,
+- the product is enabled in the store's channel,
 - the seller has the product in stock. A downloadable product needs no stock.
 
 When the store uses subscription plans, only sellers with an active subscription are
@@ -3814,13 +3814,13 @@ the one on the product page itself.
 The top of the page shows the product's name, its overall star rating and the number
 of approved product reviews. Each offer below it shows:
 
-- **The seller's business name**, which opens the seller's shop page;
-- **The seller's star rating**, the average of the seller's approved reviews;
-- **The price** this seller charges;
-- **The seller's description** of their offer, such as delivery or warranty details;
+- **The seller's business name**, which opens the seller's shop page.
+- **The seller's star rating**, the average of the seller's approved reviews.
+- **The price** this seller charges.
+- **The seller's description** of their offer, such as delivery or warranty details.
 - **A quantity box** for a simple or virtual product, or the **samples** to download and
-  the **links** to choose, each with its price, for a downloadable product;
-- **Add to Cart**, which is greyed out when the offer can't be bought;
+  the **links** to choose, each with its price, for a downloadable product.
+- **Add to Cart**, which is greyed out when the offer can't be bought.
 - **Report Product**, when the store lets customers report products. See
   [Seller & Product Flagging](../moderation/seller-product-flagging.md).
 
@@ -3866,14 +3866,14 @@ Customers check out once for the whole cart. They choose one shipping method and
 the store once, even when the products come from several sellers.
 
 After the order is placed, each seller sees their own products from it. Sellers ship
-them when the store lets sellers create shipments; otherwise the store ships them.
+them when the store lets sellers create shipments. Otherwise the store ships them.
 Products from different sellers can arrive in separate packages.
 
 ## After the order
 
 From their account, customers can:
 
-- ask for a return. See [Returns (RMA)](../orders/return-merchandise-authorization.md);
+- ask for a return. See [Returns (RMA)](../orders/return-merchandise-authorization.md),
 - message a seller. See [Communications](../customers/communications.md).
 
 To review a seller, customers open the seller's shop page. See
@@ -3893,9 +3893,9 @@ the features and the seller journey. It isn't shown on the store's home page.
 
 Each seller card shows:
 
-- the seller's logo;
-- their business name, which opens their shop page;
-- their address;
+- the seller's logo,
+- their business name, which opens their shop page,
+- their address,
 - their star rating and number of reviews, counting approved reviews only.
 
 ## How sellers are chosen
@@ -3905,9 +3905,9 @@ seller.
 
 A seller can be featured when they are:
 
-- approved and not suspended;
-- a shop owner with a business name, not a team member;
-- selling on the current channel;
+- approved and not suspended,
+- a shop owner with a business name, not a team member,
+- selling on the current channel,
 - on an active plan, when the store uses subscription plans.
 
 The eligible sellers are then ranked by the **Popularity Criteria** you choose:
@@ -4250,8 +4250,8 @@ changes there straight away.
 **Status** on the [General](general.md) screen switches the whole marketplace on
 or off. While it is off:
 
-- the **Marketplace** menu disappears from the admin panel;
-- the Seller Panel and the marketplace storefront pages are unavailable;
+- the **Marketplace** menu disappears from the admin panel,
+- the Seller Panel and the marketplace storefront pages are unavailable,
 - seller products are hidden from the storefront and can't be bought.
 
 Your data is kept, and everything returns when you switch it back on.

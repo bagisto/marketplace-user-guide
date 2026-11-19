@@ -52,13 +52,13 @@ to the page:
 After scheduling:
 
 - download the label with **Download** on the shipment, or **Print Label** on the
-  order's row;
-- the shipment shows the pickup's confirmation and time window, and the **Label Cost**;
+  order's row,
+- the shipment shows the pickup's confirmation and time window, and the **Label Cost**,
 - shipments from the same source for the same collection time share one pickup.
 
 The label cost is shown for your information and isn't taken from your payout.
 
-If the courier rejects the collection window, nothing is saved; choose another time and
+If the courier rejects the collection window, nothing is saved. Choose another time and
 try again. If the courier can't be booked for another reason, the shipment is still
 saved and marked **Not Booked**.
 

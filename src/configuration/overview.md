@@ -55,8 +55,8 @@ changes there straight away.
 **Status** on the [General](general.md) screen switches the whole marketplace on
 or off. While it is off:
 
-- the **Marketplace** menu disappears from the admin panel;
-- the Seller Panel and the marketplace storefront pages are unavailable;
+- the **Marketplace** menu disappears from the admin panel,
+- the Seller Panel and the marketplace storefront pages are unavailable,
 - seller products are hidden from the storefront and can't be bought.
 
 Your data is kept, and everything returns when you switch it back on.

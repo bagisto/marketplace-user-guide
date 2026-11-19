@@ -23,11 +23,11 @@ Go to **Sales >> Orders** in the Seller Panel.
 Each row shows:
 
 - **Id / Date / Status / Customer** — the order number and date, the status of your part
-  of the order, and the customer's name, email and location;
+  of the order, and the customer's name, email and location.
 - **Items / Payment / Shipment** — how many products, the payment method and the
-  shipping method;
+  shipping method.
 - **Gross Amt. / Discount / Commission** — the value of your products, the discount and
-  the store's commission;
+  the store's commission.
 - **Seller Earn / Seller Payment Status** — what you earn from the order, and where
   its payment stands. The payment status is shown only with the **Payment Request**
   permission. See [Payment statuses](../payments/payment-management.md#payment-statuses).
@@ -93,7 +93,7 @@ Click **Schedule Pickup** on the order row or on the order page. See
 3. Confirm.
 
 Your products that aren't invoiced yet are cancelled and their stock is returned.
-Invoiced products can't be cancelled; the store admin refunds them instead. The
+Invoiced products can't be cancelled. The store admin refunds them instead. The
 customer receives an **Order Cancellation Confirmation** email, with a copy to you and
 the store admin. The customer's whole order is cancelled only once every seller's
 products in it are cancelled.

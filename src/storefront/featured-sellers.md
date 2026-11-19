@@ -12,9 +12,9 @@ the features and the seller journey. It isn't shown on the store's home page.
 
 Each seller card shows:
 
-- the seller's logo;
-- their business name, which opens their shop page;
-- their address;
+- the seller's logo,
+- their business name, which opens their shop page,
+- their address,
 - their star rating and number of reviews, counting approved reviews only.
 
 ## How sellers are chosen
@@ -24,9 +24,9 @@ seller.
 
 A seller can be featured when they are:
 
-- approved and not suspended;
-- a shop owner with a business name, not a team member;
-- selling on the current channel;
+- approved and not suspended,
+- a shop owner with a business name, not a team member,
+- selling on the current channel,
 - on an active plan, when the store uses subscription plans.
 
 The eligible sellers are then ranked by the **Popularity Criteria** you choose:

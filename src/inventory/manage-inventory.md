@@ -18,14 +18,14 @@ products you sell as your own.
 Each row shows:
 
 - the image, name, SKU, type and ID, and for a variant a **Parent** link to the main
-  product;
+  product,
 - the category and the price, with an **Edit price** link that opens
-  [Manage Pricing](../pricing/manage-pricing.md) for that product;
+  [Manage Pricing](../pricing/manage-pricing.md) for that product,
 - the **Listing Status**: **Active** when the product is on and approved,
   **Unapproved** when it is on but not yet approved, and **Inactive** when it is
-  switched off, with the date the product was last updated;
+  switched off, with the date the product was last updated,
 - how many were **Sold**, how many are **Undelivered** and how many were
-  **Canceled**;
+  **Canceled**,
 - the total **Stock**, or **Stock Not Managed** when the product doesn't track stock.
 
 ## Update the stock of a product

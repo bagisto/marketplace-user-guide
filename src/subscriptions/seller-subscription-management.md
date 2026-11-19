@@ -39,8 +39,8 @@ Switch **Subscription Plans** on and enter your terms in
 | **Billing Cycle** | **Monthly** or **Yearly**. |
 | **Duration (days)** | How long the plan lasts. Leave it empty for 30 days on a monthly plan or 365 days on a yearly one. |
 | **Max Products (Empty = unlimited)** | How many products the seller can list. |
-| **Max Staff** | How many team members the seller can add. It starts at 1; clear it for no limit. |
-| **Commission Value** | The commission percentage you take from sellers on this plan. It replaces the seller's own rate. Always enter a value; see [Commission](../payments/commission-management.md). |
+| **Max Staff** | How many team members the seller can add. It starts at 1. Clear it for no limit. |
+| **Commission Value** | The commission percentage you take from sellers on this plan. It replaces the seller's own rate. Always enter a value. See [Commission](../payments/commission-management.md). |
 | **Is Featured** | Marks the plan with a star for sellers. |
 | **Status** | Shows the plan to sellers. It is off on a new plan. |
 | **Position** | The order the plan appears in. Enter 1 or more, and a different number for each plan. |

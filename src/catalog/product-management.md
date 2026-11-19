@@ -14,10 +14,10 @@ created and the catalog products you sell as your own.
 
 Each row shows:
 
-- the name, SKU and product number;
-- the image, price, stock and listing ID;
+- the name, SKU and product number,
+- the image, price, stock and listing ID,
 - the status (**Active** or **Disable**), the approval badge, the category and the
-  product type;
+  product type,
 - the barcode, or **Not Generated**.
 
 The approval badge is **Draft**, **Waiting For Approval**, **Approved** or

@@ -57,7 +57,7 @@ To change several families at once, tick them, click **Select Action**, and use
 
 - **Stepped** — one step at a time, with the steps in a scrolling row of tabs
   (**Horizontal Tabs**) or, on wide screens, in a list down the side
-  (**Vertical Rail**; smaller screens still show tabs). Sellers move
+  (**Vertical Rail**, smaller screens still show tabs). Sellers move
   with **Previous** and **Next**, and a step with a mistake is marked.
 - **Two Column** — the whole form on one page, in two columns.
 

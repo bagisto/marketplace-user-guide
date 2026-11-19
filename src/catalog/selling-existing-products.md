@@ -20,8 +20,8 @@ Customers see your offer next to other sellers' offers for the same product. See
 
 You can't sell a product when:
 
-- the store doesn't allow sellers to sell catalog products (**You are not allowed to assign this product**);
-- you already sell it (**You are already selling this product**);
+- the store doesn't allow sellers to sell catalog products (**You are not allowed to assign this product**),
+- you already sell it (**You are already selling this product**),
 - its product type isn't one you're allowed to sell.
 
 ## Create your offer
