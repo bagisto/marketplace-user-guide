@@ -30,16 +30,16 @@ no roles.
 |---|---|
 | **Dashboard** | The dashboard |
 | **Manage Profile** | Nothing for team members, because only the shop owner can open **My Profile** |
-| **Catalog** | List Your Product; Products, with Assign, Edit, Delete, Product Barcode (Generate and Print) and Generate Content With Magic AI; Bulk Upload, with Imports (Create, Edit, Delete and Import) |
-| **Inventories** | Manage Inventory, with Update Status and Save Inventories; Inventory Sources, with Create, Edit and Delete |
+| **Catalog** | List Your Product. Products, with Assign, Edit, Delete, Product Barcode (Generate and Print) and Generate Content With Magic AI. Bulk Upload, with Imports (Create, Edit, Delete and Import) |
+| **Inventories** | Manage Inventory, with Update Status and Save Inventories. Inventory Sources, with Create, Edit and Delete |
 | **Pricing** | Manage Pricing, with Save Prices |
-| **Marketing** | Product Discounts, with Create, Edit, Delete and Join (View, Enroll and Withdraw) for the store's discounts; Checkout Deals, with Create, Edit, Copy, Delete and Coupons |
-| **Sales** | Orders, with View, Cancel, Invoice, Print Invoice, Shipment and Payment Request; RMA, with View; Bookings; Transactions, with View and Print |
-| **Performance** | Account Health, with Refresh Account Health; Seller Reviews; Product Reviews |
+| **Marketing** | Product Discounts, with Create, Edit, Delete and Join (View, Enroll and Withdraw) for the store's discounts. Checkout Deals, with Create, Edit, Copy, Delete and Coupons |
+| **Sales** | Orders, with View, Cancel, Invoice, Print Invoice, Shipment and Payment Request. RMA, with View. Bookings. Transactions, with View and Print |
+| **Performance** | Account Health, with Refresh Account Health. Seller Reviews. Product Reviews |
 | **Reporting** | Sales, Customers, Products |
 | **Communication** | Admin, Customers |
 | **Customers** | The customers list |
-| **Settings** | General; Users, with Create, Edit and Delete; Roles, with Create, Edit and Delete |
+| **Settings** | General. Users, with Create, Edit and Delete. Roles, with Create, Edit and Delete |
 
 A **Custom** role needs at least one permission.
 

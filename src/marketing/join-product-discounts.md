@@ -91,9 +91,9 @@ withdraws.
 
 A joined discount lowers a seller's prices only while all of these are true:
 
-- joining is switched on in [Marketing settings](../configuration/marketing.md);
-- the catalog rule still has **Allow Sellers to Join** on;
-- the seller's request is **Approved**;
+- joining is switched on in [Marketing settings](../configuration/marketing.md),
+- the catalog rule still has **Allow Sellers to Join** on,
+- the seller's request is **Approved**,
 - the rule itself is active, in date, and matches the channel and customer group.
 
 Prices are updated in the background, so a change can take a little while to show.

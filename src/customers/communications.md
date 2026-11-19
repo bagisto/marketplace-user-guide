@@ -42,8 +42,8 @@ replies.
 Sellers with unread messages show a count. The menu at the top of a conversation has:
 
 - **Block Seller** or **Unblock Seller**, once the conversation has a message. While a
-  seller is blocked, neither of you can send messages;
-- **Clear Chat History** — deletes every message in the conversation for both of you;
+  seller is blocked, neither of you can send messages.
+- **Clear Chat History** — deletes every message in the conversation for both of you.
 - **Exit** — closes the conversation.
 
 ## Customers and sellers

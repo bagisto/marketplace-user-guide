@@ -97,5 +97,5 @@ stands. Team members see it only with the **Payment Request** permission.
 - Team members need **Orders** with **Payment Request** to request payment.
 - Admins need **Marketplace >> Sales >> Payment Request** with **Pay**. In this
   version, **Select Action >> Pay Now** appears only for admins whose role has
-  **All** permissions; other admins pay orders one at a time with **Pay Now**.
+  **All** permissions. Other admins pay orders one at a time with **Pay Now**.
 - The view icon needs **Marketplace >> Sales >> Orders >> View**.

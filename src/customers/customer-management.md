@@ -11,9 +11,9 @@ Go to **Customers** in the Seller Panel.
 
 Each row shows:
 
-- **Customer / Email / Gender** — the customer's name, email and gender;
+- **Customer / Email / Gender** — the customer's name, email and gender.
 - **Revenue / Order Count** — what the customer has spent with you and how many orders
-  they have placed;
+  they have placed.
 - **Status / Group** — whether their account is **Active** or **Inactive**, and their
   customer group.
 
@@ -24,7 +24,7 @@ closed ones.
 ## Find a customer
 
 Search by name, or click **Filter** to narrow the list by **Customer**, **Email**,
-**Status** or **Group**. Click a column heading to sort by it; **Revenue** and **Group**
+**Status** or **Group**. Click a column heading to sort by it. **Revenue** and **Group**
 can't be sorted. When email addresses are masked, you can't search, filter or sort by
 email.
 

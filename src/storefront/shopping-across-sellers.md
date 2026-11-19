@@ -12,7 +12,7 @@ When the store shows seller shops publicly, customers see these on the page of a
 product a seller created:
 
 - **Sold By** with the seller's business name, which opens their shop page, and the
-  seller's star rating from approved reviews;
+  seller's star rating from approved reviews.
 - **Report Product**, to report a problem with the product, when the store lets
   customers report products. See
   [Seller & Product Flagging](../moderation/seller-product-flagging.md).
@@ -28,9 +28,9 @@ When other sellers sell the same product, the product page shows a link such as
 **2 more seller selling same product**. The count includes only offers that customers
 can buy now:
 
-- the seller is approved and not suspended;
-- the seller's offer is approved and published;
-- the product is enabled in the store's channel;
+- the seller is approved and not suspended,
+- the seller's offer is approved and published,
+- the product is enabled in the store's channel,
 - the seller has the product in stock. A downloadable product needs no stock.
 
 When the store uses subscription plans, only sellers with an active subscription are
@@ -53,13 +53,13 @@ the one on the product page itself.
 The top of the page shows the product's name, its overall star rating and the number
 of approved product reviews. Each offer below it shows:
 
-- **The seller's business name**, which opens the seller's shop page;
-- **The seller's star rating**, the average of the seller's approved reviews;
-- **The price** this seller charges;
-- **The seller's description** of their offer, such as delivery or warranty details;
+- **The seller's business name**, which opens the seller's shop page.
+- **The seller's star rating**, the average of the seller's approved reviews.
+- **The price** this seller charges.
+- **The seller's description** of their offer, such as delivery or warranty details.
 - **A quantity box** for a simple or virtual product, or the **samples** to download and
-  the **links** to choose, each with its price, for a downloadable product;
-- **Add to Cart**, which is greyed out when the offer can't be bought;
+  the **links** to choose, each with its price, for a downloadable product.
+- **Add to Cart**, which is greyed out when the offer can't be bought.
 - **Report Product**, when the store lets customers report products. See
   [Seller & Product Flagging](../moderation/seller-product-flagging.md).
 
@@ -105,14 +105,14 @@ Customers check out once for the whole cart. They choose one shipping method and
 the store once, even when the products come from several sellers.
 
 After the order is placed, each seller sees their own products from it. Sellers ship
-them when the store lets sellers create shipments; otherwise the store ships them.
+them when the store lets sellers create shipments. Otherwise the store ships them.
 Products from different sellers can arrive in separate packages.
 
 ## After the order
 
 From their account, customers can:
 
-- ask for a return. See [Returns (RMA)](../orders/return-merchandise-authorization.md);
+- ask for a return. See [Returns (RMA)](../orders/return-merchandise-authorization.md),
 - message a seller. See [Communications](../customers/communications.md).
 
 To review a seller, customers open the seller's shop page. See

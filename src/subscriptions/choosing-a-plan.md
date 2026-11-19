@@ -22,9 +22,9 @@ Go to **Plans >> Available Plans**.
 
 If you have a plan, the page starts with **Current Plan**. Each plan card shows:
 
-- the plan's name, with a star when the store recommends it;
-- its price and how many days it lasts;
-- **Max Products**, **Max Staff Ids** and **Admin Commission**;
+- the plan's name, with a star when the store recommends it,
+- its price and how many days it lasts,
+- **Max Products**, **Max Staff Ids** and **Admin Commission**,
 - under **Permissions**, every part of the Seller Panel. Parts the plan doesn't include
   are shown in red with a cross.
 

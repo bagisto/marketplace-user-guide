@@ -96,8 +96,8 @@ Sellers edit all of this on [Manage Profile](../seller-panel/manage-profile.md).
 A shop page can't be opened when:
 
 - the store doesn't make seller shops public (**Show Publicly** in
-  [Sellers settings](../configuration/sellers.md));
-- the seller isn't approved, or is suspended;
-- the seller doesn't sell on the channel you're browsing;
-- the store uses subscription plans and the seller has no active plan;
+  [Sellers settings](../configuration/sellers.md)),
+- the seller isn't approved, or is suspended,
+- the seller doesn't sell on the channel you're browsing,
+- the store uses subscription plans and the seller has no active plan,
 - the marketplace is switched off.

@@ -92,12 +92,12 @@ password fields first, then every mapped attribute marked
 
 | Card | Attributes | Seen by |
 |---|---|---|
-| General | Name, Email, Phone, Slug, Business Name | Name, Email, Slug and Business Name are on the sign-up form; all are on the profile |
-| Description | Business Description | Profile; the shop page **About** tab |
-| Policies | Return Policy, Shipping Policy, Privacy Policy | Profile; the shop page **About** tab when filled |
-| Meta Description | Meta Title, Meta Keywords, Meta Description | Profile; used for the shop page in search engines |
-| Address | Address, City, Country, State, Postcode | Profile; shown on the shop page |
-| Social Links | Facebook, Instagram, YouTube | Profile; the **Share** menu on the shop page |
+| General | Name, Email, Phone, Slug, Business Name | Name, Email, Slug and Business Name are on the sign-up form. All are on the profile |
+| Description | Business Description | Profile, the shop page **About** tab |
+| Policies | Return Policy, Shipping Policy, Privacy Policy | Profile, the shop page **About** tab when filled |
+| Meta Description | Meta Title, Meta Keywords, Meta Description | Profile, used for the shop page in search engines |
+| Address | Address, City, Country, State, Postcode | Profile, shown on the shop page |
+| Social Links | Facebook, Instagram, YouTube | Profile, the **Share** menu on the shop page |
 | Settings | Minimum Order Amount, Google Analytics ID | Profile |
 | Settings | Commission Enabled, Commission Percentage, Allowed Product Types, Magic AI Enabled, Magic AI Generation Limit | Admin only, on **Edit Seller** |
 

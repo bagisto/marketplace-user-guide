@@ -48,10 +48,10 @@ Each request shows the **RMA ID**, the **Order ID**, the **Customer Name**, the
 
 The page shows:
 
-- **General** — the date, package condition, the customer's information and photos;
+- **General** — the date, package condition, the customer's information and photos.
 - **Items** — the product, its price, the return and order quantities, what the
-  customer wants and why;
-- **Conversation** — messages between you and the customer;
+  customer wants and why.
+- **Conversation** — messages between you and the customer.
 - the **Status**, the **Order Details** and the **Customer Details**.
 
 ### Reply to the customer
@@ -62,7 +62,7 @@ The page shows:
 3. Click **Send Message**.
 
 The customer receives a **New RMA Message Received** email. When the customer replies,
-the reply appears in the conversation; the store admin is emailed about it, not you.
+the reply appears in the conversation. The store admin is emailed about it, not you.
 
 ### Update the status
 
