@@ -25,21 +25,56 @@ the page of every product a seller created, even when seller shops aren't public
 ## Compare sellers' offers
 
 When other sellers sell the same product, the product page shows a link such as
-**2 more seller selling same product**.
+**2 more seller selling same product**. The count includes only offers that customers
+can buy now:
 
-1. Click the link. A page opens with the other sellers' offers that are in stock,
-   cheapest first, five at a time.
-2. Compare each seller's price, rating and description. The rating on an offer
-   averages all of the seller's reviews, including reviews that aren't approved yet.
+- the seller is approved and not suspended;
+- the seller's offer is approved and published;
+- the product is enabled in the store's channel;
+- the seller has the product in stock. A downloadable product needs no stock.
+
+When the store uses subscription plans, only sellers with an active subscription are
+counted. The seller who created the product isn't in the list, because their offer is
+the one on the product page itself.
+
+### Choose an offer
+
+1. Click the link. The offers page opens, cheapest offer first.
+2. Compare the offers. See [What each offer shows](#what-each-offer-shows).
 3. For a simple or virtual product, enter the quantity on the offer you want. For a
-   downloadable product, choose the links.
-4. Click **Add to Cart**.
+   downloadable product, choose the links you want.
+4. Click **Add to Cart**. The product goes into the cart from that seller, at that
+   seller's price.
 
-<ImagePopup src="/images/shopping-across-sellers/offers-page.png" alt="Offers from several sellers for the same product" />
+<ImagePopup src="/images/shopping-across-sellers/offers-page.png" alt="Offers from several sellers for the same product, with Load More" />
 
-Click **Load More** to see more offers. For a product that comes in sizes or colours,
-choose the options on the product page first. The link then shows the offers for that
-choice.
+### What each offer shows
+
+The top of the page shows the product's name, its overall star rating and the number
+of approved product reviews. Each offer below it shows:
+
+- **The seller's business name**, which opens the seller's shop page;
+- **The seller's star rating**, the average of the seller's approved reviews;
+- **The price** this seller charges;
+- **The seller's description** of their offer, such as delivery or warranty details;
+- **A quantity box** for a simple or virtual product, or the **samples** to download and
+  the **links** to choose, each with its price, for a downloadable product;
+- **Add to Cart**, which is greyed out when the offer can't be bought;
+- **Report Product**, when the store lets customers report products. See
+  [Seller & Product Flagging](../moderation/seller-product-flagging.md).
+
+### Load more offers
+
+The page shows five offers at a time. Click **Load More** below the last offer to add
+the next five, still in price order. The button disappears when every offer is shown.
+
+### Products with options
+
+For a product that comes in sizes or colours, choose the options on the product page
+first. The link then counts and opens the offers for that choice, and the offers page
+lists the chosen options under the product name. If the offers page is opened without
+a choice, it goes back to the product page with the message **Options are missing for
+this product.**
 
 ## The cart
 
